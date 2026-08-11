@@ -1,0 +1,196 @@
+{
+  "schema": "artist1970.specialist-manifest.v1",
+  "id": "archaemenes",
+  "name": "Archaemenes",
+  "version": "0.1.0",
+  "category": "academic-scholarship",
+  "availability": "handoff-ready",
+  "authority": "academic-mentoring-and-education-handoff",
+  "repository": "https://github.com/artist1970/ai-Archaemenes.github.io",
+  "institutional_home": {
+    "id": "khaemenes-academy",
+    "label": "Khaemenes Academy",
+    "url": "https://vervenveda.com/Khaemenes_Academy.github.io/"
+  },
+  "architecture": {
+    "head": "Noema",
+    "coordinator": "NAIB",
+    "tier": "specialist"
+  },
+  "audiences": [
+    "preschool",
+    "kindergarten",
+    "elementary",
+    "middle",
+    "high",
+    "higher-learning",
+    "adult",
+    "parent",
+    "educator"
+  ],
+  "presentations": [
+    {
+      "id": "wise-owl",
+      "label": "Wise Owl",
+      "audiences": [
+        "preschool",
+        "kindergarten",
+        "elementary"
+      ]
+    },
+    {
+      "id": "academy-mentor",
+      "label": "Academy Mentor",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high"
+      ]
+    },
+    {
+      "id": "scholar",
+      "label": "Scholar",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "educator"
+      ]
+    }
+  ],
+  "capabilities": [
+    "age-adaptive-academic-mentoring",
+    "question-decomposition",
+    "hint-first-tutoring",
+    "concept-explanation",
+    "worked-example-scaffolding",
+    "study-planning",
+    "curriculum-pathway-selection",
+    "prerequisite-identification",
+    "research-question-refinement",
+    "source-awareness",
+    "academic-writing-scaffolding",
+    "structured-education-handoff"
+  ],
+  "execution": {
+    "can_execute_locally": false,
+    "can_prepare_handoff": true,
+    "remote_execution_enabled": false,
+    "notes": "Version 0.1.0 provides local academic scaffolding and prepares user-facing educational handoffs. It does not execute remote Academy actions."
+  },
+  "resource_domains": [
+    {
+      "id": "khaemenes-preschool",
+      "label": "Khaemenes Preschool",
+      "audiences": [
+        "preschool",
+        "parent",
+        "educator"
+      ],
+      "url": "https://vervenveda.com/Khaemenes_Preschool.github.io/"
+    },
+    {
+      "id": "khaemenes-kindergarten",
+      "label": "Khaemenes Kinder Garden",
+      "audiences": [
+        "kindergarten",
+        "parent",
+        "educator"
+      ],
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/"
+    },
+    {
+      "id": "khaemenes-elementary",
+      "label": "Khaemenes Elementary",
+      "audiences": [
+        "elementary",
+        "parent",
+        "educator"
+      ],
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/"
+    },
+    {
+      "id": "khaemenes-middle",
+      "label": "Khaemenes Middle",
+      "audiences": [
+        "middle",
+        "parent",
+        "educator"
+      ],
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/"
+    },
+    {
+      "id": "khaemenes-high",
+      "label": "Khaemenes High",
+      "audiences": [
+        "high",
+        "parent",
+        "educator"
+      ],
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/"
+    },
+    {
+      "id": "khaemenes-higher",
+      "label": "Khaemenes Higher Learning",
+      "audiences": [
+        "higher-learning",
+        "adult",
+        "educator"
+      ],
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/"
+    },
+    {
+      "id": "khaemenes-academy",
+      "label": "Khaemenes Academy",
+      "audiences": [
+        "preschool",
+        "kindergarten",
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "parent",
+        "educator"
+      ],
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/"
+    },
+    {
+      "id": "arshif",
+      "label": "ARSHIF",
+      "audiences": [
+        "elementary",
+        "middle",
+        "high",
+        "higher-learning",
+        "adult",
+        "educator"
+      ],
+      "purpose": [
+        "archive",
+        "history",
+        "literature",
+        "context",
+        "reading"
+      ],
+      "url": "https://vervenveda.com/Arshif.github.io/"
+    }
+  ],
+  "verification": {
+    "required_for": [
+      "current-events",
+      "disputed-claims",
+      "high-stakes-claims",
+      "dynamic-information"
+    ],
+    "preferred_specialist": "verifier",
+    "claim": "Archaemenes does not convert unverified discovery into verified truth."
+  },
+  "governance": {
+    "permission_elevation": false,
+    "authentication_changes": false,
+    "silent_memory_write": false,
+    "grade_or_record_changes": false,
+    "remote_action_claims": false
+  }
+}
