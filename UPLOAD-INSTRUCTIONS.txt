@@ -1,0 +1,15 @@
+ARCHAEMENES PUBLIC CLEANUP
+
+Upload these four files to the ROOT of:
+artist1970/Archaemenes.github.io
+
+Replace the existing versions:
+- README.md
+- index.html
+- archaemenes_persona.json
+- specialist-manifest.json
+
+Then DELETE this old public implementation file:
+- archaemenes-adapter.js
+
+Do not change any Noema/NAIB files during this step.

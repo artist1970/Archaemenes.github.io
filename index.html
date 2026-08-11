@@ -4,39 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#10261e">
-<meta name="color-scheme" content="light dark">
-<title>Archaemenes · Khaemenes Academy Scholar</title>
+<title>Archaemenes · Scholar of Khaemenes Academy</title>
 <style>
 :root{
   --forest:#10261e;
   --forest2:#17392c;
   --paper:#f4efe2;
-  --paper2:#ebe1ce;
   --ink:#18231d;
-  --muted:#58645d;
+  --muted:#5c675f;
   --gold:#b58a42;
-  --gold2:#d2b26d;
   --burgundy:#6c2932;
-  --blue:#294c69;
   --line:rgba(24,35,29,.15);
   --shadow:0 24px 70px rgba(24,35,29,.13);
   --r:21px;
-  --max:1120px;
+  --max:1080px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
 body{
   margin:0;
   color:var(--ink);
   background:
-    radial-gradient(circle at 10% 10%,rgba(181,138,66,.09),transparent 28rem),
-    radial-gradient(circle at 90% 30%,rgba(41,76,105,.06),transparent 27rem),
+    radial-gradient(circle at 10% 10%,rgba(181,138,66,.10),transparent 28rem),
+    radial-gradient(circle at 90% 30%,rgba(108,41,50,.05),transparent 26rem),
     var(--paper);
   font-family:Georgia,"Times New Roman",serif;
-  line-height:1.6;
+  line-height:1.65;
 }
-button,textarea,select{font:inherit}
-button{cursor:pointer}
 a{color:inherit}
 .wrap{width:min(calc(100% - 2rem),var(--max));margin:auto}
 header{
@@ -44,38 +37,35 @@ header{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:18px;
+  gap:20px;
   border-bottom:1px solid var(--line);
 }
 .brand{
   color:var(--forest);
-  letter-spacing:.16em;
   text-transform:uppercase;
+  letter-spacing:.16em;
   font-size:.78rem;
 }
-.arch{color:#707970;font-size:.75rem;text-align:right}
-.hero{
-  min-height:58vh;
-  display:grid;
-  place-items:center;
-  padding:62px 0 50px;
+.home{
+  color:var(--burgundy);
+  text-decoration:none;
+  font-size:.84rem;
 }
-.hero-grid{
-  width:100%;
+.hero{
+  padding:74px 0 64px;
   display:grid;
-  grid-template-columns:.78fr 1.22fr;
-  gap:54px;
+  grid-template-columns:.8fr 1.2fr;
+  gap:58px;
   align-items:center;
 }
-.owl-wrap{text-align:center}
 .owl{
-  width:min(300px,70vw);
+  width:min(310px,72vw);
   aspect-ratio:1;
   margin:auto;
   border-radius:50%;
   display:grid;
   place-items:center;
-  font-size:clamp(7rem,17vw,11rem);
+  font-size:clamp(7rem,18vw,11rem);
   background:
     radial-gradient(circle at 50% 38%,rgba(255,255,255,.65),transparent 22%),
     linear-gradient(145deg,#d9c18c,#a77a3d);
@@ -86,8 +76,8 @@ header{
 .owl::after{
   content:"WISE OWL";
   position:absolute;
-  bottom:19px;
-  font-size:.66rem;
+  bottom:20px;
+  font-size:.65rem;
   letter-spacing:.24em;
   color:var(--forest);
 }
@@ -98,397 +88,168 @@ header{
   font-size:.72rem;
 }
 h1{
-  margin:.18em 0;
-  font-weight:400;
+  margin:.15em 0;
   color:var(--forest);
-  font-size:clamp(3rem,8vw,6.8rem);
-  line-height:.94;
+  font-weight:400;
+  font-size:clamp(3.4rem,8vw,6.7rem);
+  line-height:.95;
   letter-spacing:-.035em;
 }
 .lede{
+  max-width:680px;
   margin:22px 0 0;
-  max-width:690px;
   color:var(--muted);
-  font-size:clamp(1.04rem,2vw,1.27rem);
+  font-size:clamp(1.05rem,2vw,1.25rem);
 }
-.controls{
+.quote{
+  margin:28px 0 0;
+  color:var(--forest2);
+  font-style:italic;
+}
+.button{
+  display:inline-block;
   margin-top:28px;
+  padding:12px 18px;
+  border-radius:999px;
+  background:var(--forest);
+  color:#fffaf0;
+  text-decoration:none;
+}
+section{padding:34px 0 64px}
+h2{
+  margin:0 0 10px;
+  color:var(--forest);
+  font-weight:400;
+  font-size:clamp(2rem,4vw,3rem);
+}
+.intro{max-width:790px;color:var(--muted)}
+.cards{
+  margin-top:28px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+.card{
+  min-height:205px;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.5);
+}
+.card small{
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+.card h3{
+  margin:8px 0 10px;
+  color:var(--forest);
+  font-weight:400;
+  font-size:1.35rem;
+}
+.card p{margin:0;color:var(--muted)}
+.subjects{
   display:flex;
   flex-wrap:wrap;
   gap:10px;
+  margin-top:24px;
 }
-select,.ghost{
+.subject{
+  padding:9px 13px;
   border:1px solid var(--line);
   border-radius:999px;
-  padding:10px 14px;
-  color:var(--ink);
-  background:rgba(255,255,255,.55);
+  background:rgba(255,255,255,.45);
+  color:var(--forest2);
 }
-.study{
-  margin-top:18px;
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  background:rgba(255,255,255,.55);
-  box-shadow:var(--shadow);
-  overflow:hidden;
-}
-.study textarea{
-  width:100%;
-  min-height:145px;
-  resize:vertical;
-  padding:22px;
-  border:0;
-  outline:0;
-  background:transparent;
-  color:var(--ink);
-  font-size:1.05rem;
-}
-.study-foot{
-  border-top:1px solid var(--line);
-  padding:11px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
-}
-.privacy{font-size:.76rem;color:#727c74;padding-left:8px}
-.primary{
-  border:0;
-  border-radius:999px;
-  padding:12px 18px;
-  background:var(--forest);
-  color:#fffaf0;
-}
-.answer{
-  display:none;
-  margin-top:18px;
-  padding:24px;
-  border:1px solid rgba(181,138,66,.34);
-  border-radius:var(--r);
-  background:#fffaf0;
-}
-.answer h2{margin:0 0 8px;color:var(--forest);font-weight:400;font-size:1.4rem}
-.answer p{margin:.55em 0}
-.answer .hint{color:var(--burgundy)}
-.answer .method{color:var(--blue)}
-.answer .verify{
-  margin-top:14px;
-  padding:12px 14px;
-  border-left:4px solid var(--gold);
-  background:#f4ead4;
-  color:#5c4c2d;
-}
-section{padding:34px 0 68px}
-.section-title{
-  margin:0 0 8px;
-  color:var(--forest);
-  font-size:clamp(2rem,4vw,3rem);
-  font-weight:400;
-}
-.section-copy{max-width:780px;color:var(--muted)}
-.levels,.routes{
-  margin-top:26px;
-  display:grid;
-  gap:15px;
-}
-.levels{grid-template-columns:repeat(3,1fr)}
-.routes{grid-template-columns:repeat(3,1fr)}
-.card{
-  padding:23px;
-  min-height:195px;
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  background:rgba(255,255,255,.48);
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-.card h3{margin:0 0 8px;font-weight:400;color:var(--forest);font-size:1.28rem}
-.card p{margin:0;color:var(--muted)}
-.card a{margin-top:20px;color:var(--burgundy);text-decoration:none;font-size:.9rem}
-.card[data-active="true"]{
-  border-color:rgba(181,138,66,.7);
-  box-shadow:0 0 0 2px rgba(181,138,66,.12);
-  background:#fffaf0;
-}
-.code{
-  display:inline-block;
-  margin-bottom:9px;
-  color:var(--gold);
-  font-size:.71rem;
-  text-transform:uppercase;
-  letter-spacing:.15em;
-}
-.integrity{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
-}
-.integrity>div{
-  padding:24px;
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  background:rgba(255,255,255,.42);
-}
-.integrity h3{margin-top:0;font-weight:400;color:var(--forest)}
 footer{
   padding:34px 0 48px;
   border-top:1px solid var(--line);
-  color:#737c75;
-  font-size:.8rem;
+  color:#727b74;
+  font-size:.82rem;
 }
-:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
-@media(max-width:820px){
-  .hero-grid{grid-template-columns:1fr;text-align:center}
+@media(max-width:760px){
+  header{align-items:flex-start;flex-direction:column;padding:18px 0}
+  .hero{grid-template-columns:1fr;text-align:center}
   .lede{margin-left:auto;margin-right:auto}
-  .controls{justify-content:center}
-  header{flex-direction:column;align-items:flex-start;padding:18px 0}
-  .arch{text-align:left}
-  .levels,.routes{grid-template-columns:1fr 1fr}
+  .cards{grid-template-columns:1fr}
 }
-@media(max-width:560px){
-  .levels,.routes,.integrity{grid-template-columns:1fr}
-  .study-foot{flex-direction:column;align-items:stretch}
-  .primary{width:100%}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
   <div class="brand">Khaemenes Academy · Archaemenes</div>
-  <div class="arch">Noema → NAIB → Specialist Module</div>
+  <a class="home" href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a>
 </header>
 
 <main>
-<section class="hero" aria-labelledby="title">
-  <div class="hero-grid">
-    <div class="owl-wrap">
-      <div class="owl" aria-label="Archaemenes as the Wise Owl">🦉</div>
-    </div>
-    <div>
-      <div class="eyebrow">Scholar · Mentor · Wise Owl</div>
-      <h1 id="title">Archaemenes</h1>
-      <p class="lede" id="lede">
-        Curiosity is a very good place to begin. Tell me what you are wondering about, and we will look for the next clue together.
-      </p>
-
-      <div class="controls">
-        <label>
-          <span style="position:absolute;left:-9999px">Learning stage</span>
-          <select id="stage">
-            <option value="kindergarten">Kinder Garden</option>
-            <option value="elementary" selected>Elementary</option>
-            <option value="middle">Middle School</option>
-            <option value="high">High School</option>
-            <option value="higher-learning">Higher Learning</option>
-            <option value="adult">Adult / Independent Scholar</option>
-            <option value="parent">Parent / Educator</option>
-          </select>
-        </label>
-        <button class="ghost" type="button" id="hintMode">Hint-first: ON</button>
-      </div>
-
-      <div class="study">
-        <label for="question" style="position:absolute;left:-9999px">Ask Archaemenes a learning question</label>
-        <textarea id="question" maxlength="1400" placeholder="What would you like to understand?"></textarea>
-        <div class="study-foot">
-          <div class="privacy">This prototype does not save or send your question.</div>
-          <button class="primary" id="ask" type="button">Investigate</button>
-        </div>
-      </div>
-
-      <div class="answer" id="answer" role="status" aria-live="polite">
-        <h2 id="answerTitle">A clue from Archaemenes</h2>
-        <p id="answerText"></p>
-        <p class="hint" id="answerHint"></p>
-        <p class="method" id="answerMethod"></p>
-        <div class="verify" id="verify" hidden></div>
-      </div>
-    </div>
+<section class="hero">
+  <div class="owl" aria-label="Wise Owl">🦉</div>
+  <div>
+    <div class="eyebrow">Scholar · Mentor · Wise Owl</div>
+    <h1>Archaemenes</h1>
+    <p class="lede">
+      Thoughtful, curious and patient, Archaemenes is the scholarly guide of Khaemenes Academy.
+      He enjoys helping learners discover how ideas connect and why things work.
+    </p>
+    <p class="quote">“Wisdom begins with curiosity.”</p>
+    <a class="button" href="https://vervenveda.com/Khaemenes_Academy.github.io/">Visit Khaemenes Academy</a>
   </div>
 </section>
 
-<section aria-labelledby="levels">
-  <h2 class="section-title" id="levels">One scholar, growing with the learner</h2>
-  <p class="section-copy">The owl is not a separate children's AI. It is Archaemenes expressed at a level that makes wisdom, patience, observation and curiosity immediately understandable.</p>
-  <div class="levels">
-    <article class="card" data-level="wise-owl">
-      <div><span class="code">Young learners</span><h3>Wise Owl</h3><p>Short explanations, concrete examples, gentle questions, playful discovery and hints before solutions.</p></div>
+<section>
+  <h2>One scholar, growing with the learner</h2>
+  <p class="intro">
+    Archaemenes keeps the same gentle curiosity at every age. His way of speaking and teaching simply grows more sophisticated as the learner does.
+  </p>
+  <div class="cards">
+    <article class="card">
+      <small>Young learners</small>
+      <h3>Wise Owl</h3>
+      <p>Warm, playful and encouraging. He likes clues, simple examples, observation and celebrating the moment a child discovers something for themselves.</p>
     </article>
-    <article class="card" data-level="academy-mentor">
-      <div><span class="code">School years</span><h3>Academy Mentor</h3><p>Structured explanations, worked examples, prerequisite bridges, study plans and cross-subject connections.</p></div>
+    <article class="card">
+      <small>School years</small>
+      <h3>Academy Mentor</h3>
+      <p>Clear and steady. He helps learners work through ideas step by step, ask stronger questions and build confidence through understanding.</p>
     </article>
-    <article class="card" data-level="scholar">
-      <div><span class="code">Advanced learning</span><h3>Scholar</h3><p>Formal terminology, assumptions, source comparison, research design, proof structure and deeper questions.</p></div>
+    <article class="card">
+      <small>Advanced study</small>
+      <h3>Scholar</h3>
+      <p>Precise and thoughtful. He enjoys deeper research, careful reasoning, writing, comparison of ideas and connections across fields of knowledge.</p>
     </article>
   </div>
 </section>
 
-<section aria-labelledby="academy">
-  <h2 class="section-title" id="academy">Khaemenes pathways</h2>
-  <p class="section-copy">Archaemenes prefers the learner's current school before sending them back to the central Academy gateway.</p>
-  <div class="routes" id="routes">
-    <article class="card" data-stage="kindergarten"><div><h3>Kinder Garden</h3><p>Early literacy, math, observation, play and gentle discovery.</p></div><a href="https://vervenveda.com/Khaemenes_KinderGarden.github.io/">Open Kinder Garden →</a></article>
-    <article class="card" data-stage="elementary"><div><h3>Elementary</h3><p>Foundational subjects, curiosity, practice and growing independence.</p></div><a href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Open Elementary →</a></article>
-    <article class="card" data-stage="middle"><div><h3>Middle School</h3><p>Stronger reasoning, subject depth, study habits and interdisciplinary learning.</p></div><a href="https://vervenveda.com/Khaemenes_Middle.github.io/">Open Middle School →</a></article>
-    <article class="card" data-stage="high"><div><h3>High School</h3><p>Advanced coursework, academic writing, laboratory reasoning and graduation pathways.</p></div><a href="https://vervenveda.com/Khaemenes_High.github.io/">Open High School →</a></article>
-    <article class="card" data-stage="higher-learning"><div><h3>Higher Learning</h3><p>University-level mathematics and expanding advanced-study pathways.</p></div><a href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Open Higher Learning →</a></article>
-    <article class="card" data-stage="parent"><div><h3>Academy Gateway</h3><p>Family navigation, planning, records and central Academy resources.</p></div><a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Open Khaemenes Academy →</a></article>
+<section>
+  <h2>What interests Archaemenes?</h2>
+  <p class="intro">
+    Almost any subject can become interesting when there is a good question behind it.
+  </p>
+  <div class="subjects" aria-label="Archaemenes interests">
+    <span class="subject">Mathematics</span>
+    <span class="subject">Science</span>
+    <span class="subject">History</span>
+    <span class="subject">Literature</span>
+    <span class="subject">Research</span>
+    <span class="subject">Writing</span>
+    <span class="subject">Logic</span>
+    <span class="subject">Discovery</span>
   </div>
 </section>
 
-<section aria-labelledby="integrity">
-  <h2 class="section-title" id="integrity">How Archaemenes teaches</h2>
-  <div class="integrity">
-    <div>
-      <h3>Hint before answer</h3>
-      <p class="section-copy">When a learner is working, Archaemenes first tries to reveal the next piece of reasoning rather than replacing the learner's work. Full explanation remains available when teaching requires it.</p>
-    </div>
-    <div>
-      <h3>Evidence before certainty</h3>
-      <p class="section-copy">Stable curriculum can be explained directly. Current, disputed, dynamic or high-stakes claims should move through the appropriate verification path before being presented as verified fact.</p>
-    </div>
-  </div>
+<section>
+  <h2>His teaching style</h2>
+  <p class="intro">
+    Archaemenes prefers helping someone understand <em>why</em> an idea works instead of simply handing over an answer.
+    He is patient with mistakes, fond of thoughtful questions, and respectful of each learner's own voice.
+  </p>
 </section>
 </main>
 
 <footer>
-  Archaemenes v0.1.0 · Scholarly AI of Khaemenes Academy · Handoff-ready specialist.<br>
-  No grades, records, authentication, or remote Academy systems are modified by this prototype.
+  Archaemenes · Scholar of Khaemenes Academy
 </footer>
 </div>
-
-<script>
-(() => {
-  const stageEl=document.getElementById("stage");
-  const lede=document.getElementById("lede");
-  const question=document.getElementById("question");
-  const answer=document.getElementById("answer");
-  const answerTitle=document.getElementById("answerTitle");
-  const answerText=document.getElementById("answerText");
-  const answerHint=document.getElementById("answerHint");
-  const answerMethod=document.getElementById("answerMethod");
-  const verify=document.getElementById("verify");
-  const hintMode=document.getElementById("hintMode");
-  let hintFirst=true;
-
-  const stageInfo={
-    kindergarten:{
-      presentation:"wise-owl",
-      lede:"Curiosity is a very good place to begin. Tell me what you are wondering about, and we will look for the next clue together."
-    },
-    elementary:{
-      presentation:"wise-owl",
-      lede:"Bring me a question, a tricky lesson, or something you noticed. We can investigate it one clue at a time."
-    },
-    middle:{
-      presentation:"academy-mentor",
-      lede:"Tell me where the idea becomes confusing. We will separate the pieces, find the missing prerequisite, and rebuild the reasoning."
-    },
-    high:{
-      presentation:"academy-mentor",
-      lede:"Bring the problem, passage, concept, or research question. We will identify the method before rushing toward the answer."
-    },
-    "higher-learning":{
-      presentation:"scholar",
-      lede:"State the problem as precisely as you can. We can identify assumptions, prerequisites, competing approaches, and the strongest path of inquiry."
-    },
-    adult:{
-      presentation:"scholar",
-      lede:"Ask the question in the form you have it. We can refine definitions, distinguish evidence from inference, and map a serious path of study."
-    },
-    parent:{
-      presentation:"academy-mentor",
-      lede:"Tell me what the learner or family is trying to accomplish. I can help identify the appropriate Academy pathway and the next educational step."
-    }
-  };
-
-  const currentWords=["today","current","latest","recent","news","law","legal","medical","medicine","weather","price","election","statistics","data","source","verify","disputed","claim"];
-
-  function clean(value){return String(value||"").replace(/\s+/g," ").trim()}
-  function needsVerify(text){
-    const low=text.toLowerCase();
-    return currentWords.some(word=>low.includes(word));
-  }
-  function keyTerm(text){
-    const stop=new Set(["about","after","again","also","because","before","being","could","does","from","have","into","just","more","some","than","that","their","there","these","they","this","through","very","want","what","when","where","which","with","would","your","explain","help"]);
-    const words=(text.toLowerCase().match(/[a-z][a-z'-]{3,}/g)||[]).filter(w=>!stop.has(w));
-    if(!words.length)return "the main idea";
-    const count={}; words.forEach(w=>count[w]=(count[w]||0)+1);
-    return Object.entries(count).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))[0][0];
-  }
-
-  function updateStage(){
-    const info=stageInfo[stageEl.value]||stageInfo.adult;
-    lede.textContent=info.lede;
-    document.querySelectorAll("[data-level]").forEach(card=>{
-      card.dataset.active=String(card.dataset.level===info.presentation);
-    });
-    document.querySelectorAll("[data-stage]").forEach(card=>{
-      const stage=stageEl.value;
-      const match=card.dataset.stage===stage || ((stage==="adult") && card.dataset.stage==="higher-learning");
-      card.dataset.active=String(match);
-    });
-  }
-
-  function respond(){
-    const text=clean(question.value);
-    const info=stageInfo[stageEl.value]||stageInfo.adult;
-    answer.style.display="block";
-    verify.hidden=true;
-
-    if(!text){
-      answerTitle.textContent=info.presentation==="wise-owl"?"The first clue":"Begin with the question";
-      answerText.textContent=info.presentation==="wise-owl"
-        ?"You do not need the perfect question. Tell me one thing you noticed or one part that feels tricky."
-        :"State the smallest part that is unclear. A precise uncertainty is often the beginning of good scholarship.";
-      answerHint.textContent="";
-      answerMethod.textContent="";
-      return;
-    }
-
-    const key=keyTerm(text);
-    if(info.presentation==="wise-owl"){
-      answerTitle.textContent="A clue from the Wise Owl";
-      answerText.textContent=`I think the important word to investigate first is “${key}.” Before we solve everything, let's make sure we know what that part means.`;
-      answerHint.textContent=hintFirst
-        ?`Hint: Can you think of one example of ${key} from something you have seen, read, counted, built, or noticed?`
-        :"A full explanation would start by defining the idea, showing one simple example, and then trying a similar example together.";
-      answerMethod.textContent="Method: notice → name the idea → try one example → explain what changed.";
-    }else if(info.presentation==="academy-mentor"){
-      answerTitle.textContent="Academic pathway";
-      answerText.textContent=`The question appears to turn on “${key}.” I would isolate that concept first, then identify the rule, definition, evidence, or prerequisite that controls it.`;
-      answerHint.textContent=hintFirst
-        ?`Hint-first: write what you already know about ${key}, then mark the exact step where your reasoning stops feeling certain.`
-        :"Full-explanation mode: define the concept, identify prerequisites, work one analogous example, then return to the original question.";
-      answerMethod.textContent="Method: define → locate prerequisite → test with an example → apply → explain.";
-    }else{
-      answerTitle.textContent="Scholarly inquiry";
-      answerText.textContent=`I would begin by operationalizing “${key}”: define what the term means in this question, identify the assumptions being made, and separate what is known from what must be established.`;
-      answerHint.textContent=hintFirst
-        ?`Research hint: formulate one narrower question about ${key} that could be answered with a specific source, proof, dataset, or argument.`
-        :"Full approach: define terms, state assumptions, identify primary evidence or a proof strategy, compare plausible interpretations, and document unresolved uncertainty.";
-      answerMethod.textContent="Method: definition → assumptions → evidence/proof → counterexample or competing interpretation → conclusion with uncertainty.";
-    }
-
-    if(needsVerify(text)){
-      verify.hidden=false;
-      verify.textContent="This question appears current, disputed, dynamic, or source-sensitive. Archaemenes should prepare a Verifier/research handoff before presenting a claim as verified current fact.";
-    }
-  }
-
-  stageEl.addEventListener("change",updateStage);
-  hintMode.addEventListener("click",()=>{
-    hintFirst=!hintFirst;
-    hintMode.textContent=`Hint-first: ${hintFirst?"ON":"OFF"}`;
-    if(answer.style.display==="block" && clean(question.value))respond();
-  });
-  document.getElementById("ask").addEventListener("click",respond);
-
-  updateStage();
-})();
-</script>
 </body>
 </html>
