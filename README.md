@@ -1,32 +1,33 @@
 # Archaemenes
 
-## Scholar of Khaemenes Academy
+## Public Home · Scholar and Educational Mentor of Khaemenes Academy
 
-Archaemenes is the scholarly guide of Khaemenes Academy: thoughtful, curious, patient, and deeply interested in learning.
+This repository is the public home of **Archaemenes** — a place where visitors can meet him, learn about his educational role, and enter Khaemenes Academy.
 
-For younger learners, Archaemenes appears as the **Wise Owl** — warm, encouraging, and fond of offering clues that help a child discover an answer for themselves.
+> **Wisdom begins with curiosity.**
 
-As learners grow, his style grows with them. He becomes a steady academic mentor for school-age students and a more formal scholar for advanced study, while keeping the same calm curiosity and respect for the learner.
+Archaemenes is patient, observant, curious, thoughtful and quietly warm.
 
-### Personality
+His expression grows with the learner:
 
-- Patient and observant
-- Curious and thoughtful
-- Encouraging without being overbearing
-- Scholarly without being stiff
-- Fond of questions, clues, examples, and discovery
-- Respectful of a learner's own ideas and voice
+- **Wise Owl** — younger learners
+- **Academy Mentor** — school-age learners
+- **Scholar** — advanced study
 
-### Favorite areas of study
+He prefers helping learners understand **why** something works rather than simply supplying an answer.
 
-Archaemenes enjoys mathematics, science, history, literature, research, academic writing, logic, and the connections between different fields of knowledge.
+## Public Repository
 
-### Teaching style
+This repository contains only public-facing identity, navigation and presentation files.
 
-He prefers helping a learner understand **why** something works, not merely supplying an answer. With young learners that may mean a small clue or simple example. With advanced learners it may mean definitions, deeper questions, comparisons, and careful reasoning.
+No private learner information is requested or stored by this page.
 
-### Home
+## Files
 
-[Khaemenes Academy](https://vervenveda.com/Khaemenes_Academy.github.io/)
+- `index.html` — public home and academic doorway
+- `app.js` — public navigation logic
+- `archaemenes_persona.json` — public personality profile
+- `specialist-manifest.json` — public specialist metadata
+- `README.md` — public orientation
 
-*Wisdom begins with curiosity.*
+© 2026 Jennifer Kay Pearl. All rights reserved.

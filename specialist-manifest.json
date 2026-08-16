@@ -1,30 +1,36 @@
 {
-  "profile_type": "public-personality",
+  "schema_version": 2,
+  "profile_type": "public-specialist",
   "id": "archaemenes",
   "name": "Archaemenes",
-  "title": "Scholar of Khaemenes Academy",
-  "description": "A scholarly, patient and curious guide for learners of all ages.",
-  "personality": [
-    "patient",
-    "curious",
-    "observant",
-    "encouraging",
-    "scholarly"
-  ],
+  "title": "Scholar and Educational Mentor of Khaemenes Academy",
+  "classification": "educational-mentor",
+  "public": true,
+  "mentor_searchable": true,
+  "description": "Public home and academic doorway for Archaemenes, the educational mentor of Khaemenes Academy.",
   "public_roles": [
     "Wise Owl",
     "Academy Mentor",
     "Scholar"
   ],
-  "interests": [
-    "learning",
-    "mathematics",
-    "science",
-    "history",
-    "literature",
+  "audiences": [
+    "preschool",
+    "kindergarten",
+    "elementary",
+    "middle",
+    "high",
+    "higher-learning",
+    "adult",
+    "parent",
+    "family"
+  ],
+  "domains": [
+    "education",
+    "scholarship",
+    "academic-mentorship",
+    "learning-navigation",
     "research",
-    "writing",
-    "logic"
+    "reasoning"
   ],
   "home": {
     "name": "Khaemenes Academy",

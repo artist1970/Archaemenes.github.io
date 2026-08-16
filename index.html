@@ -3,54 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Archaemenes — Scholar of Khaemenes Academy. Public academic doorway for students, parents, families, grade-level discovery, and collegiate learning.">
-<meta name="theme-color" content="#f4efe2">
+<meta name="description" content="Archaemenes — Scholar and Educational Mentor of Khaemenes Academy. A public academic doorway for learners and families.">
+<meta name="theme-color" content="#183a2d">
 <meta name="color-scheme" content="light">
-<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="referrer" content="no-referrer">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'none';">
 <meta name="robots" content="index,follow">
-
-<title>Archaemenes · Scholar of Khaemenes Academy</title>
-
+<title>Archaemenes · Scholar & Educational Mentor</title>
 <style>
 :root{
-  --paper:#f5f0e4;
-  --paper-bright:#fffdf8;
-  --paper-deep:#e9dfca;
-  --ink:#233029;
-  --muted:#677068;
-  --forest:#183a2d;
-  --forest-2:#27513f;
-  --gold:#b58b46;
-  --gold-soft:#dfc995;
-  --burgundy:#71353d;
-  --blue:#3e6179;
-  --sage:#6c826f;
-  --line:rgba(35,48,41,.15);
-  --line-strong:rgba(35,48,41,.26);
-  --shadow:0 18px 48px rgba(42,46,38,.10);
-  --shadow-small:0 8px 24px rgba(42,46,38,.07);
-  --r:21px;
-  --control:9px;
-  --max:1180px;
+  --paper:#f5f0e4;--paper-bright:#fffdf8;--ink:#233029;--muted:#677068;
+  --forest:#183a2d;--forest-2:#27513f;--gold:#b58b46;--gold-soft:#dfc995;
+  --burgundy:#71353d;--line:rgba(35,48,41,.15);--line-strong:rgba(35,48,41,.26);
+  --shadow:0 18px 48px rgba(42,46,38,.10);--shadow-small:0 8px 24px rgba(42,46,38,.07);
+  --r:21px;--control:9px;--max:1180px;
   --serif:"Cinzel","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
-  --body:"Brandon Grotesque","Avenir Next",Avenir,"Segoe UI",Arial,sans-serif;
+  --body:"Brandon Grotesque","Avenir Next",Avenir,"Segoe UI",Arial,sans-serif
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:94px}
 body{
-  margin:0;
-  min-width:300px;
-  color:var(--ink);
+  margin:0;min-width:300px;color:var(--ink);
   background:
     radial-gradient(circle at 10% 0,rgba(181,139,70,.08),transparent 27rem),
     radial-gradient(circle at 92% 8%,rgba(62,97,121,.05),transparent 30rem),
     linear-gradient(180deg,#fbf8f1,var(--paper));
-  font-family:var(--body);
-  font-size:16px;
-  line-height:1.7;
-  text-align:center;
-  -webkit-font-smoothing:antialiased;
+  font-family:var(--body);font-size:16px;line-height:1.7;text-align:center
 }
 a{color:inherit;text-decoration:none}
 button,select{font:inherit}
@@ -58,413 +37,68 @@ button{cursor:pointer}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 ::selection{background:var(--gold-soft);color:var(--forest)}
 .shell{width:min(calc(100% - 38px),var(--max));margin:auto}
-.skip{
-  position:fixed;left:12px;top:12px;z-index:3000;
-  transform:translateY(-180%);
-  padding:10px 14px;border-radius:var(--control);
-  color:#fff;background:var(--forest)
-}
+.skip{position:fixed;left:12px;top:12px;z-index:3000;transform:translateY(-180%);padding:10px 14px;border-radius:var(--control);color:#fff;background:var(--forest)}
 .skip:focus{transform:none}
-
-.topline{
-  min-height:34px;
-  display:flex;align-items:center;justify-content:center;
-  color:#efe5cf;
-  background:linear-gradient(90deg,#10271f,#183a2d 50%,#10271f);
-  font-size:.74rem;
-  letter-spacing:.11em;
-  text-transform:uppercase;
-}
-.header{
-  position:sticky;top:0;z-index:1200;
-  border-bottom:1px solid rgba(255,255,255,.12);
-  color:#fff;
-  background:rgba(24,58,45,.97);
-  backdrop-filter:blur(14px);
-  box-shadow:0 8px 24px rgba(22,42,32,.12);
-}
-.nav{
-  min-height:68px;
-  display:grid;
-  grid-template-columns:minmax(230px,1fr) auto minmax(230px,1fr);
-  align-items:center;
-  gap:20px;
-}
-.brand{
-  justify-self:start;
-  display:flex;align-items:center;gap:11px;
-  text-align:left;
-}
-.seal{
-  width:43px;height:43px;display:grid;place-items:center;
-  border:1px solid rgba(223,201,149,.72);
-  border-radius:var(--control);
-  color:var(--forest);
-  background:linear-gradient(145deg,#fff8de,#d4b46f);
-  font:500 .78rem var(--serif);
-  letter-spacing:.08em;
-}
-.brand-copy strong{
-  display:block;
-  font-family:var(--serif);
-  font-size:.84rem;
-  font-weight:500;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-}
-.brand-copy small{
-  display:block;margin-top:4px;
-  color:rgba(255,255,255,.62);
-  font-size:.66rem;letter-spacing:.08em;
-  text-transform:uppercase;
-}
-.site-name{
-  font-family:var(--serif);
-  font-size:.82rem;
-  font-weight:500;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-}
-.navlinks{
-  justify-self:end;
-  display:flex;align-items:center;gap:7px;
-}
-.navlinks a{
-  min-height:37px;
-  display:inline-flex;align-items:center;justify-content:center;
-  padding:7px 10px;
-  border:1px solid rgba(255,255,255,.17);
-  border-radius:var(--control);
-  font-size:.69rem;
-  letter-spacing:.07em;
-  text-transform:uppercase;
-}
+.topline{min-height:34px;display:flex;align-items:center;justify-content:center;color:#efe5cf;background:linear-gradient(90deg,#10271f,#183a2d 50%,#10271f);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase}
+.header{position:sticky;top:0;z-index:1200;border-bottom:1px solid rgba(255,255,255,.12);color:#fff;background:rgba(24,58,45,.98);box-shadow:0 8px 24px rgba(22,42,32,.12)}
+.nav{min-height:68px;display:grid;grid-template-columns:minmax(230px,1fr) auto minmax(230px,1fr);align-items:center;gap:20px}
+.brand{justify-self:start;display:flex;align-items:center;gap:11px;text-align:left}
+.seal{width:43px;height:43px;display:grid;place-items:center;border:1px solid rgba(223,201,149,.72);border-radius:var(--control);color:var(--forest);background:linear-gradient(145deg,#fff8de,#d4b46f);font:500 .78rem var(--serif);letter-spacing:.08em}
+.brand-copy strong{display:block;font-family:var(--serif);font-size:.84rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.brand-copy small{display:block;margin-top:4px;color:rgba(255,255,255,.62);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase}
+.site-name{font-family:var(--serif);font-size:.82rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase}
+.navlinks{justify-self:end;display:flex;align-items:center;gap:7px}
+.navlinks a{min-height:37px;display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid rgba(255,255,255,.17);border-radius:var(--control);font-size:.69rem;letter-spacing:.07em;text-transform:uppercase}
 .navlinks a:hover{background:rgba(255,255,255,.08)}
 .navlinks .portal{border-color:rgba(223,201,149,.48);color:#fff6dc}
-
-.hero{
-  position:relative;
-  overflow:hidden;
-  padding:82px 0 78px;
-  border-bottom:1px solid var(--line);
-}
-.hero::before{
-  content:"";
-  position:absolute;left:50%;top:-360px;
-  width:780px;height:780px;
-  transform:translateX(-50%);
-  border:1px solid rgba(24,58,45,.06);
-  border-radius:50%;
-  box-shadow:0 0 0 78px rgba(24,58,45,.025),0 0 0 156px rgba(24,58,45,.015);
-  pointer-events:none;
-}
-.hero-inner{
-  position:relative;z-index:1;
-  display:grid;
-  grid-template-columns:.72fr 1.28fr;
-  gap:64px;
-  align-items:center;
-}
-.owl{
-  width:min(300px,75vw);
-  aspect-ratio:1;
-  margin:auto;
-  display:grid;place-items:center;
-  position:relative;
-  border:7px double var(--forest);
-  border-radius:50%;
-  background:
-    radial-gradient(circle at 50% 36%,rgba(255,255,255,.72),transparent 22%),
-    linear-gradient(145deg,#e4cf99,#b88b45);
-  box-shadow:var(--shadow);
-  font-size:clamp(7rem,16vw,10rem);
-}
-.owl::after{
-  content:"WISE OWL";
-  position:absolute;bottom:18px;
-  color:var(--forest);
-  font-size:.62rem;
-  letter-spacing:.24em;
-}
+.hero{position:relative;overflow:hidden;padding:82px 0 78px;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;left:50%;top:-360px;width:780px;height:780px;transform:translateX(-50%);border:1px solid rgba(24,58,45,.06);border-radius:50%;box-shadow:0 0 0 78px rgba(24,58,45,.025),0 0 0 156px rgba(24,58,45,.015);pointer-events:none}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:.72fr 1.28fr;gap:64px;align-items:center}
+.owl{width:min(300px,75vw);aspect-ratio:1;margin:auto;display:grid;place-items:center;position:relative;border:7px double var(--forest);border-radius:50%;background:radial-gradient(circle at 50% 36%,rgba(255,255,255,.72),transparent 22%),linear-gradient(145deg,#e4cf99,#b88b45);box-shadow:var(--shadow);font-size:clamp(7rem,16vw,10rem)}
+.owl::after{content:"WISE OWL";position:absolute;bottom:18px;color:var(--forest);font-size:.62rem;letter-spacing:.24em}
 .hero-copy{text-align:left}
-.eyebrow,.kicker{
-  margin:0;
-  color:var(--burgundy);
-  font-family:var(--serif);
-  font-size:.74rem;
-  font-weight:500;
-  letter-spacing:.20em;
-  text-transform:uppercase;
-}
-h1,h2,h3{
-  font-family:var(--serif);
-  font-weight:500;
-  text-wrap:balance;
-}
-h1{
-  margin:9px 0 0;
-  color:var(--forest);
-  font-size:clamp(3.6rem,7.8vw,6.7rem);
-  line-height:.98;
-  letter-spacing:-.025em;
-}
-.tagline{
-  margin:15px 0 0;
-  color:var(--gold);
-  font-family:var(--serif);
-  font-size:clamp(1rem,2vw,1.24rem);
-  letter-spacing:.06em;
-}
-.lede{
-  max-width:700px;
-  margin:21px 0 0;
-  color:var(--muted);
-  font-size:1.08rem;
-}
-.quote{
-  margin:20px 0 0;
-  color:var(--forest-2);
-  font-family:Georgia,serif;
-  font-size:1.06rem;
-  font-style:italic;
-}
-.actions{
-  display:flex;gap:9px;flex-wrap:wrap;
-  margin-top:27px;
-}
-.btn{
-  min-height:44px;
-  display:inline-flex;align-items:center;justify-content:center;
-  padding:10px 15px;
-  border:1px solid var(--line-strong);
-  border-radius:var(--control);
-  color:var(--forest);
-  background:rgba(255,255,255,.52);
-  font-size:.76rem;
-  font-weight:600;
-  letter-spacing:.065em;
-  text-transform:uppercase;
-  transition:.16s ease;
-}
+.eyebrow,.kicker{margin:0;color:var(--burgundy);font-family:var(--serif);font-size:.74rem;font-weight:500;letter-spacing:.20em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);font-weight:500;text-wrap:balance}
+h1{margin:9px 0 0;color:var(--forest);font-size:clamp(3.3rem,7.2vw,6.4rem);line-height:.98;letter-spacing:-.025em}
+.tagline{margin:15px 0 0;color:var(--gold);font-family:var(--serif);font-size:clamp(1rem,2vw,1.24rem);letter-spacing:.06em}
+.lede{max-width:700px;margin:21px 0 0;color:var(--muted);font-size:1.08rem}
+.quote{margin:20px 0 0;color:var(--forest-2);font-family:Georgia,serif;font-size:1.06rem;font-style:italic}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:27px}
+.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:10px 15px;border:1px solid var(--line-strong);border-radius:var(--control);color:var(--forest);background:rgba(255,255,255,.52);font-size:.76rem;font-weight:600;letter-spacing:.065em;text-transform:uppercase;transition:.16s ease}
 .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-small)}
 .btn-primary{color:#fff;background:var(--forest);border-color:var(--forest)}
 .btn-gold{color:#2b261a;background:linear-gradient(145deg,#f1dfb7,#d8b875);border-color:#d3b36e}
-
 .section{padding:78px 0}
-.section.alt{
-  border-block:1px solid var(--line);
-  background:rgba(255,255,255,.38);
-}
+.section.alt{border-block:1px solid var(--line);background:rgba(255,255,255,.38)}
 .section-head{max-width:820px;margin:0 auto}
-.section h2{
-  margin:8px 0 0;
-  color:var(--forest);
-  font-size:clamp(2.1rem,4.4vw,3.45rem);
-  line-height:1.08;
-}
-.intro{
-  margin:17px auto 0;
-  max-width:790px;
-  color:var(--muted);
-}
-.identity-grid,.level-grid,.mentor-grid,.resource-grid{
-  display:grid;
-  gap:15px;
-  margin-top:31px;
-}
+.section h2{margin:8px 0 0;color:var(--forest);font-size:clamp(2.1rem,4.4vw,3.45rem);line-height:1.08}
+.intro{margin:17px auto 0;max-width:790px;color:var(--muted)}
+.identity-grid,.level-grid,.mentor-grid,.character-grid{display:grid;gap:15px;margin-top:31px}
 .identity-grid{grid-template-columns:repeat(4,1fr)}
-.level-grid{grid-template-columns:repeat(3,1fr)}
-.mentor-grid{grid-template-columns:repeat(3,1fr)}
-.resource-grid{grid-template-columns:repeat(3,1fr)}
-.card{
-  min-height:100%;
-  padding:25px;
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  background:rgba(255,253,248,.75);
-  box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
-  text-align:center;
-}
-.card .number,.card .icon{
-  width:44px;height:44px;
-  display:grid;place-items:center;
-  margin:0 auto 15px;
-  border:1px solid var(--line-strong);
-  border-radius:var(--control);
-  color:var(--forest);
-  background:var(--paper-bright);
-  font:500 .72rem var(--serif);
-  letter-spacing:.08em;
-}
-.card small{
-  color:var(--gold);
-  font-size:.67rem;
-  font-weight:600;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-}
-.card h3{
-  margin:7px 0 9px;
-  color:var(--forest);
-  font-size:1.25rem;
-}
-.card p{
-  margin:0;
-  color:var(--muted);
-  font-size:.94rem;
-}
-.card .door{
-  margin-top:18px;
-  min-height:40px;
-  display:inline-flex;align-items:center;justify-content:center;
-  padding:8px 12px;
-  border:1px solid var(--line-strong);
-  border-radius:var(--control);
-  color:var(--forest);
-  background:#fffdf8;
-  font-size:.72rem;
-  font-weight:600;
-  letter-spacing:.055em;
-  text-transform:uppercase;
-}
+.level-grid,.mentor-grid,.character-grid{grid-template-columns:repeat(3,1fr)}
+.card{min-height:100%;padding:25px;border:1px solid var(--line);border-radius:var(--r);background:rgba(255,253,248,.75);text-align:center}
+.card .number,.card .icon{width:44px;height:44px;display:grid;place-items:center;margin:0 auto 15px;border:1px solid var(--line-strong);border-radius:var(--control);color:var(--forest);background:var(--paper-bright);font:500 .72rem var(--serif);letter-spacing:.08em}
+.card small{color:var(--gold);font-size:.67rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.card h3{margin:7px 0 9px;color:var(--forest);font-size:1.25rem}
+.card p{margin:0;color:var(--muted);font-size:.94rem}
+.card .door{margin-top:18px;min-height:40px;display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border:1px solid var(--line-strong);border-radius:var(--control);color:var(--forest);background:#fffdf8;font-size:.72rem;font-weight:600;letter-spacing:.055em;text-transform:uppercase}
 .card .door:hover{border-color:var(--gold);box-shadow:var(--shadow-small)}
-
-.discovery{
-  max-width:760px;
-  margin:32px auto 0;
-  padding:24px;
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  background:linear-gradient(180deg,#fffdf8,#f5efe2);
-  box-shadow:var(--shadow-small);
-}
-.discovery label{
-  display:block;
-  margin-bottom:10px;
-  color:var(--forest);
-  font-family:var(--serif);
-  font-size:.86rem;
-  letter-spacing:.10em;
-  text-transform:uppercase;
-}
-.discovery-row{
-  display:grid;
-  grid-template-columns:1fr auto;
-  gap:9px;
-}
-.discovery select{
-  min-width:0;
-  min-height:46px;
-  padding:0 13px;
-  border:1px solid var(--line-strong);
-  border-radius:var(--control);
-  color:var(--ink);
-  background:#fffdf8;
-  text-align:center;
-}
-.discovery button{
-  min-height:46px;
-  padding:9px 16px;
-  border:1px solid var(--forest);
-  border-radius:var(--control);
-  color:#fff;
-  background:var(--forest);
-  font-weight:600;
-  letter-spacing:.055em;
-  text-transform:uppercase;
-}
-
-.parent-panel{
-  margin-top:31px;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:16px;
-}
-.parent-copy,.parent-links{
-  padding:28px;
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  background:rgba(255,253,248,.78);
-  text-align:left;
-}
-.parent-copy h3,.parent-links h3{
-  margin:5px 0 10px;
-  color:var(--forest);
-  font-size:1.45rem;
-}
-.parent-copy p,.parent-links p{color:var(--muted)}
-.link-list{display:grid;gap:8px;margin-top:16px}
-.link-list a{
-  min-height:43px;
-  display:flex;align-items:center;justify-content:space-between;
-  gap:14px;
-  padding:9px 12px;
-  border:1px solid var(--line);
-  border-radius:var(--control);
-  background:#fffdf8;
-  color:var(--forest);
-  font-size:.86rem;
-}
-.link-list a::after{content:"→";color:var(--gold)}
-.qa-note{
-  margin-top:15px;
-  padding:12px 13px;
-  border:1px dashed rgba(181,139,70,.48);
-  border-radius:var(--control);
-  color:#756340;
-  background:#fff8e9;
-  font-size:.84rem;
-}
-
-.public-note{
-  max-width:900px;
-  margin:30px auto 0;
-  padding:18px 20px;
-  border:1px solid var(--line);
-  border-radius:var(--control);
-  color:var(--muted);
-  background:rgba(255,255,255,.48);
-  font-size:.88rem;
-}
-footer{
-  padding:34px 0 44px;
-  border-top:1px solid var(--line);
-  color:#757d76;
-  font-size:.79rem;
-}
-.footer-inner{
-  display:flex;align-items:center;justify-content:space-between;gap:20px;
-  text-align:left;
-}
-.footer-links{
-  display:flex;gap:13px;flex-wrap:wrap;justify-content:flex-end;
-}
+.discovery{max-width:760px;margin:32px auto 0;padding:24px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,#fffdf8,#f5efe2);box-shadow:var(--shadow-small)}
+.discovery label{display:block;margin-bottom:10px;color:var(--forest);font-family:var(--serif);font-size:.86rem;letter-spacing:.10em;text-transform:uppercase}
+.discovery-row{display:grid;grid-template-columns:1fr auto;gap:9px}
+.discovery select{min-width:0;min-height:46px;padding:0 13px;border:1px solid var(--line-strong);border-radius:var(--control);color:var(--ink);background:#fffdf8;text-align:center}
+.discovery button{min-height:46px;padding:9px 16px;border:1px solid var(--forest);border-radius:var(--control);color:#fff;background:var(--forest);font-weight:600;letter-spacing:.055em;text-transform:uppercase}
+.route-status{min-height:1.4em;margin:10px 0 0;color:var(--muted);font-size:.82rem}
+.public-note{max-width:900px;margin:30px auto 0;padding:18px 20px;border:1px solid var(--line);border-radius:var(--control);color:var(--muted);background:rgba(255,255,255,.48);font-size:.88rem}
+footer{padding:34px 0 44px;border-top:1px solid var(--line);color:#757d76;font-size:.79rem}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left}
+.footer-links{display:flex;gap:13px;flex-wrap:wrap;justify-content:flex-end}
 .footer-links a:hover{text-decoration:underline;text-underline-offset:3px}
-
-@media(max-width:980px){
-  .nav{grid-template-columns:1fr auto}
-  .site-name{display:none}
-  .identity-grid{grid-template-columns:repeat(2,1fr)}
-  .level-grid{grid-template-columns:repeat(2,1fr)}
-  .parent-panel{grid-template-columns:1fr}
-}
-@media(max-width:760px){
-  .topline{padding:7px 18px;line-height:1.4}
-  .nav{grid-template-columns:1fr;gap:10px;padding:14px 0}
-  .brand,.navlinks{justify-self:center}
-  .navlinks{flex-wrap:wrap;justify-content:center}
-  .hero{padding-top:56px}
-  .hero-inner{grid-template-columns:1fr;gap:38px}
-  .hero-copy{text-align:center}
-  .actions{justify-content:center}
-  .identity-grid,.level-grid,.mentor-grid,.resource-grid{grid-template-columns:1fr}
-  .discovery-row{grid-template-columns:1fr}
-  .footer-inner{flex-direction:column;text-align:center}
-  .footer-links{justify-content:center}
-}
+@media(max-width:980px){.nav{grid-template-columns:1fr auto}.site-name{display:none}.identity-grid{grid-template-columns:repeat(2,1fr)}.level-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.topline{padding:7px 18px;line-height:1.4}.nav{grid-template-columns:1fr;gap:10px;padding:14px 0}.brand,.navlinks{justify-self:center}.navlinks{flex-wrap:wrap;justify-content:center}.hero{padding-top:56px}.hero-inner{grid-template-columns:1fr;gap:38px}.hero-copy{text-align:center}.actions{justify-content:center}.identity-grid,.level-grid,.mentor-grid,.character-grid{grid-template-columns:1fr}.discovery-row{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
-
 <body id="top">
 <a class="skip" href="#main">Skip to main content</a>
 
@@ -476,11 +110,11 @@ footer{
       <span class="seal">A</span>
       <span class="brand-copy">
         <strong>Archaemenes</strong>
-        <small>Scholar of Khaemenes Academy</small>
+        <small>Scholar & Educational Mentor</small>
       </span>
     </a>
 
-    <a class="site-name" href="#levels">Academic Guidance</a>
+    <a class="site-name" href="#mentor">Academic Guidance</a>
 
     <nav class="navlinks" aria-label="Primary navigation">
       <a href="https://vervenveda.com/Khaemenes_Academy.github.io/#student-portal">Student</a>
@@ -496,19 +130,12 @@ footer{
 <section class="hero">
   <div class="shell hero-inner">
     <div class="owl" aria-label="Wise Owl">🦉</div>
-
     <div class="hero-copy">
       <p class="eyebrow">Wise Owl · Academy Mentor · Scholar</p>
       <h1>Archaemenes</h1>
-      <p class="tagline">Scholar of Khaemenes Academy</p>
-
-      <p class="lede">
-        Thoughtful, curious and patient, Archaemenes helps learners and families find the right academic doorway,
-        understand where they are in the learning journey, and discover where to go next.
-      </p>
-
+      <p class="tagline">Scholar and Educational Mentor of Khaemenes Academy</p>
+      <p class="lede">Thoughtful, curious and patient, Archaemenes helps learners understand ideas, find the right academic doorway and grow toward greater independence.</p>
       <p class="quote">“Wisdom begins with curiosity.”</p>
-
       <div class="actions">
         <a class="btn btn-primary" href="#levels">Find Your Learning Level</a>
         <a class="btn btn-gold" href="https://vervenveda.com/Khaemenes_Academy.github.io/">Enter Khaemenes Academy</a>
@@ -522,43 +149,13 @@ footer{
     <div class="section-head">
       <p class="kicker">Choose your doorway</p>
       <h2>Who is entering?</h2>
-      <p class="intro">
-        Archaemenes can guide students, parents, families and collegiate learners to the part of Khaemenes Academy designed for them.
-      </p>
+      <p class="intro">Students, parents, families and advanced learners can begin from the doorway designed for them.</p>
     </div>
-
     <div class="identity-grid">
-      <article class="card">
-        <span class="icon">S</span>
-        <small>Learner</small>
-        <h3>Student Portal</h3>
-        <p>Choose a learning stage and enter the appropriate campus, grade doorway or study pathway.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/#student-portal">Open Student Portal</a>
-      </article>
-
-      <article class="card">
-        <span class="icon">P</span>
-        <small>Guidance</small>
-        <h3>Parent &amp; Educator</h3>
-        <p>Review pathways, family-facing resources, planning tools, records and learning support.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/#parent-portal">Open Parent Portal</a>
-      </article>
-
-      <article class="card">
-        <span class="icon">F</span>
-        <small>Connected learners</small>
-        <h3>Family Account</h3>
-        <p>Use the Academy’s family doorway for profiles, connected learners, planning, records and continuity.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Open Family Hub</a>
-      </article>
-
-      <article class="card">
-        <span class="icon">C</span>
-        <small>Advanced study</small>
-        <h3>Collegiate Student</h3>
-        <p>Enter Higher Learning for collegiate study, advanced mathematics, research preparation and lifelong scholarship.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Enter Collegiate Campus</a>
-      </article>
+      <article class="card"><span class="icon">S</span><small>Learner</small><h3>Student Portal</h3><p>Choose a learning stage and enter the appropriate campus or study pathway.</p><a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/#student-portal">Open Student Portal</a></article>
+      <article class="card"><span class="icon">P</span><small>Guidance</small><h3>Parent & Educator</h3><p>Review pathways, family-facing resources and learning support.</p><a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/#parent-portal">Open Parent Portal</a></article>
+      <article class="card"><span class="icon">F</span><small>Connected learners</small><h3>Family Account</h3><p>Use the Academy family doorway for connected learner experiences.</p><a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Open Family Hub</a></article>
+      <article class="card"><span class="icon">C</span><small>Advanced study</small><h3>Collegiate Student</h3><p>Enter Higher Learning for collegiate study, research preparation and lifelong scholarship.</p><a class="door" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Enter Collegiate Campus</a></article>
     </div>
   </div>
 </section>
@@ -568,75 +165,33 @@ footer{
     <div class="section-head">
       <p class="kicker">Academic discovery</p>
       <h2>Where are you learning?</h2>
-      <p class="intro">
-        Choose the learner’s current stage. Archaemenes remains the same scholar while his teaching expression grows with the learner.
-      </p>
+      <p class="intro">Choose the learner’s current stage. Archaemenes remains the same scholar while his teaching expression grows with the learner.</p>
     </div>
 
     <div class="discovery">
       <label for="learningLevel">Choose a learning level</label>
       <div class="discovery-row">
         <select id="learningLevel">
-          <option value="https://vervenveda.com/Khaemenes_Preschool.github.io/">Preschool · Early Childhood</option>
-          <option value="https://vervenveda.com/Khaemenes_KinderGarden.github.io/">Kinder Garden</option>
-          <option value="https://vervenveda.com/Khaemenes_Elementary.github.io/">Elementary · Grades 1–5</option>
-          <option value="https://vervenveda.com/Khaemenes_Middle.github.io/">Middle School · Grades 6–8</option>
-          <option value="https://vervenveda.com/Khaemenes_High.github.io/">High School · Grades 9–12</option>
-          <option value="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Higher Learning · GED · College · Careers</option>
-          <option value="https://vervenveda.com/Khaemenes_Linguistics.github.io/">Linguistics &amp; Languages</option>
+          <option value="preschool">Preschool · Early Childhood</option>
+          <option value="kindergarten">Kinder Garden</option>
+          <option value="elementary">Elementary · Grades 1–5</option>
+          <option value="middle">Middle School · Grades 6–8</option>
+          <option value="high">High School · Grades 9–12</option>
+          <option value="higher">Higher Learning · GED · College · Careers</option>
+          <option value="linguistics">Linguistics & Languages</option>
         </select>
         <button id="openLevel" type="button">Enter Learning Campus</button>
       </div>
+      <p id="routeStatus" class="route-status" role="status" aria-live="polite"></p>
     </div>
 
     <div class="level-grid">
-      <article class="card">
-        <span class="number">01</span>
-        <small>Early years</small>
-        <h3>Preschool</h3>
-        <p>Early exploration, play, guided discovery and age-appropriate learning.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Enter Preschool</a>
-      </article>
-
-      <article class="card">
-        <span class="number">02</span>
-        <small>Foundation</small>
-        <h3>Kinder Garden</h3>
-        <p>A kinder place to learn through curiosity, foundational skills and guided play.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_KinderGarden.github.io/">Enter Kinder Garden</a>
-      </article>
-
-      <article class="card">
-        <span class="number">03</span>
-        <small>Grades 1–5</small>
-        <h3>Elementary</h3>
-        <p>Core subjects, discovery, projects and growing independence.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Enter Elementary</a>
-      </article>
-
-      <article class="card">
-        <span class="number">04</span>
-        <small>Grades 6–8</small>
-        <h3>Middle School</h3>
-        <p>Structured reasoning, broader subject depth and high-school readiness.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_Middle.github.io/">Enter Middle School</a>
-      </article>
-
-      <article class="card">
-        <span class="number">05</span>
-        <small>Grades 9–12</small>
-        <h3>High School</h3>
-        <p>Complete courses, assessments, records, portfolios and graduation preparation.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_High.github.io/">Enter High School</a>
-      </article>
-
-      <article class="card">
-        <span class="number">06</span>
-        <small>GED · College · Careers</small>
-        <h3>Higher Learning</h3>
-        <p>Collegiate study, research preparation, advanced learning and lifelong scholarship.</p>
-        <a class="door" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Enter Higher Learning</a>
-      </article>
+      <article class="card"><span class="number">01</span><small>Early years</small><h3>Preschool</h3><p>Early exploration, play and guided discovery.</p><a class="door" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Enter Preschool</a></article>
+      <article class="card"><span class="number">02</span><small>Foundation</small><h3>Kinder Garden</h3><p>A kinder place to learn through curiosity and guided play.</p><a class="door" href="https://vervenveda.com/Khaemenes_KinderGarden.github.io/">Enter Kinder Garden</a></article>
+      <article class="card"><span class="number">03</span><small>Grades 1–5</small><h3>Elementary</h3><p>Core subjects, discovery, projects and growing independence.</p><a class="door" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Enter Elementary</a></article>
+      <article class="card"><span class="number">04</span><small>Grades 6–8</small><h3>Middle School</h3><p>Structured reasoning, broader subject depth and high-school readiness.</p><a class="door" href="https://vervenveda.com/Khaemenes_Middle.github.io/">Enter Middle School</a></article>
+      <article class="card"><span class="number">05</span><small>Grades 9–12</small><h3>High School</h3><p>Complete courses, assessments and graduation preparation.</p><a class="door" href="https://vervenveda.com/Khaemenes_High.github.io/">Enter High School</a></article>
+      <article class="card"><span class="number">06</span><small>GED · College · Careers</small><h3>Higher Learning</h3><p>Collegiate study, advanced learning and lifelong scholarship.</p><a class="door" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Enter Higher Learning</a></article>
     </div>
   </div>
 </section>
@@ -646,79 +201,31 @@ footer{
     <div class="section-head">
       <p class="kicker">One identity across ages</p>
       <h2>How Archaemenes meets the learner</h2>
-      <p class="intro">
-        His personality does not change. His language, pacing and depth simply mature with the student.
-      </p>
+      <p class="intro">His personality remains consistent while his language, pacing and depth mature with the student.</p>
     </div>
-
     <div class="mentor-grid">
-      <article class="card">
-        <span class="icon">🦉</span>
-        <small>Younger learners</small>
-        <h3>Wise Owl</h3>
-        <p>Warm, playful and encouraging. He uses clues, examples and discovery instead of rushing to the answer.</p>
-      </article>
-
-      <article class="card">
-        <span class="icon">A</span>
-        <small>School years</small>
-        <h3>Academy Mentor</h3>
-        <p>Clear, patient and structured. He helps students reason step by step and build confidence through understanding.</p>
-      </article>
-
-      <article class="card">
-        <span class="icon">Σ</span>
-        <small>Advanced study</small>
-        <h3>Scholar</h3>
-        <p>Precise and thoughtful, supporting deeper research, academic writing, evidence, comparison and interdisciplinary connections.</p>
-      </article>
+      <article class="card"><span class="icon">🦉</span><small>Younger learners</small><h3>Wise Owl</h3><p>Warm, playful and encouraging. He uses clues, examples and discovery instead of rushing to the answer.</p></article>
+      <article class="card"><span class="icon">A</span><small>School years</small><h3>Academy Mentor</h3><p>Clear, patient and structured. He helps students reason step by step and build confidence through understanding.</p></article>
+      <article class="card"><span class="icon">Σ</span><small>Advanced study</small><h3>Scholar</h3><p>Precise and thoughtful, supporting deeper research, academic writing, evidence and interdisciplinary connections.</p></article>
     </div>
   </div>
 </section>
 
-<section class="section alt" id="parents">
+<section class="section alt" id="character">
   <div class="shell">
     <div class="section-head">
-      <p class="kicker">For parents &amp; families</p>
-      <h2>Guidance without clutter</h2>
-      <p class="intro">
-        Family-facing resources stay organized around the questions parents actually need to answer: where a learner belongs, what records matter, and what support is available.
-      </p>
+      <p class="kicker">Meet the scholar</p>
+      <h2>A mentor with a recognizable character</h2>
+      <p class="intro">Archaemenes values curiosity, careful reasoning, intellectual independence and learner dignity.</p>
     </div>
-
-    <div class="parent-panel">
-      <article class="parent-copy">
-        <p class="kicker">Family guidance</p>
-        <h3>Start with the learner, then choose the pathway.</h3>
-        <p>
-          Use the Parent Portal for guidance and resources, the Family Account Hub for connected learner records and continuity,
-          and the Homeschool Compass for planning and state-aware support.
-        </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="https://vervenveda.com/Khaemenes_Academy.github.io/#parent-portal">Parent Portal</a>
-          <a class="btn" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family Account Hub</a>
-        </div>
-        <div class="qa-note">
-          Parent Q&amp;A will be added as a separate plain-text public guide in the next file step, then linked here so it can be opened, saved or printed without exposing any private system material.
-        </div>
-      </article>
-
-      <aside class="parent-links">
-        <p class="kicker">Parent resources</p>
-        <h3>Useful public doors</h3>
-        <div class="link-list">
-          <a href="https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Homeschool_compass_index.html">Homeschool Compass</a>
-          <a href="https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Transcript_generator_index.html">Transcript Generator</a>
-          <a href="https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Diploma_generator_index.html">Diploma Generator</a>
-          <a href="https://vervenveda.com/Khaemenes_Academy.github.io/Parent_resources/Art_studio_index.html">Family Art Studio</a>
-        </div>
-      </aside>
+    <div class="character-grid">
+      <article class="card"><span class="icon">?</span><small>Curiosity</small><h3>Question First</h3><p>He often begins by asking what the learner notices before deciding what to explain.</p></article>
+      <article class="card"><span class="icon">≈</span><small>Humility</small><h3>Comfort With Uncertainty</h3><p>He can say “I do not know yet” and treats investigation as part of scholarship.</p></article>
+      <article class="card"><span class="icon">↗</span><small>Growth</small><h3>Independence</h3><p>As mastery grows, he offers less scaffolding and more room for the learner’s own reasoning.</p></article>
     </div>
 
     <div class="public-note">
-      <strong>Public doorway:</strong> this Archaemenes page is designed for navigation and academic discovery only.
-      It does not request passwords, credentials, private documents or sensitive student information.
-      Personal and family information belongs only in the appropriate Academy account or portal experience.
+      This public page is designed for academic discovery and navigation. It does not ask visitors to enter passwords, private documents or sensitive student information.
     </div>
   </div>
 </section>
@@ -728,38 +235,17 @@ footer{
 <footer>
   <div class="shell footer-inner">
     <div>
-      <strong>Archaemenes · Scholar of Khaemenes Academy</strong><br>
+      <strong>Archaemenes · Scholar and Educational Mentor</strong><br>
       <small>Wisdom begins with curiosity.</small>
     </div>
     <nav class="footer-links" aria-label="Footer navigation">
       <a href="#levels">Learning Levels</a>
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/#student-portal">Student Portal</a>
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/#parent-portal">Parent Portal</a>
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family Hub</a>
-      <a href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Collegiate</a>
+      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a>
+      <a href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Higher Learning</a>
     </nav>
   </div>
 </footer>
 
-<script>
-(() => {
-  "use strict";
-
-  const level = document.getElementById("learningLevel");
-  const open = document.getElementById("openLevel");
-
-  open.addEventListener("click", () => {
-    const url = level.value;
-    if (url) window.location.assign(url);
-  });
-
-  level.addEventListener("keydown", event => {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      open.click();
-    }
-  });
-})();
-</script>
+<script src="app.js"></script>
 </body>
 </html>
