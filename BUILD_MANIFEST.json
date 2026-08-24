@@ -1,0 +1,23 @@
+{
+  "files": {
+    "index.html": {
+      "bytes": 36799,
+      "sha256": "59656b77699629543ee9c180a0f847b893515050e50568c50753bff743930366"
+    },
+    "app.js": {
+      "bytes": 15034,
+      "sha256": "986d54897732019cc3be389f12ec40ee59bc4e60cbb3845f0348d47a90ade8a7"
+    },
+    "README_UPGRADE.md": {
+      "bytes": 2243,
+      "sha256": "fc50d7c837d39c7fe74644013babdc81dd27209d257baf764009475401809565"
+    }
+  },
+  "checks": {
+    "index_has_app": true,
+    "csp_self_connect": true,
+    "no_noema_string": true,
+    "no_private_core_fetch": true,
+    "note_local_storage": true
+  }
+}

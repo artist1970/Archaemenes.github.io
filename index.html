@@ -3,106 +3,234 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Archaemenes — Scholar and Educational Mentor of Khaemenes Academy. A public academic doorway for learners and families.">
+<meta name="description" content="Archaemenes — Principal, Scholar and Educational Mentor of Khaemenes Academy. A welcoming public home for students, families, educators and lifelong learners.">
 <meta name="theme-color" content="#183a2d">
 <meta name="color-scheme" content="light">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'none';">
 <meta name="robots" content="index,follow">
-<title>Archaemenes · Scholar & Educational Mentor</title>
+<title>Archaemenes · Principal, Scholar & Educational Mentor</title>
 <style>
 :root{
-  --paper:#f5f0e4;--paper-bright:#fffdf8;--ink:#233029;--muted:#677068;
-  --forest:#183a2d;--forest-2:#27513f;--gold:#b58b46;--gold-soft:#dfc995;
-  --burgundy:#71353d;--line:rgba(35,48,41,.15);--line-strong:rgba(35,48,41,.26);
-  --shadow:0 18px 48px rgba(42,46,38,.10);--shadow-small:0 8px 24px rgba(42,46,38,.07);
-  --r:21px;--control:9px;--max:1180px;
+  --paper:#f4efe4;--paper2:#fffdf8;--paper3:#f8f3e9;--ink:#202b25;--muted:#687069;
+  --forest:#183a2d;--forest2:#28533f;--forest3:#0f271e;--gold:#b58b46;--gold2:#e5d1a0;
+  --burgundy:#71353d;--blue:#3e6179;--sage:#7e9786;--line:rgba(32,43,37,.14);--line2:rgba(32,43,37,.25);
+  --shadow:0 22px 55px rgba(42,46,38,.10);--soft:0 9px 25px rgba(42,46,38,.08);
+  --r:18px;--control:8px;--max:1210px;--header:74px;
   --serif:"Cinzel","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
-  --body:"Brandon Grotesque","Avenir Next",Avenir,"Segoe UI",Arial,sans-serif
+  --body:"Brandon Grotesque","Avenir Next",Avenir,"Segoe UI",Arial,sans-serif;
+  --base-size:16px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:94px}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 18px)}
 body{
   margin:0;min-width:300px;color:var(--ink);
   background:
-    radial-gradient(circle at 10% 0,rgba(181,139,70,.08),transparent 27rem),
-    radial-gradient(circle at 92% 8%,rgba(62,97,121,.05),transparent 30rem),
+    radial-gradient(circle at 8% 3%,rgba(181,139,70,.10),transparent 28rem),
+    radial-gradient(circle at 94% 7%,rgba(62,97,121,.07),transparent 32rem),
     linear-gradient(180deg,#fbf8f1,var(--paper));
-  font-family:var(--body);font-size:16px;line-height:1.7;text-align:center
+  font-family:var(--body);font-size:var(--base-size);line-height:1.68;text-align:center;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility
 }
+body.calm{
+  --paper:#f2f0e8;--paper2:#fbfaf5;--forest:#294038;--forest2:#3b594d;--gold:#9a8053;
+  background:linear-gradient(180deg,#f7f4ec,#eeefe9)
+}
+body.large-text{--base-size:18px}
+body.reduce-motion *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 a{color:inherit;text-decoration:none}
-button,select{font:inherit}
+button,input,select,textarea{font:inherit}
 button{cursor:pointer}
+button:disabled{cursor:not-allowed;opacity:.55}
+img,svg{max-width:100%}
+[hidden]{display:none!important}
+::selection{background:var(--gold2);color:var(--forest)}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-::selection{background:var(--gold-soft);color:var(--forest)}
-.shell{width:min(calc(100% - 38px),var(--max));margin:auto}
-.skip{position:fixed;left:12px;top:12px;z-index:3000;transform:translateY(-180%);padding:10px 14px;border-radius:var(--control);color:#fff;background:var(--forest)}
+.shell{width:min(calc(100% - 36px),var(--max));margin:auto}
+.skip{position:fixed;left:10px;top:10px;z-index:4000;transform:translateY(-180%);padding:9px 13px;border-radius:var(--control);color:#fff;background:#111}
 .skip:focus{transform:none}
-.topline{min-height:34px;display:flex;align-items:center;justify-content:center;color:#efe5cf;background:linear-gradient(90deg,#10271f,#183a2d 50%,#10271f);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase}
-.header{position:sticky;top:0;z-index:1200;border-bottom:1px solid rgba(255,255,255,.12);color:#fff;background:rgba(24,58,45,.98);box-shadow:0 8px 24px rgba(22,42,32,.12)}
-.nav{min-height:68px;display:grid;grid-template-columns:minmax(230px,1fr) auto minmax(230px,1fr);align-items:center;gap:20px}
+
+.topline{
+  min-height:34px;display:flex;align-items:center;justify-content:center;padding:6px 14px;
+  color:#efe5cf;background:linear-gradient(90deg,#10271f,#183a2d 50%,#10271f);
+  font-size:.72rem;letter-spacing:.11em;text-transform:uppercase
+}
+.header{
+  position:sticky;top:0;z-index:1500;min-height:var(--header);
+  border-bottom:1px solid rgba(255,255,255,.12);color:#fff;background:rgba(24,58,45,.97);
+  box-shadow:0 8px 24px rgba(22,42,32,.12);backdrop-filter:blur(15px)
+}
+.nav{min-height:var(--header);display:grid;grid-template-columns:minmax(230px,1fr) auto minmax(230px,1fr);align-items:center;gap:18px}
 .brand{justify-self:start;display:flex;align-items:center;gap:11px;text-align:left}
-.seal{width:43px;height:43px;display:grid;place-items:center;border:1px solid rgba(223,201,149,.72);border-radius:var(--control);color:var(--forest);background:linear-gradient(145deg,#fff8de,#d4b46f);font:500 .78rem var(--serif);letter-spacing:.08em}
-.brand-copy strong{display:block;font-family:var(--serif);font-size:.84rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
-.brand-copy small{display:block;margin-top:4px;color:rgba(255,255,255,.62);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase}
-.site-name{font-family:var(--serif);font-size:.82rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase}
-.navlinks{justify-self:end;display:flex;align-items:center;gap:7px}
-.navlinks a{min-height:37px;display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid rgba(255,255,255,.17);border-radius:var(--control);font-size:.69rem;letter-spacing:.07em;text-transform:uppercase}
-.navlinks a:hover{background:rgba(255,255,255,.08)}
-.navlinks .portal{border-color:rgba(223,201,149,.48);color:#fff6dc}
-.hero{position:relative;overflow:hidden;padding:82px 0 78px;border-bottom:1px solid var(--line)}
-.hero::before{content:"";position:absolute;left:50%;top:-360px;width:780px;height:780px;transform:translateX(-50%);border:1px solid rgba(24,58,45,.06);border-radius:50%;box-shadow:0 0 0 78px rgba(24,58,45,.025),0 0 0 156px rgba(24,58,45,.015);pointer-events:none}
+.seal{width:44px;height:44px;display:grid;place-items:center;border:1px solid rgba(229,209,160,.72);border-radius:var(--control);color:var(--forest);background:linear-gradient(145deg,#fff8de,#d4b46f);font:600 .82rem var(--serif);letter-spacing:.08em}
+.brand-copy strong{display:block;font-family:var(--serif);font-size:.86rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.brand-copy small{display:block;margin-top:4px;color:rgba(255,255,255,.66);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase}
+.site-name{font-family:var(--serif);font-size:.8rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase}
+.navlinks{justify-self:end;display:flex;align-items:center;gap:6px}
+.navlinks a,.navlinks button{
+  min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;
+  border:1px solid rgba(255,255,255,.17);border-radius:var(--control);color:#fff;background:transparent;
+  font-size:.68rem;letter-spacing:.07em;text-transform:uppercase
+}
+.navlinks a:hover,.navlinks button:hover{background:rgba(255,255,255,.08)}
+.navlinks .mentor-link{border-color:rgba(229,209,160,.55);color:#fff6dc}
+
+.hero{position:relative;overflow:hidden;padding:82px 0 76px;border-bottom:1px solid var(--line)}
+.hero::before{
+  content:"";position:absolute;left:50%;top:-410px;width:860px;height:860px;transform:translateX(-50%);
+  border:1px solid rgba(24,58,45,.06);border-radius:50%;
+  box-shadow:0 0 0 86px rgba(24,58,45,.025),0 0 0 172px rgba(24,58,45,.015);pointer-events:none
+}
 .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:.72fr 1.28fr;gap:64px;align-items:center}
-.owl{width:min(300px,75vw);aspect-ratio:1;margin:auto;display:grid;place-items:center;position:relative;border:7px double var(--forest);border-radius:50%;background:radial-gradient(circle at 50% 36%,rgba(255,255,255,.72),transparent 22%),linear-gradient(145deg,#e4cf99,#b88b45);box-shadow:var(--shadow);font-size:clamp(7rem,16vw,10rem)}
-.owl::after{content:"WISE OWL";position:absolute;bottom:18px;color:var(--forest);font-size:.62rem;letter-spacing:.24em}
+.owl-wrap{position:relative}
+.owl{
+  width:min(310px,76vw);aspect-ratio:1;margin:auto;display:grid;place-items:center;position:relative;
+  border:7px double var(--forest);border-radius:50%;background:
+    radial-gradient(circle at 50% 34%,rgba(255,255,255,.76),transparent 22%),
+    linear-gradient(145deg,#e4cf99,#b88b45);box-shadow:var(--shadow);font-size:clamp(7.4rem,16vw,10rem)
+}
+.owl::after{content:"ARCHAEMENES";position:absolute;bottom:17px;color:var(--forest);font-size:.6rem;letter-spacing:.24em}
+.owl-orbit{position:absolute;inset:-18px;border:1px solid rgba(181,139,70,.22);border-radius:50%;animation:orbit 15s linear infinite}
+.owl-orbit::before,.owl-orbit::after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.owl-orbit::before{left:20%;top:2%}.owl-orbit::after{right:4%;bottom:28%}
+@keyframes orbit{to{transform:rotate(360deg)}}
 .hero-copy{text-align:left}
-.eyebrow,.kicker{margin:0;color:var(--burgundy);font-family:var(--serif);font-size:.74rem;font-weight:500;letter-spacing:.20em;text-transform:uppercase}
+.eyebrow,.kicker{margin:0;color:var(--burgundy);font-family:var(--serif);font-size:.73rem;font-weight:500;letter-spacing:.19em;text-transform:uppercase}
 h1,h2,h3{font-family:var(--serif);font-weight:500;text-wrap:balance}
-h1{margin:9px 0 0;color:var(--forest);font-size:clamp(3.3rem,7.2vw,6.4rem);line-height:.98;letter-spacing:-.025em}
-.tagline{margin:15px 0 0;color:var(--gold);font-family:var(--serif);font-size:clamp(1rem,2vw,1.24rem);letter-spacing:.06em}
-.lede{max-width:700px;margin:21px 0 0;color:var(--muted);font-size:1.08rem}
-.quote{margin:20px 0 0;color:var(--forest-2);font-family:Georgia,serif;font-size:1.06rem;font-style:italic}
-.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:27px}
-.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:10px 15px;border:1px solid var(--line-strong);border-radius:var(--control);color:var(--forest);background:rgba(255,255,255,.52);font-size:.76rem;font-weight:600;letter-spacing:.065em;text-transform:uppercase;transition:.16s ease}
-.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-small)}
-.btn-primary{color:#fff;background:var(--forest);border-color:var(--forest)}
-.btn-gold{color:#2b261a;background:linear-gradient(145deg,#f1dfb7,#d8b875);border-color:#d3b36e}
-.section{padding:78px 0}
+h1{margin:9px 0 0;color:var(--forest);font-size:clamp(3.4rem,7.5vw,6.8rem);line-height:.96;letter-spacing:-.025em}
+.tagline{margin:15px 0 0;color:var(--gold);font-family:var(--serif);font-size:clamp(1rem,2vw,1.22rem);letter-spacing:.055em}
+.lede{max-width:710px;margin:20px 0 0;color:var(--muted);font-size:1.08rem}
+.quote{margin:20px 0 0;color:var(--forest2);font-family:Georgia,serif;font-size:1.06rem;font-style:italic}
+.badges{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}
+.badge{display:inline-flex;align-items:center;min-height:30px;padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.7);font-size:.72rem;font-weight:700}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}
+.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:10px 15px;border:1px solid var(--line2);border-radius:var(--control);color:var(--forest);background:rgba(255,255,255,.6);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:.16s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--soft)}
+.btn.primary{color:#fff;background:var(--forest);border-color:var(--forest)}
+.btn.gold{color:#2b261a;background:linear-gradient(145deg,#f1dfb7,#d8b875);border-color:#d3b36e}
+.btn.ghost{background:transparent}
+.hero-note{margin:13px 0 0;color:var(--muted);font-size:.75rem}
+
+.section{padding:76px 0}
 .section.alt{border-block:1px solid var(--line);background:rgba(255,255,255,.38)}
-.section-head{max-width:820px;margin:0 auto}
-.section h2{margin:8px 0 0;color:var(--forest);font-size:clamp(2.1rem,4.4vw,3.45rem);line-height:1.08}
-.intro{margin:17px auto 0;max-width:790px;color:var(--muted)}
-.identity-grid,.level-grid,.mentor-grid,.character-grid{display:grid;gap:15px;margin-top:31px}
+.section.dark{color:#f7f4ea;background:linear-gradient(145deg,#17382c,#0f251d)}
+.section.dark h2,.section.dark h3{color:#fff}.section.dark .kicker{color:#e4cf99}.section.dark .intro{color:rgba(255,255,255,.72)}
+.section-head{max-width:850px;margin:0 auto}
+.section h2{margin:8px 0 0;color:var(--forest);font-size:clamp(2.1rem,4.4vw,3.5rem);line-height:1.08}
+.intro{margin:16px auto 0;max-width:790px;color:var(--muted)}
+
+.welcome-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:18px;margin-top:31px;align-items:stretch}
+.panel{border:1px solid var(--line);border-radius:var(--r);background:rgba(255,253,248,.82);box-shadow:var(--soft);text-align:left}
+.panel-pad{padding:24px}
+.panel h3{margin:0;color:var(--forest);font-size:1.35rem}
+.panel p{color:var(--muted)}
+.role-buttons{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:16px}
+.role-buttons button{min-height:48px;padding:10px;border:1px solid var(--line2);border-radius:var(--control);color:var(--forest);background:#fffdf8;font-weight:700}
+.role-buttons button[aria-pressed="true"]{color:#fff;background:var(--forest);border-color:var(--forest)}
+.archaemenes-response{position:relative;min-height:100%;padding:26px 28px 26px 68px;border:1px solid rgba(181,139,70,.3);border-radius:var(--r);background:linear-gradient(180deg,#fff8e8,#fffdf8);box-shadow:var(--soft)}
+.archaemenes-response::before{content:"A";position:absolute;left:22px;top:25px;width:31px;height:31px;display:grid;place-items:center;border-radius:50%;color:#fff;background:var(--forest);font:600 .76rem var(--serif)}
+.archaemenes-response strong{display:block;color:var(--forest);font-family:var(--serif);font-size:1rem;letter-spacing:.04em}
+.archaemenes-response p{margin:9px 0 0;color:#5f685f;font-family:Georgia,serif;font-size:1.04rem;line-height:1.75}
+.response-meta{margin-top:13px;color:#8a7756;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+
+.conversation-shell{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr);gap:18px;margin-top:31px}
+.prompt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:16px}
+.prompt-grid button{
+  min-height:72px;padding:13px;border:1px solid var(--line);border-radius:12px;background:#fff;text-align:left;color:var(--forest)
+}
+.prompt-grid button strong{display:block;font-family:var(--serif);font-size:.96rem;font-weight:500}
+.prompt-grid button small{display:block;margin-top:5px;color:var(--muted);line-height:1.4}
+.prompt-grid button:hover{border-color:var(--gold);box-shadow:var(--soft)}
+.conversation-card{min-height:400px;display:flex;flex-direction:column}
+.conversation-output{flex:1;padding:20px;border:1px solid rgba(229,209,160,.26);border-radius:14px;background:linear-gradient(180deg,#17382c,#10271f);color:#f8f2e5}
+.conversation-output .speaker{color:#e4cf99;font-family:var(--serif);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase}
+.conversation-output blockquote{margin:12px 0 0;font-family:Georgia,serif;font-size:1.12rem;line-height:1.75}
+.conversation-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+
+.question-box{margin-top:18px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--paper3)}
+.question-box .question{margin:9px 0 0;color:var(--forest);font-family:Georgia,serif;font-size:1.12rem}
+
+.note-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);gap:18px;margin-top:31px}
+.note-form{display:grid;gap:12px}
+.field{display:grid;gap:6px}
+.field label{color:var(--forest);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.field input,.field select,.field textarea{
+  width:100%;padding:11px 12px;border:1px solid var(--line2);border-radius:var(--control);color:var(--ink);background:#fffdf8
+}
+.field textarea{min-height:150px;resize:vertical}
+.form-note{margin:0;color:var(--muted);font-size:.78rem}
+.status{min-height:1.4em;margin:0;color:var(--forest2);font-size:.82rem;font-weight:700}
+.note-list{display:grid;gap:9px;margin-top:12px}
+.saved-note{padding:13px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.saved-note strong{display:block;color:var(--forest)}
+.saved-note small{display:block;margin-top:3px;color:var(--muted)}
+.saved-note p{margin:8px 0 0;white-space:pre-wrap;color:#46534a}
+.saved-note-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.mini{min-height:34px;padding:6px 9px;border:1px solid var(--line2);border-radius:var(--control);background:#fff;color:var(--forest);font-size:.72rem;font-weight:700}
+
+.identity-grid,.level-grid,.character-grid,.ecosystem-grid{display:grid;gap:14px;margin-top:31px}
 .identity-grid{grid-template-columns:repeat(4,1fr)}
-.level-grid,.mentor-grid,.character-grid{grid-template-columns:repeat(3,1fr)}
-.card{min-height:100%;padding:25px;border:1px solid var(--line);border-radius:var(--r);background:rgba(255,253,248,.75);text-align:center}
-.card .number,.card .icon{width:44px;height:44px;display:grid;place-items:center;margin:0 auto 15px;border:1px solid var(--line-strong);border-radius:var(--control);color:var(--forest);background:var(--paper-bright);font:500 .72rem var(--serif);letter-spacing:.08em}
-.card small{color:var(--gold);font-size:.67rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
-.card h3{margin:7px 0 9px;color:var(--forest);font-size:1.25rem}
-.card p{margin:0;color:var(--muted);font-size:.94rem}
-.card .door{margin-top:18px;min-height:40px;display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border:1px solid var(--line-strong);border-radius:var(--control);color:var(--forest);background:#fffdf8;font-size:.72rem;font-weight:600;letter-spacing:.055em;text-transform:uppercase}
-.card .door:hover{border-color:var(--gold);box-shadow:var(--shadow-small)}
-.discovery{max-width:760px;margin:32px auto 0;padding:24px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,#fffdf8,#f5efe2);box-shadow:var(--shadow-small)}
-.discovery label{display:block;margin-bottom:10px;color:var(--forest);font-family:var(--serif);font-size:.86rem;letter-spacing:.10em;text-transform:uppercase}
+.level-grid{grid-template-columns:repeat(3,1fr)}
+.character-grid{grid-template-columns:repeat(3,1fr)}
+.ecosystem-grid{grid-template-columns:repeat(3,1fr)}
+.card{min-height:100%;padding:24px;border:1px solid var(--line);border-radius:var(--r);background:rgba(255,253,248,.78);text-align:center;transition:.16s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--soft)}
+.card .number,.card .icon{width:44px;height:44px;display:grid;place-items:center;margin:0 auto 14px;border:1px solid var(--line2);border-radius:var(--control);color:var(--forest);background:var(--paper2);font:600 .72rem var(--serif)}
+.card small{color:var(--gold);font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.card h3{margin:7px 0 9px;color:var(--forest);font-size:1.2rem}
+.card p{margin:0;color:var(--muted);font-size:.92rem}
+.card .door{margin-top:16px;min-height:40px;display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border:1px solid var(--line2);border-radius:var(--control);color:var(--forest);background:#fffdf8;font-size:.7rem;font-weight:700;letter-spacing:.055em;text-transform:uppercase}
+.card .door:hover{border-color:var(--gold);box-shadow:var(--soft)}
+.character-card{cursor:pointer}
+.character-card[aria-pressed="true"]{border-color:var(--gold);box-shadow:0 0 0 3px rgba(181,139,70,.12)}
+
+.discovery{max-width:760px;margin:31px auto 0;padding:23px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,#fffdf8,#f5efe2);box-shadow:var(--soft)}
+.discovery label{display:block;margin-bottom:9px;color:var(--forest);font-family:var(--serif);font-size:.84rem;letter-spacing:.1em;text-transform:uppercase}
 .discovery-row{display:grid;grid-template-columns:1fr auto;gap:9px}
-.discovery select{min-width:0;min-height:46px;padding:0 13px;border:1px solid var(--line-strong);border-radius:var(--control);color:var(--ink);background:#fffdf8;text-align:center}
-.discovery button{min-height:46px;padding:9px 16px;border:1px solid var(--forest);border-radius:var(--control);color:#fff;background:var(--forest);font-weight:600;letter-spacing:.055em;text-transform:uppercase}
+.discovery select{min-width:0;min-height:46px;padding:0 13px;border:1px solid var(--line2);border-radius:var(--control);color:var(--ink);background:#fffdf8;text-align:center}
+.discovery button{min-height:46px;padding:9px 16px;border:1px solid var(--forest);border-radius:var(--control);color:#fff;background:var(--forest);font-weight:700;letter-spacing:.055em;text-transform:uppercase}
 .route-status{min-height:1.4em;margin:10px 0 0;color:var(--muted);font-size:.82rem}
-.public-note{max-width:900px;margin:30px auto 0;padding:18px 20px;border:1px solid var(--line);border-radius:var(--control);color:var(--muted);background:rgba(255,255,255,.48);font-size:.88rem}
-footer{padding:34px 0 44px;border-top:1px solid var(--line);color:#757d76;font-size:.79rem}
+
+.office-banner{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;margin-top:30px;padding:26px;border:1px solid rgba(229,209,160,.28);border-radius:var(--r);background:rgba(255,255,255,.05);text-align:left}
+.office-banner p{margin:8px 0 0;color:rgba(255,255,255,.72)}
+.office-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.office-actions a{min-height:42px;display:inline-flex;align-items:center;padding:9px 12px;border:1px solid rgba(255,255,255,.25);border-radius:var(--control);color:#fff;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.055em}
+.office-actions a:first-child{color:#2b261a;background:linear-gradient(145deg,#f1dfb7,#d8b875);border-color:#d3b36e}
+
+.comfort{position:fixed;left:12px;bottom:12px;z-index:1300;display:flex;gap:6px;padding:6px;border:1px solid var(--line);border-radius:999px;background:rgba(255,253,248,.95);box-shadow:var(--soft)}
+.comfort button{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;color:var(--forest);background:#fff;font-weight:800}
+.comfort button[aria-pressed="true"]{color:#fff;background:var(--forest)}
+
+.public-note{max-width:920px;margin:30px auto 0;padding:18px 20px;border:1px solid var(--line);border-radius:var(--control);color:var(--muted);background:rgba(255,255,255,.48);font-size:.86rem}
+footer{padding:34px 0 46px;border-top:1px solid var(--line);color:#747b75;font-size:.79rem}
 .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left}
 .footer-links{display:flex;gap:13px;flex-wrap:wrap;justify-content:flex-end}
 .footer-links a:hover{text-decoration:underline;text-underline-offset:3px}
-@media(max-width:980px){.nav{grid-template-columns:1fr auto}.site-name{display:none}.identity-grid{grid-template-columns:repeat(2,1fr)}.level-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:760px){.topline{padding:7px 18px;line-height:1.4}.nav{grid-template-columns:1fr;gap:10px;padding:14px 0}.brand,.navlinks{justify-self:center}.navlinks{flex-wrap:wrap;justify-content:center}.hero{padding-top:56px}.hero-inner{grid-template-columns:1fr;gap:38px}.hero-copy{text-align:center}.actions{justify-content:center}.identity-grid,.level-grid,.mentor-grid,.character-grid{grid-template-columns:1fr}.discovery-row{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+@media(max-width:980px){
+  .nav{grid-template-columns:1fr auto}.site-name{display:none}
+  .identity-grid{grid-template-columns:repeat(2,1fr)}
+  .level-grid,.ecosystem-grid{grid-template-columns:repeat(2,1fr)}
+  .conversation-shell,.note-grid,.welcome-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .nav{grid-template-columns:1fr;gap:10px;padding:13px 0}.brand,.navlinks{justify-self:center}.navlinks{flex-wrap:wrap;justify-content:center}
+  .hero{padding-top:54px}.hero-inner{grid-template-columns:1fr;gap:38px}.hero-copy{text-align:center}.actions,.badges{justify-content:center}
+  .identity-grid,.level-grid,.character-grid,.ecosystem-grid{grid-template-columns:1fr}
+  .prompt-grid,.role-buttons{grid-template-columns:1fr}
+  .discovery-row{grid-template-columns:1fr}
+  .office-banner{grid-template-columns:1fr;text-align:center}.office-actions{justify-content:center}
+  .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
+  .comfort{left:50%;transform:translateX(-50%)}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 </style>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to main content</a>
 
-<div class="topline">Khaemenes Academy · Public Academic Doorway</div>
+<div class="topline">Khaemenes Academy · Public Home of Archaemenes</div>
 
 <header class="header">
   <div class="shell nav">
@@ -110,17 +238,17 @@ footer{padding:34px 0 44px;border-top:1px solid var(--line);color:#757d76;font-s
       <span class="seal">A</span>
       <span class="brand-copy">
         <strong>Archaemenes</strong>
-        <small>Scholar & Educational Mentor</small>
+        <small>Principal · Scholar · Educational Mentor</small>
       </span>
     </a>
 
-    <a class="site-name" href="#mentor">Academic Guidance</a>
+    <a class="site-name" href="#meet">Meet Archaemenes</a>
 
     <nav class="navlinks" aria-label="Primary navigation">
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/#student-portal">Student</a>
-      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/#parent-portal">Parent</a>
+      <a href="#message">Leave a Note</a>
+      <a href="#levels">Academy</a>
       <a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family</a>
-      <a class="portal" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Collegiate</a>
+      <a class="mentor-link" href="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/">Enter Mentor</a>
     </nav>
   </div>
 </header>
@@ -129,33 +257,148 @@ footer{padding:34px 0 44px;border-top:1px solid var(--line);color:#757d76;font-s
 
 <section class="hero">
   <div class="shell hero-inner">
-    <div class="owl" aria-label="Wise Owl">🦉</div>
+    <div class="owl-wrap" aria-hidden="true">
+      <div class="owl-orbit"></div>
+      <div class="owl">🦉</div>
+    </div>
     <div class="hero-copy">
       <p class="eyebrow">Wise Owl · Academy Mentor · Scholar</p>
       <h1>Archaemenes</h1>
-      <p class="tagline">Scholar and Educational Mentor of Khaemenes Academy</p>
-      <p class="lede">Thoughtful, curious and patient, Archaemenes helps learners understand ideas, find the right academic doorway and grow toward greater independence.</p>
-      <p class="quote">“Wisdom begins with curiosity.”</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#levels">Find Your Learning Level</a>
-        <a class="btn btn-gold" href="https://vervenveda.com/Khaemenes_Academy.github.io/">Enter Khaemenes Academy</a>
+      <p class="tagline">Principal, Scholar and Educational Mentor of Khaemenes Academy</p>
+      <p class="lede" id="heroLede">Thoughtful, curious and quietly warm, Archaemenes welcomes students and families into a place where questions matter, mistakes become evidence, and understanding matters more than simply reaching an answer.</p>
+      <p class="quote" id="heroQuote">“Wisdom begins with curiosity.”</p>
+      <div class="badges" aria-label="Archaemenes qualities">
+        <span class="badge">Patient</span><span class="badge">Curious</span><span class="badge">Fair-minded</span><span class="badge">Evidence-aware</span><span class="badge">Quietly warm</span>
       </div>
+      <div class="actions">
+        <a class="btn primary" href="#meet">Come In & Say Hello</a>
+        <a class="btn gold" href="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/">Talk with Archaemenes</a>
+        <a class="btn ghost" href="#message">Leave a Note</a>
+      </div>
+      <p class="hero-note">This public home does not ask for passwords, grades, private records or sensitive student information.</p>
     </div>
   </div>
 </section>
 
-<section class="section" id="entry">
+<section class="section" id="meet">
   <div class="shell">
     <div class="section-head">
-      <p class="kicker">Choose your doorway</p>
-      <h2>Who is entering?</h2>
-      <p class="intro">Students, parents, families and advanced learners can begin from the doorway designed for them.</p>
+      <p class="kicker">At the doorway</p>
+      <h2>Archaemenes greets each visitor differently.</h2>
+      <p class="intro">Choose who is visiting. This changes only the welcome on this page; it does not create an account or identify you.</p>
     </div>
-    <div class="identity-grid">
-      <article class="card"><span class="icon">S</span><small>Learner</small><h3>Student Portal</h3><p>Choose a learning stage and enter the appropriate campus or study pathway.</p><a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/#student-portal">Open Student Portal</a></article>
-      <article class="card"><span class="icon">P</span><small>Guidance</small><h3>Parent & Educator</h3><p>Review pathways, family-facing resources and learning support.</p><a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/#parent-portal">Open Parent Portal</a></article>
-      <article class="card"><span class="icon">F</span><small>Connected learners</small><h3>Family Account</h3><p>Use the Academy family doorway for connected learner experiences.</p><a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Open Family Hub</a></article>
-      <article class="card"><span class="icon">C</span><small>Advanced study</small><h3>Collegiate Student</h3><p>Enter Higher Learning for collegiate study, research preparation and lifelong scholarship.</p><a class="door" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Enter Collegiate Campus</a></article>
+
+    <div class="welcome-grid">
+      <section class="panel panel-pad" aria-labelledby="visitorTitle">
+        <h3 id="visitorTitle">Who is visiting today?</h3>
+        <p>Archaemenes is the same person with every visitor, but he changes his emphasis depending on what brought you here.</p>
+        <div class="role-buttons" id="visitorRoles">
+          <button type="button" data-role="student" aria-pressed="true">Student</button>
+          <button type="button" data-role="parent" aria-pressed="false">Parent / Guardian</button>
+          <button type="button" data-role="educator" aria-pressed="false">Educator</button>
+          <button type="button" data-role="visitor" aria-pressed="false">Curious Visitor</button>
+        </div>
+      </section>
+
+      <section class="archaemenes-response" aria-live="polite">
+        <strong id="welcomeSpeaker">Archaemenes</strong>
+        <p id="welcomeText">Welcome. You do not need to know exactly what you need before you begin. Tell me what you are trying to understand, and we will find the first useful question together.</p>
+        <div class="response-meta" id="welcomeMeta">Student welcome · public home</div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="conversation">
+  <div class="shell">
+    <div class="section-head">
+      <p class="kicker">A glimpse of his character</p>
+      <h2>What might Archaemenes say?</h2>
+      <p class="intro">These are public, prewritten examples of his mentoring character—not a live private AI conversation. Choose a situation and see how he tends to respond.</p>
+    </div>
+
+    <div class="conversation-shell">
+      <section class="panel panel-pad" aria-labelledby="promptTitle">
+        <h3 id="promptTitle">Choose a moment</h3>
+        <div class="prompt-grid" id="promptGrid">
+          <button type="button" data-prompt="mistake"><strong>I made a mistake.</strong><small>I am worried I got it wrong.</small></button>
+          <button type="button" data-prompt="stuck"><strong>I feel stuck.</strong><small>I cannot see what to do next.</small></button>
+          <button type="button" data-prompt="disagree"><strong>I disagree with you.</strong><small>I think there may be another way.</small></button>
+          <button type="button" data-prompt="idea"><strong>I have a strange idea.</strong><small>I do not know if it makes sense.</small></button>
+          <button type="button" data-prompt="research"><strong>I want to investigate something.</strong><small>Help me turn curiosity into research.</small></button>
+          <button type="button" data-prompt="begin"><strong>I do not know where to begin.</strong><small>There are too many choices.</small></button>
+        </div>
+      </section>
+
+      <section class="conversation-card" aria-labelledby="responseTitle">
+        <div class="conversation-output" aria-live="polite">
+          <div class="speaker" id="responseTitle">Archaemenes</div>
+          <blockquote id="characterResponse">“A good question does not need to arrive fully formed. Begin with what you notice.”</blockquote>
+        </div>
+        <div class="conversation-actions">
+          <a class="btn primary" href="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/">Continue in the Academy Mentor</a>
+          <button class="btn" id="anotherPrompt" type="button">Another Thought</button>
+        </div>
+
+        <div class="question-box">
+          <span class="kicker">Question from Archaemenes</span>
+          <p class="question" id="dailyQuestion">What is something you understand better today than you did a week ago?</p>
+          <div class="conversation-actions">
+            <button class="mini" id="anotherQuestion" type="button">Another Question</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="message">
+  <div class="shell">
+    <div class="section-head">
+      <p class="kicker">The message desk</p>
+      <h2>Leave Archaemenes a note.</h2>
+      <p class="intro">Write a question, thought or message before entering the Academy Mentor. Notes saved here remain only in this browser until you copy, delete or clear them.</p>
+    </div>
+
+    <div class="note-grid">
+      <section class="panel panel-pad">
+        <form class="note-form" id="noteForm">
+          <div class="field">
+            <label for="noteName">Name or nickname · optional</label>
+            <input id="noteName" maxlength="40" autocomplete="off" placeholder="How should Archaemenes address you?">
+          </div>
+          <div class="field">
+            <label for="noteTopic">What is this about?</label>
+            <select id="noteTopic">
+              <option value="learning">Learning question</option>
+              <option value="parent">Parent / family question</option>
+              <option value="research">Research or project idea</option>
+              <option value="academy">Finding the right Academy doorway</option>
+              <option value="message">A note for Archaemenes</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="noteText">Your note</label>
+            <textarea id="noteText" maxlength="1200" placeholder="Write your thought here. Please do not include passwords, addresses, medical records or other sensitive personal information."></textarea>
+          </div>
+          <p class="form-note">This public page does not transmit the note to a server. Use “Copy & Open Mentor” when you are ready to take the note into the family-linked Academy Mentor.</p>
+          <div class="actions">
+            <button class="btn primary" type="submit">Save on This Device</button>
+            <button class="btn gold" id="copyOpenMentor" type="button">Copy & Open Mentor</button>
+            <button class="btn" id="clearDraft" type="button">Clear Draft</button>
+          </div>
+          <p class="status" id="noteStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <aside class="panel panel-pad" aria-labelledby="savedTitle">
+        <h3 id="savedTitle">Notes on this device</h3>
+        <p class="form-note">Only the three most recent notes are shown here. Nothing is uploaded by this page.</p>
+        <div class="note-list" id="noteList"></div>
+        <div class="actions">
+          <button class="btn" id="clearAllNotes" type="button">Clear Saved Notes</button>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
@@ -165,7 +408,7 @@ footer{padding:34px 0 44px;border-top:1px solid var(--line);color:#757d76;font-s
     <div class="section-head">
       <p class="kicker">Academic discovery</p>
       <h2>Where are you learning?</h2>
-      <p class="intro">Choose the learner’s current stage. Archaemenes remains the same scholar while his teaching expression grows with the learner.</p>
+      <p class="intro">Archaemenes remains one continuous mentor while his language, pacing and depth grow with the learner.</p>
     </div>
 
     <div class="discovery">
@@ -177,7 +420,7 @@ footer{padding:34px 0 44px;border-top:1px solid var(--line);color:#757d76;font-s
           <option value="elementary">Elementary · Grades 1–5</option>
           <option value="middle">Middle School · Grades 6–8</option>
           <option value="high">High School · Grades 9–12</option>
-          <option value="higher">Higher Learning · GED · College · Careers</option>
+          <option value="higher">Higher Learning · College · Careers</option>
           <option value="linguistics">Linguistics & Languages</option>
         </select>
         <button id="openLevel" type="button">Enter Learning Campus</button>
@@ -186,62 +429,106 @@ footer{padding:34px 0 44px;border-top:1px solid var(--line);color:#757d76;font-s
     </div>
 
     <div class="level-grid">
-      <article class="card"><span class="number">01</span><small>Early years</small><h3>Preschool</h3><p>Early exploration, play and guided discovery.</p><a class="door" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Enter Preschool</a></article>
-      <article class="card"><span class="number">02</span><small>Foundation</small><h3>Kinder Garden</h3><p>A kinder place to learn through curiosity and guided play.</p><a class="door" href="https://vervenveda.com/Khaemenes_KinderGarden.github.io/">Enter Kinder Garden</a></article>
-      <article class="card"><span class="number">03</span><small>Grades 1–5</small><h3>Elementary</h3><p>Core subjects, discovery, projects and growing independence.</p><a class="door" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Enter Elementary</a></article>
-      <article class="card"><span class="number">04</span><small>Grades 6–8</small><h3>Middle School</h3><p>Structured reasoning, broader subject depth and high-school readiness.</p><a class="door" href="https://vervenveda.com/Khaemenes_Middle.github.io/">Enter Middle School</a></article>
-      <article class="card"><span class="number">05</span><small>Grades 9–12</small><h3>High School</h3><p>Complete courses, assessments and graduation preparation.</p><a class="door" href="https://vervenveda.com/Khaemenes_High.github.io/">Enter High School</a></article>
-      <article class="card"><span class="number">06</span><small>GED · College · Careers</small><h3>Higher Learning</h3><p>Collegiate study, advanced learning and lifelong scholarship.</p><a class="door" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Enter Higher Learning</a></article>
+      <article class="card"><span class="number">01</span><small>Early years</small><h3>Preschool</h3><p>Play, early language, number sense, movement and guided discovery.</p><a class="door" href="https://vervenveda.com/Khaemenes_Preschool.github.io/">Enter Preschool</a></article>
+      <article class="card"><span class="number">02</span><small>Foundation</small><h3>Kinder Garden</h3><p>Kindness, curiosity, school readiness and foundational learning.</p><a class="door" href="https://vervenveda.com/Khaemenes_KinderGarden.github.io/">Enter Kinder Garden</a></article>
+      <article class="card"><span class="number">03</span><small>Grades 1–5</small><h3>Elementary</h3><p>Core subjects, projects, discovery and growing independence.</p><a class="door" href="https://vervenveda.com/Khaemenes_Elementary.github.io/">Enter Elementary</a></article>
+      <article class="card"><span class="number">04</span><small>Grades 6–8</small><h3>Middle School</h3><p>Structured reasoning, deeper subject work and high-school readiness.</p><a class="door" href="https://vervenveda.com/Khaemenes_Middle.github.io/">Enter Middle School</a></article>
+      <article class="card"><span class="number">05</span><small>Grades 9–12</small><h3>High School</h3><p>Rigorous courses, assessments, research, careers and graduation preparation.</p><a class="door" href="https://vervenveda.com/Khaemenes_High.github.io/">Enter High School</a></article>
+      <article class="card"><span class="number">06</span><small>Advanced study</small><h3>Higher Learning</h3><p>Collegiate learning, advanced scholarship, research and lifelong study.</p><a class="door" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Enter Higher Learning</a></article>
     </div>
   </div>
 </section>
 
-<section class="section" id="mentor">
+<section class="section" id="character">
   <div class="shell">
     <div class="section-head">
-      <p class="kicker">One identity across ages</p>
-      <h2>How Archaemenes meets the learner</h2>
-      <p class="intro">His personality remains consistent while his language, pacing and depth mature with the student.</p>
+      <p class="kicker">Meet the person behind the office</p>
+      <h2>His character is part of the welcome.</h2>
+      <p class="intro">Select a quality to hear one of the principles that shapes how Archaemenes teaches and leads.</p>
     </div>
-    <div class="mentor-grid">
-      <article class="card"><span class="icon">🦉</span><small>Younger learners</small><h3>Wise Owl</h3><p>Warm, playful and encouraging. He uses clues, examples and discovery instead of rushing to the answer.</p></article>
-      <article class="card"><span class="icon">A</span><small>School years</small><h3>Academy Mentor</h3><p>Clear, patient and structured. He helps students reason step by step and build confidence through understanding.</p></article>
-      <article class="card"><span class="icon">Σ</span><small>Advanced study</small><h3>Scholar</h3><p>Precise and thoughtful, supporting deeper research, academic writing, evidence and interdisciplinary connections.</p></article>
+
+    <div class="character-grid" id="characterGrid">
+      <button class="card character-card" type="button" data-character="curiosity" aria-pressed="true"><span class="icon">?</span><small>Curiosity</small><h3>Question First</h3><p>He starts with what the learner notices, wonders or suspects.</p></button>
+      <button class="card character-card" type="button" data-character="dignity" aria-pressed="false"><span class="icon">◇</span><small>Dignity</small><h3>Respect the Learner</h3><p>Speed, confidence and quietness are never mistaken for intelligence.</p></button>
+      <button class="card character-card" type="button" data-character="disagreement" aria-pressed="false"><span class="icon">↔</span><small>Reasoning</small><h3>Disagreement Is Allowed</h3><p>A learner may question Archaemenes and bring a different argument.</p></button>
+      <button class="card character-card" type="button" data-character="uncertainty" aria-pressed="false"><span class="icon">≈</span><small>Humility</small><h3>Comfort With Uncertainty</h3><p>He distinguishes what is known, inferred, interpreted and uncertain.</p></button>
+      <button class="card character-card" type="button" data-character="wonder" aria-pressed="false"><span class="icon">✦</span><small>Wonder</small><h3>Let Discovery Breathe</h3><p>Not every interesting moment must immediately become an assignment.</p></button>
+      <button class="card character-card" type="button" data-character="fairness" aria-pressed="false"><span class="icon">⚖</span><small>Stewardship</small><h3>Fair, Calm Leadership</h3><p>As Principal, he protects the educational purpose without turning authority into personality.</p></button>
+    </div>
+
+    <div class="archaemenes-response" style="max-width:850px;margin:18px auto 0" aria-live="polite">
+      <strong>Archaemenes</strong>
+      <p id="characterPrinciple">“We do not need certainty before we begin investigating.”</p>
+      <div class="response-meta">Public character principle</div>
     </div>
   </div>
 </section>
 
-<section class="section alt" id="character">
+<section class="section dark" id="office">
   <div class="shell">
     <div class="section-head">
-      <p class="kicker">Meet the scholar</p>
-      <h2>A mentor with a recognizable character</h2>
-      <p class="intro">Archaemenes values curiosity, careful reasoning, intellectual independence and learner dignity.</p>
+      <p class="kicker">Principal's office</p>
+      <h2>Leadership without distance.</h2>
+      <p class="intro">Principal is an office Archaemenes holds within Khaemenes Academy. It does not replace his identity as scholar and mentor, and this public page does not make disciplinary, grading or placement decisions.</p>
     </div>
-    <div class="character-grid">
-      <article class="card"><span class="icon">?</span><small>Curiosity</small><h3>Question First</h3><p>He often begins by asking what the learner notices before deciding what to explain.</p></article>
-      <article class="card"><span class="icon">≈</span><small>Humility</small><h3>Comfort With Uncertainty</h3><p>He can say “I do not know yet” and treats investigation as part of scholarship.</p></article>
-      <article class="card"><span class="icon">↗</span><small>Growth</small><h3>Independence</h3><p>As mastery grows, he offers less scaffolding and more room for the learner’s own reasoning.</p></article>
+
+    <div class="office-banner">
+      <div>
+        <h3>For students and families</h3>
+        <p>Use the Family Profile for learner identity and parent administration, the Student Portal for academic continuity, or the Academy Mentor to speak with Archaemenes in the learner's school context.</p>
+      </div>
+      <div class="office-actions">
+        <a href="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/">Academy Mentor</a>
+        <a href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Family Profile</a>
+        <a href="https://vervenveda.com/Khaemenes_Academy.github.io/student/">Student Portal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="ecosystem">
+  <div class="shell">
+    <div class="section-head">
+      <p class="kicker">Explore from here</p>
+      <h2>A doorway into the wider learning ecosystem.</h2>
+      <p class="intro">Archaemenes does not need to be every tool. Part of good mentorship is helping a learner find the right place, specialist or resource.</p>
+    </div>
+
+    <div class="ecosystem-grid">
+      <article class="card"><span class="icon">K</span><small>Academy</small><h3>Khaemenes Academy</h3><p>Enter the central educational campus and its student, family and learning pathways.</p><a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/">Open Academy</a></article>
+      <article class="card"><span class="icon">F</span><small>Family</small><h3>Family Profile</h3><p>Manage family and learner identity through the Academy's shared family doorway.</p><a class="door" href="https://vervenveda.com/Khaemenes_Academy.github.io/family/">Open Family Profile</a></article>
+      <article class="card"><span class="icon">Σ</span><small>Advanced</small><h3>Higher Learning</h3><p>Continue into collegiate, professional and lifelong scholarship.</p><a class="door" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Open Higher Learning</a></article>
+      <article class="card"><span class="icon">L</span><small>Languages</small><h3>Linguistics</h3><p>Explore language study and multilingual learning pathways.</p><a class="door" href="https://vervenveda.com/Khaemenes_Linguistics.github.io/">Open Linguistics</a></article>
+      <article class="card"><span class="icon">V</span><small>Ecosystem</small><h3>Verve N Veda</h3><p>Explore the wider public network of education, research, creativity and service.</p><a class="door" href="https://vervenveda.com/">Open Verve N Veda</a></article>
+      <article class="card"><span class="icon">β</span><small>Feedback</small><h3>Beta Program</h3><p>Help improve public pages and learning tools by sharing structured feedback.</p><a class="door" href="https://vervenveda.com/beta/">Open Beta Program</a></article>
     </div>
 
     <div class="public-note">
-      This public page is designed for academic discovery and navigation. It does not ask visitors to enter passwords, private documents or sensitive student information.
+      Archaemenes' public home intentionally contains public-safe personality, navigation and local interaction only. Private learner records, family administration, hidden governance systems and secure provider services remain outside this page.
     </div>
   </div>
 </section>
 
 </main>
 
+<div class="comfort" aria-label="Comfort controls">
+  <button id="calmToggle" type="button" aria-label="Toggle calm colors" aria-pressed="false">☁</button>
+  <button id="textToggle" type="button" aria-label="Toggle larger text" aria-pressed="false">A+</button>
+  <button id="motionToggle" type="button" aria-label="Reduce movement" aria-pressed="false">◫</button>
+</div>
+
 <footer>
   <div class="shell footer-inner">
     <div>
-      <strong>Archaemenes · Scholar and Educational Mentor</strong><br>
+      <strong>Archaemenes · Principal, Scholar and Educational Mentor</strong><br>
       <small>Wisdom begins with curiosity.</small>
     </div>
     <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#meet">Meet Archaemenes</a>
+      <a href="#message">Leave a Note</a>
       <a href="#levels">Learning Levels</a>
       <a href="https://vervenveda.com/Khaemenes_Academy.github.io/">Khaemenes Academy</a>
-      <a href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/">Higher Learning</a>
+      <a href="https://vervenveda.com/">Verve N Veda</a>
     </nav>
   </div>
 </footer>
