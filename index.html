@@ -439,6 +439,33 @@ footer{padding:34px 0 46px;border-top:1px solid var(--line);color:#747b75;font-s
   </div>
 </section>
 
+
+<section class="section" id="livingMentorPreview" aria-labelledby="livingMentorHeading">
+  <div class="shell">
+    <div class="section-head">
+      <p class="kicker">Living Mentor · Public Preview</p>
+      <h2 id="livingMentorHeading">Meet Archaemenes as you grow.</h2>
+      <p class="intro">One character, four original artistic expressions. Choose a stage to hear a short welcome using your device's voice. No microphone, student profile, or remote tutor connection is used.</p>
+    </div>
+    <div style="max-width:800px;margin:auto;border:1px solid rgba(130,130,130,.3);border-radius:7px;padding:22px;text-align:center">
+      <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-bottom:18px" role="group" aria-label="Archaemenes learning stage">
+        <button type="button" data-mentor-stage="young" aria-pressed="false">Young</button>
+        <button type="button" data-mentor-stage="middle" aria-pressed="false">Middle School</button>
+        <button type="button" data-mentor-stage="high" aria-pressed="true">High School</button>
+        <button type="button" data-mentor-stage="university" aria-pressed="false">Higher Learning</button>
+      </div>
+      <img data-mentor-image src="assets/Archaemens-high.png" alt="Original Archaemenes High School artwork" width="260" height="260" decoding="async" loading="lazy" style="max-width:100%;height:auto;max-height:340px;object-fit:contain;animation:archaemenes-breathe 5s ease-in-out infinite;transform-origin:center bottom">
+      <p data-mentor-label style="font-size:1.1rem;margin:14px 0 8px">Academy Mentor · High School</p>
+      <p data-mentor-transcript aria-live="polite">Begin with the evidence and the governing principle. Which part of the reasoning should we examine?</p>
+      <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:10px">
+        <button type="button" data-mentor-speak>Read aloud</button>
+        <button type="button" data-mentor-stop>Stop voice</button>
+      </div>
+      <p style="font-size:.82rem;margin-top:16px">Archaemenes is the Principal and Educational Mentor. NAIB is the AI Administrator; Noema is the Chancellor. Academy course authorities alone determine grades and mastery.</p>
+    </div>
+  </div>
+</section>
+<style>@keyframes archaemenes-breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}@media(prefers-reduced-motion:reduce){#livingMentorPreview [data-mentor-image]{animation:none!important}}#livingMentorPreview button[aria-pressed="true"]{outline:2px solid currentColor;outline-offset:2px}#livingMentorPreview button:focus-visible{outline:3px solid #b48b45;outline-offset:3px}</style>
 <section class="section" id="character">
   <div class="shell">
     <div class="section-head">
@@ -534,5 +561,6 @@ footer{padding:34px 0 46px;border-top:1px solid var(--line);color:#747b75;font-s
 </footer>
 
 <script src="app.js"></script>
+<script src="living-mentor-preview-v1.js" defer></script>
 </body>
 </html>
