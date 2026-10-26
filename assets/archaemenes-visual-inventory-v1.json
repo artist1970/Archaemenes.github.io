@@ -1,0 +1,53 @@
+{
+  "schema": "archaemenes-visual-asset-inventory",
+  "version": 1,
+  "status": "inventory-only-not-deployment-approval",
+  "canonicalCandidateRepository": "artist1970/Archaemenes.github.io",
+  "entries": [
+    {
+      "id": "young",
+      "path": "assets/Archaemenes-young.png",
+      "stage": "early learners",
+      "notes": "candidate: Pre-K, kindergarten and elementary",
+      "sourceRepository": "artist1970/Archaemenes.github.io",
+      "sourceBranch": "main",
+      "url": "https://raw.githubusercontent.com/artist1970/Archaemenes.github.io/main/assets/Archaemenes-young.png",
+      "approvedForDeployment": false
+    },
+    {
+      "id": "middle",
+      "path": "assets/Archaemens-mid.png",
+      "stage": "middle school",
+      "notes": "candidate: middle grades",
+      "sourceRepository": "artist1970/Archaemenes.github.io",
+      "sourceBranch": "main",
+      "url": "https://raw.githubusercontent.com/artist1970/Archaemenes.github.io/main/assets/Archaemens-mid.png",
+      "approvedForDeployment": false
+    },
+    {
+      "id": "high",
+      "path": "assets/Archaemens-high.png",
+      "stage": "high school",
+      "notes": "candidate: grades 9–12",
+      "sourceRepository": "artist1970/Archaemenes.github.io",
+      "sourceBranch": "main",
+      "url": "https://raw.githubusercontent.com/artist1970/Archaemenes.github.io/main/assets/Archaemens-high.png",
+      "approvedForDeployment": false
+    },
+    {
+      "id": "university",
+      "path": "assets/Archaemenes-University.png",
+      "stage": "higher learning",
+      "notes": "candidate: university and adult",
+      "sourceRepository": "artist1970/Archaemenes.github.io",
+      "sourceBranch": "main",
+      "url": "https://raw.githubusercontent.com/artist1970/Archaemenes.github.io/main/assets/Archaemenes-University.png",
+      "approvedForDeployment": false
+    }
+  ],
+  "unresolved": [
+    "Archaemenes Core repository path or location not identified",
+    "Age-stage art approval, animation rights and exact child-age mapping require owner review",
+    "No student-facing assets are altered by this inventory"
+  ]
+}
