@@ -143,6 +143,7 @@ footer{padding:36px 0 46px;border-top:1px solid var(--line);color:#78817c;font-s
 <footer><div class="shell"><strong>Archaemenes · High School Educational Mentor</strong><div class="footer-links"><a href="../">Archaemenes Gateway</a><a href="../early/">Early Learning</a><a href="../middle/">Middle School</a><a href="../higher/">Higher Education</a><a href="https://vervenveda.github.io/Khaemenes_High.github.io/">Khaemenes Sr. High</a></div></div></footer>
 
 
+<script src="mentor-algebra1-bank-v1.js"></script>
 <script>
 (()=>{"use strict";
 const $=id=>document.getElementById(id);
@@ -153,7 +154,7 @@ document.addEventListener("click",e=>{if(!e.target.closest(".menu-wrap")&&menu&&
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!overlay.hidden)gate(false)});
 const params=new URLSearchParams(location.search),ctx={};["course","week","unit","lesson","concept"].forEach(k=>{const v=params.get(k);if(v)ctx[k]=v.replace(/[<>]/g,"").slice(0,120)});const parts=[];["course","week","unit","lesson","concept"].forEach(k=>{if(ctx[k])parts.push(ctx[k])});if(parts.length){$("courseContext").hidden=false;$("contextValue").textContent=parts.join(" · ");try{localStorage.setItem("khaemenes_archaemenes_high_context_v1",JSON.stringify(ctx))}catch{}}
 const responses={explain:"Start with the idea you are studying. Tell me what part makes sense and the first point where the reasoning becomes unclear. We will rebuild it from there.",hint:"A good hint should move your thinking without taking the work away from you. Identify the operation, relationship or rule that connects what you know to what you need.",practice:"Practice works best with a fresh example rather than the graded problem. Return to the course concept, choose an ungraded example, and work one line at a time.",review:"A mistake is evidence. Find the exact step where your reasoning changed direction, name the rule used there, and test that rule on a simpler example.",concept:"Before calculating, name the concept in one sentence: what quantities are involved, what relationship connects them, and what result are you trying to determine?",example:"Use a new example with different numbers but the same structure. Solve it slowly enough that you can explain why each step is allowed.",steps:"Organize your work as: understand the question → identify known information → choose a rule or operation → execute carefully → verify the result.","review-plan":"Review the smallest prerequisite skill that caused difficulty, practice it independently, then return to the current lesson and try one fresh problem."};
-document.querySelectorAll("[data-mentor]").forEach(b=>b.addEventListener("click",()=>{$("mentorResponse").textContent=responses[b.dataset.mentor]||responses.explain;$("mentorTitle").textContent=b.textContent.trim();$("mentor").scrollIntoView({behavior:"smooth",block:"start"})}));
+document.querySelectorAll("[data-mentor]").forEach(b=>b.addEventListener("click",()=>{$("mentorResponse").textContent=window.ArchaemenesHighAcademicBankV1?.respond(b.dataset.mentor,ctx)||responses[b.dataset.mentor]||responses.explain;$("mentorTitle").textContent=b.textContent.trim();$("mentor").scrollIntoView({behavior:"smooth",block:"start"})}));
 })();
 </script>
 </body>
