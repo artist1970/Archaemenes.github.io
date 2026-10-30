@@ -560,7 +560,15 @@ footer{padding:34px 0 46px;border-top:1px solid var(--line);color:#747b75;font-s
   </div>
 </footer>
 
+<section id="archaemenesConversation" aria-labelledby="archaemenes-chat-heading" style="max-width:850px;margin:35px auto;padding:22px;border:1px solid #b58b46;border-radius:7px;background:#fffdf8;color:#202b25">
+<h2 id="archaemenes-chat-heading" style="font-family:Cinzel,Georgia,serif;font-weight:400">Talk with Archaemenes</h2>
+<p>Exchange greetings and everyday conversation with the Academy's curated public mentor. This preview is rule-based, not a live AI service.</p>
+<div data-chat-log role="log" aria-live="polite" aria-label="Archaemenes conversation" style="height:220px;overflow:auto;padding:12px;border:1px solid #d4c6a9;border-radius:7px;background:#f4efe4"></div>
+<form style="margin-top:12px;display:flex;gap:9px;flex-wrap:wrap"><label for="archaemenes-chat-input" style="width:100%">Your message</label><input id="archaemenes-chat-input" maxlength="500" required placeholder="Hello, Archaemenes" style="flex:1;min-width:180px;padding:12px;border:1px solid #b58b46;border-radius:7px;background:#fff;color:#202b25"><button type="submit">Send</button><button type="button" data-chat-clear>Clear</button></form>
+<p data-chat-status role="status">Loading curated conversational knowledge…</p>
+</section>
 <script src="app.js"></script>
+<script src="archaemenes-conversation.js" defer></script>
 <script src="living-mentor-preview-v1.js" defer></script>
 </body>
 </html>
