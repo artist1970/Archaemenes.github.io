@@ -157,5 +157,6 @@ const responses={explain:"Start with the idea you are studying. Tell me what par
 document.querySelectorAll("[data-mentor]").forEach(b=>b.addEventListener("click",()=>{$("mentorResponse").textContent=window.ArchaemenesHighAcademicBankV1?.respond(b.dataset.mentor,ctx)||responses[b.dataset.mentor]||responses.explain;$("mentorTitle").textContent=b.textContent.trim();$("mentor").scrollIntoView({behavior:"smooth",block:"start"})}));
 })();
 </script>
+<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 </body>
 </html>
