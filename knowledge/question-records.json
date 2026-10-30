@@ -1204,6 +1204,1896 @@
       "status": "approved",
       "source": "archaemenes-editorial-seed",
       "version": 1
+    },
+    {
+      "id": "archaemenes-guide-001",
+      "topic": "academy-navigation",
+      "question": "Where do I start at the Academy?",
+      "alternateQuestions": [],
+      "keywords": [
+        "where do i start at the academy"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-001-r1",
+          "text": "Begin at the Academy home and choose your learning level or existing learner profile. You do not need to enroll again just to find a saved profile.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-002",
+      "topic": "academy-navigation",
+      "question": "How do I find my classes?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i find my classes"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-002-r1",
+          "text": "Open your learner profile and look for your pinned or assigned classes. If one is missing, check the appropriate course entrance.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-003",
+      "topic": "academy-navigation",
+      "question": "Where is my student profile?",
+      "alternateQuestions": [],
+      "keywords": [
+        "where is my student profile"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-003-r1",
+          "text": "Use the Academy's Profile or Family portal navigation to find your existing learner dashboard.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-004",
+      "topic": "academy-navigation",
+      "question": "How do I choose a grade?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i choose a grade"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-004-r1",
+          "text": "Choose the grade that matches your current learning plan, then use placement evidence and educator guidance to confirm readiness.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-005",
+      "topic": "academy-navigation",
+      "question": "Can I explore courses before enrolling?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can i explore courses before enrolling"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-005-r1",
+          "text": "You may explore public course descriptions and learning resources without treating exploration as enrollment.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-006",
+      "topic": "academy-navigation",
+      "question": "How do I find today's lesson?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i find today's lesson"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-006-r1",
+          "text": "Open your learner dashboard and look for Today's First Step or the next available lesson in your course.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-007",
+      "topic": "academy-navigation",
+      "question": "What if a course button does not work?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what if a course button does not work"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-007-r1",
+          "text": "Tell me the page, button label, and what happened. A navigation problem should be reported rather than solved by creating a duplicate learner.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-008",
+      "topic": "academy-navigation",
+      "question": "How do I return to the Academy home?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i return to the academy home"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-008-r1",
+          "text": "Use the Academy breadcrumb or Home navigation provided on your course page.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-009",
+      "topic": "academy-navigation",
+      "question": "Where can I find the Arcade?",
+      "alternateQuestions": [],
+      "keywords": [
+        "where can i find the arcade"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-009-r1",
+          "text": "Look for the Academy Arcade link in the navigation or quick links; games supplement the lessons.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-010",
+      "topic": "academy-navigation",
+      "question": "Where can I find the library?",
+      "alternateQuestions": [],
+      "keywords": [
+        "where can i find the library"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-010-r1",
+          "text": "Visit the Academy's ARSHIF library resources when linked from your course or the ecosystem navigation.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-011",
+      "topic": "academy-navigation",
+      "question": "Where do I find language courses?",
+      "alternateQuestions": [],
+      "keywords": [
+        "where do i find language courses"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-011-r1",
+          "text": "Open the Linguistics Hall and choose the language and course level you want to study.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-012",
+      "topic": "academy-navigation",
+      "question": "Can adults study at the Academy?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can adults study at the academy"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-012-r1",
+          "text": "The Academy includes learning opportunities for different ages, including higher-learning and language courses where access is offered.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-013",
+      "topic": "academy-navigation",
+      "question": "How do I pin a course?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i pin a course"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-013-r1",
+          "text": "Use the Pin Class control where available on a course page, then confirm it appears in your learner profile.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-014",
+      "topic": "academy-navigation",
+      "question": "What if I cannot see my saved work?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what if i cannot see my saved work"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-014-r1",
+          "text": "First verify that you opened the correct learner profile on the same device; do not overwrite or recreate work before checking recovery options.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-015",
+      "topic": "academy-navigation",
+      "question": "How do I report a broken page?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i report a broken page"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-015-r1",
+          "text": "Record the page address, the action you tried, and the error. Use the Academy's beta feedback route when available.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-016",
+      "topic": "study-and-mastery",
+      "question": "What does mastery mean?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what does mastery mean"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-016-r1",
+          "text": "Mastery means showing that you understand and can apply a skill, not merely finishing a page.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-017",
+      "topic": "study-and-mastery",
+      "question": "Why is the passing score 80 percent?",
+      "alternateQuestions": [],
+      "keywords": [
+        "why is the passing score 80 percent"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-017-r1",
+          "text": "The Academy uses an 80 percent mastery threshold to unlock progression in applicable courses. The purpose is to check readiness before moving on.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-018",
+      "topic": "study-and-mastery",
+      "question": "What happens if I score below 80 percent?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what happens if i score below 80 percent"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-018-r1",
+          "text": "Review the lesson, study your errors, and retry according to the course's rules. A low score is information about what to practice next.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-019",
+      "topic": "study-and-mastery",
+      "question": "What happens when I pass a lesson?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what happens when i pass a lesson"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-019-r1",
+          "text": "In courses using the mastery gate, a qualifying score locks the completed answers and makes the next lesson available.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-020",
+      "topic": "study-and-mastery",
+      "question": "Can I change answers after passing?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can i change answers after passing"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-020-r1",
+          "text": "Completed answers may be locked after mastery so the saved evidence remains consistent; consult your course's controls.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-021",
+      "topic": "study-and-mastery",
+      "question": "Why are some quizzes open book?",
+      "alternateQuestions": [],
+      "keywords": [
+        "why are some quizzes open book"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-021-r1",
+          "text": "Open-book checks can measure how well you locate, interpret, and apply information rather than relying only on recall.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-022",
+      "topic": "study-and-mastery",
+      "question": "Why are final exams closed book?",
+      "alternateQuestions": [],
+      "keywords": [
+        "why are final exams closed book"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-022-r1",
+          "text": "A closed-book final can provide evidence of what you can explain or solve independently.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-023",
+      "topic": "study-and-mastery",
+      "question": "How should I prepare for a quiz?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how should i prepare for a quiz"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-023-r1",
+          "text": "Review the lesson explanation, work through examples, and explain the main idea in your own words before beginning.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-024",
+      "topic": "study-and-mastery",
+      "question": "What should I do after getting a question wrong?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what should i do after getting a question wrong"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-024-r1",
+          "text": "Find the exact step where your reasoning changed and compare it with the worked example.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-025",
+      "topic": "study-and-mastery",
+      "question": "How do I know I am ready for the next lesson?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i know i am ready for the next lesson"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-025-r1",
+          "text": "Try explaining the current skill without hints and completing a new practice problem accurately.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-026",
+      "topic": "study-and-mastery",
+      "question": "What is a placement assessment?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what is a placement assessment"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-026-r1",
+          "text": "A placement assessment helps identify the level of work that fits a learner's current demonstrated skills.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-027",
+      "topic": "study-and-mastery",
+      "question": "Who decides my placement?",
+      "alternateQuestions": [],
+      "keywords": [
+        "who decides my placement"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-027-r1",
+          "text": "Placement should follow the Academy's authorized assessment and administrative process, including NAIB where configured; I can explain evidence, not override placement.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-028",
+      "topic": "study-and-mastery",
+      "question": "Can I skip lessons I already know?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can i skip lessons i already know"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-028-r1",
+          "text": "Use the course's approved placement or mastery route. Do not bypass required evidence by changing saved progress.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-029",
+      "topic": "study-and-mastery",
+      "question": "How do I study for a final exam?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i study for a final exam"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-029-r1",
+          "text": "Review earlier units, practice without notes, and focus on the skills you cannot yet explain independently.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-030",
+      "topic": "study-and-mastery",
+      "question": "What if I fail a test?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what if i fail a test"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-030-r1",
+          "text": "A result below the required threshold is a signal to review and practice, not a judgment of your worth.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-031",
+      "topic": "learning-support",
+      "question": "I do not understand this lesson",
+      "alternateQuestions": [],
+      "keywords": [
+        "i do not understand this lesson"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-031-r1",
+          "text": "Tell me the topic and the first step that becomes confusing. We will begin there.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-032",
+      "topic": "learning-support",
+      "question": "Can you explain it more simply?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can you explain it more simply"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-032-r1",
+          "text": "Certainly. Share the idea or problem and I will start with a smaller example.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-033",
+      "topic": "learning-support",
+      "question": "Can you give me a hint?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can you give me a hint"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-033-r1",
+          "text": "Yes. Show me what you have tried, and I will offer a clue without giving away the whole answer.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-034",
+      "topic": "learning-support",
+      "question": "Can you do my homework for me?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can you do my homework for me"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-034-r1",
+          "text": "I can help you understand the method and check your reasoning, but the learning and final work should be yours.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-035",
+      "topic": "learning-support",
+      "question": "How do I solve a hard math problem?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i solve a hard math problem"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-035-r1",
+          "text": "Identify what is known, what is asked, and which rule connects them. Then work one justified step at a time.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-036",
+      "topic": "learning-support",
+      "question": "How can I improve my reading?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how can i improve my reading"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-036-r1",
+          "text": "Read regularly, pause to summarize each section, and look up unfamiliar words in context.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-037",
+      "topic": "learning-support",
+      "question": "How can I write a better paragraph?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how can i write a better paragraph"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-037-r1",
+          "text": "Begin with one clear idea, support it with evidence or examples, and finish by connecting the evidence to your point.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-038",
+      "topic": "learning-support",
+      "question": "How do I take useful notes?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i take useful notes"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-038-r1",
+          "text": "Write key ideas in your own words, add a short example, and mark questions to revisit.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-039",
+      "topic": "learning-support",
+      "question": "How do I remember vocabulary?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i remember vocabulary"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-039-r1",
+          "text": "Use a new word in your own sentence and revisit it across several days.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-040",
+      "topic": "learning-support",
+      "question": "What should I do when I get stuck?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what should i do when i get stuck"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-040-r1",
+          "text": "Make the task smaller. Tell me the last part you are certain about.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-041",
+      "topic": "learning-support",
+      "question": "How do I check my answer?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i check my answer"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-041-r1",
+          "text": "Use a different method when possible, substitute your result back into the problem, or explain why it makes sense.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-042",
+      "topic": "learning-support",
+      "question": "How can I ask a better question?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how can i ask a better question"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-042-r1",
+          "text": "Name the topic, describe what you tried, and point to the exact part you want clarified.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-043",
+      "topic": "learning-support",
+      "question": "What is evidence in an argument?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what is evidence in an argument"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-043-r1",
+          "text": "Evidence is information that can support or challenge a claim. We should also ask whether the source is reliable.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-044",
+      "topic": "learning-support",
+      "question": "How do I know if a source is trustworthy?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i know if a source is trustworthy"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-044-r1",
+          "text": "Check who created it, when it was published, what evidence it offers, and whether independent sources agree.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-045",
+      "topic": "learning-support",
+      "question": "What if you do not know the answer?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what if you do not know the answer"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-045-r1",
+          "text": "I should say so clearly and help identify a reliable way to investigate rather than invent certainty.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-046",
+      "topic": "student-wellbeing",
+      "question": "I am nervous about school",
+      "alternateQuestions": [],
+      "keywords": [
+        "i am nervous about school"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-046-r1",
+          "text": "It is understandable to feel nervous. We can identify one small first step and make a manageable plan.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-047",
+      "topic": "student-wellbeing",
+      "question": "I feel behind in class",
+      "alternateQuestions": [],
+      "keywords": [
+        "i feel behind in class"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-047-r1",
+          "text": "Let's identify which skill needs attention first. Progress is easier when we work from evidence rather than comparison.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-048",
+      "topic": "student-wellbeing",
+      "question": "I am afraid of failing",
+      "alternateQuestions": [],
+      "keywords": [
+        "i am afraid of failing"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-048-r1",
+          "text": "A score measures performance on a task, not your value as a person. We can prepare with focused practice.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-049",
+      "topic": "student-wellbeing",
+      "question": "I am frustrated with homework",
+      "alternateQuestions": [],
+      "keywords": [
+        "i am frustrated with homework"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-049-r1",
+          "text": "Let's pause the problem and identify what is making it difficult. A short break or smaller step may help.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-050",
+      "topic": "student-wellbeing",
+      "question": "I have too much work",
+      "alternateQuestions": [],
+      "keywords": [
+        "i have too much work"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-050-r1",
+          "text": "List the tasks and deadlines, then choose one realistic priority. A parent or teacher can help adjust the workload.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-051",
+      "topic": "student-wellbeing",
+      "question": "I cannot focus today",
+      "alternateQuestions": [],
+      "keywords": [
+        "i cannot focus today"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-051-r1",
+          "text": "Try a short work period with distractions reduced, followed by a break. If this happens often, discuss it with a trusted adult.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-052",
+      "topic": "student-wellbeing",
+      "question": "I feel embarrassed to ask questions",
+      "alternateQuestions": [],
+      "keywords": [
+        "i feel embarrassed to ask questions"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-052-r1",
+          "text": "Questions are part of scholarship. You are allowed to ask for an explanation more than once.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-053",
+      "topic": "student-wellbeing",
+      "question": "Someone is bullying me at school",
+      "alternateQuestions": [],
+      "keywords": [
+        "someone is bullying me at school"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-053-r1",
+          "text": "I'm sorry this is happening. Tell a trusted adult or school authority, and seek immediate help if you feel unsafe.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-054",
+      "topic": "student-wellbeing",
+      "question": "I had a disagreement with my teacher",
+      "alternateQuestions": [],
+      "keywords": [
+        "i had a disagreement with my teacher"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-054-r1",
+          "text": "Describe the disagreement respectfully, gather the relevant facts, and ask for a conversation about the concern.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-055",
+      "topic": "student-wellbeing",
+      "question": "I am proud of my progress",
+      "alternateQuestions": [],
+      "keywords": [
+        "i am proud of my progress"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-055-r1",
+          "text": "You have earned a moment to recognize your effort. What can you do now that you could not do before?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-056",
+      "topic": "student-wellbeing",
+      "question": "I want to give up",
+      "alternateQuestions": [],
+      "keywords": [
+        "i want to give up"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-056-r1",
+          "text": "Tell me which part feels overwhelming. We can reduce the next step and ask a trusted person for support.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-057",
+      "topic": "student-wellbeing",
+      "question": "I am worried about a test",
+      "alternateQuestions": [],
+      "keywords": [
+        "i am worried about a test"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-057-r1",
+          "text": "Make a short review plan, practice a few representative problems, and protect time for rest.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-058",
+      "topic": "student-wellbeing",
+      "question": "My friend learns faster than me",
+      "alternateQuestions": [],
+      "keywords": [
+        "my friend learns faster than me"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-058-r1",
+          "text": "Learners develop skills at different rates. Compare your current work with your own earlier understanding.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-059",
+      "topic": "student-wellbeing",
+      "question": "I do not like this subject",
+      "alternateQuestions": [],
+      "keywords": [
+        "i do not like this subject"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-059-r1",
+          "text": "You do not have to love every topic. Let's find one useful question or real-world connection to begin.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-060",
+      "topic": "student-wellbeing",
+      "question": "I need encouragement",
+      "alternateQuestions": [],
+      "keywords": [
+        "i need encouragement"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-060-r1",
+          "text": "You do not need to master everything today. One careful step and an honest question are meaningful progress.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-061",
+      "topic": "family-and-educators",
+      "question": "I am a parent. Where should I begin?",
+      "alternateQuestions": [],
+      "keywords": [
+        "i am a parent where should i begin"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-061-r1",
+          "text": "Start with the Family portal, select an existing learner or the appropriate enrollment path, and review the learner's current courses.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-062",
+      "topic": "family-and-educators",
+      "question": "Can I manage two children?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can i manage two children"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-062-r1",
+          "text": "Use each child's own learner identity and verify the selected profile before viewing or saving work.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-063",
+      "topic": "family-and-educators",
+      "question": "How can I track homeschool progress?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how can i track homeschool progress"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-063-r1",
+          "text": "Use available printable reports, completed assessments, and saved evidence to document what the learner has demonstrated.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-064",
+      "topic": "family-and-educators",
+      "question": "Can I print learning evidence?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can i print learning evidence"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-064-r1",
+          "text": "Where a course provides Print or Export Evidence, use it to retain a copy for your homeschool records.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-065",
+      "topic": "family-and-educators",
+      "question": "How should I help without giving answers?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how should i help without giving answers"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-065-r1",
+          "text": "Ask the learner to explain their thinking and provide hints or examples rather than completing the assessment for them.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-066",
+      "topic": "family-and-educators",
+      "question": "How do I support a struggling reader?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i support a struggling reader"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-066-r1",
+          "text": "Use short reading sessions, appropriate texts, and regular discussion. Seek specialist guidance when difficulties persist.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-067",
+      "topic": "family-and-educators",
+      "question": "How can I support an advanced learner?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how can i support an advanced learner"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-067-r1",
+          "text": "Offer deeper applications and appropriate placement evidence instead of simply increasing the amount of repetitive work.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-068",
+      "topic": "family-and-educators",
+      "question": "What should I do if my child loses progress?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what should i do if my child loses progress"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-068-r1",
+          "text": "Check the correct profile and available exports first. Preserve existing data and report the issue before attempting a reset.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-069",
+      "topic": "family-and-educators",
+      "question": "Can a teacher supervise several learners?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can a teacher supervise several learners"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-069-r1",
+          "text": "Where teacher tools are available, use authorized learner-specific access and keep each student's evidence separate.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-070",
+      "topic": "family-and-educators",
+      "question": "Who can see a student's portfolio?",
+      "alternateQuestions": [],
+      "keywords": [
+        "who can see a student's portfolio"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-070-r1",
+          "text": "Private learner work should only be shared through verified permissions. I cannot grant access or confirm an authorization I have not checked.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-071",
+      "topic": "family-and-educators",
+      "question": "How can families choose a foreign language?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how can families choose a foreign language"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-071-r1",
+          "text": "Explore the Linguistics Hall together, consider the learner's interests, and check that the selected course opens correctly.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-072",
+      "topic": "family-and-educators",
+      "question": "How can I encourage independent learning?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how can i encourage independent learning"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-072-r1",
+          "text": "Give learners time to attempt a problem, explain their choices, and ask for specific help when needed.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-073",
+      "topic": "family-and-educators",
+      "question": "How can I provide constructive feedback?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how can i provide constructive feedback"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-073-r1",
+          "text": "Describe the demonstrated skill, name one next improvement, and offer a concrete practice step.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-074",
+      "topic": "family-and-educators",
+      "question": "Can you change my child's grade?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can you change my child's grade"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-074-r1",
+          "text": "No. Grade changes and placement decisions must follow authorized Academy processes and supporting evidence.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-075",
+      "topic": "family-and-educators",
+      "question": "How do I protect my child's learning records?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how do i protect my child's learning records"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-075-r1",
+          "text": "Use the correct learner profile, keep secure exports, and avoid sharing private evidence through public chats.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-076",
+      "topic": "academy-culture",
+      "question": "What is the purpose of the Academy?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what is the purpose of the academy"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-076-r1",
+          "text": "The Academy seeks to make meaningful learning accessible while encouraging independence, curiosity, and demonstrated understanding.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-077",
+      "topic": "academy-culture",
+      "question": "What does sovereign learning mean?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what does sovereign learning mean"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-077-r1",
+          "text": "It emphasizes learner agency, educational access, and responsible control over learning materials and evidence.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-078",
+      "topic": "academy-culture",
+      "question": "Why does the Academy value curiosity?",
+      "alternateQuestions": [],
+      "keywords": [
+        "why does the academy value curiosity"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-078-r1",
+          "text": "Curiosity turns uncertainty into questions we can investigate and understand.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-079",
+      "topic": "academy-culture",
+      "question": "Why should I show my reasoning?",
+      "alternateQuestions": [],
+      "keywords": [
+        "why should i show my reasoning"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-079-r1",
+          "text": "Showing your reasoning helps others see what you understand and where a correction may be useful.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-080",
+      "topic": "academy-culture",
+      "question": "Is it okay to disagree with a teacher?",
+      "alternateQuestions": [],
+      "keywords": [
+        "is it okay to disagree with a teacher"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-080-r1",
+          "text": "Yes. Express disagreement respectfully, explain your evidence, and remain willing to revise your view.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-081",
+      "topic": "academy-culture",
+      "question": "What makes a good scholar?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what makes a good scholar"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-081-r1",
+          "text": "A good scholar asks careful questions, tests claims, credits sources, and remains open to correction.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-082",
+      "topic": "academy-culture",
+      "question": "Why should I credit my sources?",
+      "alternateQuestions": [],
+      "keywords": [
+        "why should i credit my sources"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-082-r1",
+          "text": "Attribution respects other people's work and helps readers verify your evidence.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-083",
+      "topic": "academy-culture",
+      "question": "Can I use AI to learn?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can i use ai to learn"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-083-r1",
+          "text": "AI can support explanation and practice, but verify important claims and follow your course's rules for independent work.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-084",
+      "topic": "academy-culture",
+      "question": "What does academic honesty mean?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what does academic honesty mean"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-084-r1",
+          "text": "It means representing your own work truthfully, crediting sources, and following assessment rules.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-085",
+      "topic": "academy-culture",
+      "question": "How should I welcome a new student?",
+      "alternateQuestions": [],
+      "keywords": [
+        "how should i welcome a new student"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-085-r1",
+          "text": "Be kind, explain where to find help, and avoid assuming everyone already knows the system.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-086",
+      "topic": "academy-culture",
+      "question": "What should I do when I discover an error in a lesson?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what should i do when i discover an error in a lesson"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-086-r1",
+          "text": "Record the lesson location and the suspected error, then submit it for review without altering someone else's evidence.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-087",
+      "topic": "academy-culture",
+      "question": "Can I learn at my own pace?",
+      "alternateQuestions": [],
+      "keywords": [
+        "can i learn at my own pace"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-087-r1",
+          "text": "Many Academy activities support self-paced practice, while mastery requirements and course structures still apply.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-088",
+      "topic": "academy-culture",
+      "question": "Why does the Academy use portfolios?",
+      "alternateQuestions": [],
+      "keywords": [
+        "why does the academy use portfolios"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-088-r1",
+          "text": "Portfolios can show learning over time through work samples, reflections, and assessment evidence.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-089",
+      "topic": "academy-culture",
+      "question": "What should I do after completing a course?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what should i do after completing a course"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-089-r1",
+          "text": "Check that your evidence is saved, review available completion records, and explore the next appropriate course.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
+    },
+    {
+      "id": "archaemenes-guide-090",
+      "topic": "academy-culture",
+      "question": "What is your role as Principal?",
+      "alternateQuestions": [],
+      "keywords": [
+        "what is your role as principal"
+      ],
+      "responses": [
+        {
+          "id": "archaemenes-guide-090-r1",
+          "text": "I am Archaemenes, the Academy's Principal and student guide. I help explain learning pathways and support thoughtful study, without overriding authorized records or decisions.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "academy-principal-editorial-seed",
+      "version": 1,
+      "role": "principal-student-guide",
+      "reviewNote": "General guidance; verify live route, course policy, and authorization before account-specific actions."
     }
   ]
 }
