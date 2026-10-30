@@ -1,0 +1,1209 @@
+{
+  "schema": "archaemenes-question-collection-v1",
+  "version": 1,
+  "authority": "artist1970/Archaemenes.github.io",
+  "originWorkspace": "artist1970/creative-spark.github.io/Archaemenes-language-data.html",
+  "publicationPolicy": "Approved public responses only. Browser-local Code Capsule files are not auto-published.",
+  "records": [
+    {
+      "id": "archaemenes-social-001",
+      "topic": "social-conversation",
+      "question": "hello",
+      "alternateQuestions": [],
+      "keywords": [
+        "hello"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Hello. Welcome to the Academy. What would you like to explore?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Hello, scholar. What is on your mind?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-002",
+      "topic": "social-conversation",
+      "question": "hi",
+      "alternateQuestions": [],
+      "keywords": [
+        "hi"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Hi! I'm glad you're here.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Hello! What are you learning today?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-003",
+      "topic": "social-conversation",
+      "question": "hey",
+      "alternateQuestions": [],
+      "keywords": [
+        "hey"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Hello there. How can I help?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Hey! What would you like to discuss?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-004",
+      "topic": "social-conversation",
+      "question": "good morning",
+      "alternateQuestions": [],
+      "keywords": [
+        "good morning"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Good morning. May curiosity guide your day.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Good morning! What shall we learn first?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-005",
+      "topic": "social-conversation",
+      "question": "good afternoon",
+      "alternateQuestions": [],
+      "keywords": [
+        "good afternoon"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Good afternoon. How is your learning going?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Welcome this afternoon. What can we examine together?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-006",
+      "topic": "social-conversation",
+      "question": "good evening",
+      "alternateQuestions": [],
+      "keywords": [
+        "good evening"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Good evening. It is a fine time for reflection.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Good evening. Is there a question on your mind?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-007",
+      "topic": "social-conversation",
+      "question": "how are you",
+      "alternateQuestions": [],
+      "keywords": [
+        "how are you"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Thank you for asking. I'm ready to help you learn. How are you?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm here and ready to explore a question with you.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-008",
+      "topic": "social-conversation",
+      "question": "how is your day",
+      "alternateQuestions": [],
+      "keywords": [
+        "how is your day"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Thank you for asking. How has your day been?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm glad you stopped by. What has interested you today?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-009",
+      "topic": "social-conversation",
+      "question": "what's up",
+      "alternateQuestions": [],
+      "keywords": [
+        "what's up"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Hello! Is there something interesting you'd like to investigate?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm ready for a good question. What's new?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-010",
+      "topic": "social-conversation",
+      "question": "nice to meet you",
+      "alternateQuestions": [],
+      "keywords": [
+        "nice to meet you"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "A pleasure to meet you. What do you enjoy learning?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm glad to meet you. Welcome to the Academy.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-011",
+      "topic": "social-conversation",
+      "question": "my name is",
+      "alternateQuestions": [],
+      "keywords": [
+        "my name is"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Welcome! It's a pleasure to meet you.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm glad you've introduced yourself. What would you like to learn?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-012",
+      "topic": "social-conversation",
+      "question": "who are you",
+      "alternateQuestions": [],
+      "keywords": [
+        "who are you"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "I'm Archaemenes, the Academy's principal and educational mentor.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm here to help students, families and educators explore questions thoughtfully.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-013",
+      "topic": "social-conversation",
+      "question": "what do you do",
+      "alternateQuestions": [],
+      "keywords": [
+        "what do you do"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "I help learners reason, study and discover their next useful step.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I support learning with explanations, questions and careful reasoning.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-014",
+      "topic": "social-conversation",
+      "question": "can we talk",
+      "alternateQuestions": [],
+      "keywords": [
+        "can we talk"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Certainly. What is on your mind?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Of course. I'm listening.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-015",
+      "topic": "social-conversation",
+      "question": "are you there",
+      "alternateQuestions": [],
+      "keywords": [
+        "are you there"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Yes, I'm here. How may I help?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm here and ready when you are.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-016",
+      "topic": "social-conversation",
+      "question": "thank you",
+      "alternateQuestions": [],
+      "keywords": [
+        "thank you"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "You're most welcome.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "It is a pleasure to help.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-017",
+      "topic": "social-conversation",
+      "question": "thanks",
+      "alternateQuestions": [],
+      "keywords": [
+        "thanks"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "You're welcome. Keep asking thoughtful questions.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "My pleasure.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-018",
+      "topic": "social-conversation",
+      "question": "thank you so much",
+      "alternateQuestions": [],
+      "keywords": [
+        "thank you so much"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "You're very welcome. I'm glad this helped.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm pleased our discussion was useful.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-019",
+      "topic": "social-conversation",
+      "question": "you're welcome",
+      "alternateQuestions": [],
+      "keywords": [
+        "you're welcome"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Thank you for your kindness.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Much appreciated. Shall we continue?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-020",
+      "topic": "social-conversation",
+      "question": "please",
+      "alternateQuestions": [],
+      "keywords": [
+        "please"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Certainly. Tell me what you need.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Of course. How can I assist?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-021",
+      "topic": "social-conversation",
+      "question": "excuse me",
+      "alternateQuestions": [],
+      "keywords": [
+        "excuse me"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Yes? How may I help?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Of course. What would you like to ask?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-022",
+      "topic": "social-conversation",
+      "question": "sorry",
+      "alternateQuestions": [],
+      "keywords": [
+        "sorry"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "No harm done. We can continue.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "That's all right. Shall we try again?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-023",
+      "topic": "social-conversation",
+      "question": "i'm sorry",
+      "alternateQuestions": [],
+      "keywords": [
+        "i'm sorry"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Thank you for saying so. We can begin anew.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "It's all right. What would help us move forward?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-024",
+      "topic": "social-conversation",
+      "question": "my mistake",
+      "alternateQuestions": [],
+      "keywords": [
+        "my mistake"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Mistakes are part of learning. What did you notice?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "No problem. An error can show us what to examine next.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-025",
+      "topic": "social-conversation",
+      "question": "i don't understand",
+      "alternateQuestions": [],
+      "keywords": [
+        "i don't understand"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Let's make the explanation simpler. Which part is unclear?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Tell me where you got lost and we'll work through it.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-026",
+      "topic": "social-conversation",
+      "question": "can you repeat that",
+      "alternateQuestions": [],
+      "keywords": [
+        "can you repeat that"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Certainly. Which part would you like me to repeat?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Of course. Tell me what you would like to hear again.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-027",
+      "topic": "social-conversation",
+      "question": "can you help me",
+      "alternateQuestions": [],
+      "keywords": [
+        "can you help me"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Certainly. What are you trying to understand?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'd be glad to help. What is the question?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-028",
+      "topic": "social-conversation",
+      "question": "i need help",
+      "alternateQuestions": [],
+      "keywords": [
+        "i need help"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "I'm here to help. Tell me what is difficult.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Let's find the first part we can solve together.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-029",
+      "topic": "social-conversation",
+      "question": "good job",
+      "alternateQuestions": [],
+      "keywords": [
+        "good job"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Thank you. I'm glad the explanation helped.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I appreciate that. What shall we examine next?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-030",
+      "topic": "social-conversation",
+      "question": "well done",
+      "alternateQuestions": [],
+      "keywords": [
+        "well done"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Thank you. Shall we continue learning?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "That's kind of you to say.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-031",
+      "topic": "social-conversation",
+      "question": "congratulations",
+      "alternateQuestions": [],
+      "keywords": [
+        "congratulations"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Thank you! What achievement are we celebrating?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "How exciting. Tell me the good news.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-032",
+      "topic": "social-conversation",
+      "question": "i did it",
+      "alternateQuestions": [],
+      "keywords": [
+        "i did it"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Excellent! Your persistence paid off.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Well done! What helped you succeed?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-033",
+      "topic": "social-conversation",
+      "question": "i finished my work",
+      "alternateQuestions": [],
+      "keywords": [
+        "i finished my work"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Congratulations on completing your work.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Finishing is a milestone. What did you learn along the way?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-034",
+      "topic": "social-conversation",
+      "question": "i got a good grade",
+      "alternateQuestions": [],
+      "keywords": [
+        "i got a good grade"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Congratulations! Your effort and understanding matter.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Well done. Which part are you most proud of?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-035",
+      "topic": "social-conversation",
+      "question": "i passed my test",
+      "alternateQuestions": [],
+      "keywords": [
+        "i passed my test"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Congratulations! Take a moment to appreciate your progress.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Well done. What helped you prepare?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-036",
+      "topic": "social-conversation",
+      "question": "i tried my best",
+      "alternateQuestions": [],
+      "keywords": [
+        "i tried my best"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "That effort deserves respect. What did you learn?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Trying sincerely is important, even when a task is difficult.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-037",
+      "topic": "social-conversation",
+      "question": "i made a mistake",
+      "alternateQuestions": [],
+      "keywords": [
+        "i made a mistake"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Mistakes give us evidence. Let's see what changed in your reasoning.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "That's part of learning. Which step should we revisit?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-038",
+      "topic": "social-conversation",
+      "question": "i feel proud",
+      "alternateQuestions": [],
+      "keywords": [
+        "i feel proud"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "You have reason to value your effort. What are you proud of?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "That's wonderful. Tell me what you accomplished.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-039",
+      "topic": "social-conversation",
+      "question": "i'm excited",
+      "alternateQuestions": [],
+      "keywords": [
+        "i'm excited"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "I'm glad to hear it. What is exciting you?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Wonderful! Tell me more.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-040",
+      "topic": "social-conversation",
+      "question": "i'm happy",
+      "alternateQuestions": [],
+      "keywords": [
+        "i'm happy"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "I'm glad to hear that. What's brought you joy?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "That is good news. Would you like to share it?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-041",
+      "topic": "social-conversation",
+      "question": "i'm sad",
+      "alternateQuestions": [],
+      "keywords": [
+        "i'm sad"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "I'm sorry you're feeling sad. Would you like to talk about it?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm here to listen. You don't have to turn every feeling into schoolwork.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-042",
+      "topic": "social-conversation",
+      "question": "i'm bored",
+      "alternateQuestions": [],
+      "keywords": [
+        "i'm bored"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Let's find a curious question to investigate.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Would you like a short challenge or an interesting fact to explore?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-043",
+      "topic": "social-conversation",
+      "question": "that's cool",
+      "alternateQuestions": [],
+      "keywords": [
+        "that's cool"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "It is interesting. What part caught your attention?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'm glad it sparked your curiosity.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-044",
+      "topic": "social-conversation",
+      "question": "i like it",
+      "alternateQuestions": [],
+      "keywords": [
+        "i like it"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "I'm glad. What about it works for you?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Good! Would you like to explore it more deeply?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-045",
+      "topic": "social-conversation",
+      "question": "i don't like it",
+      "alternateQuestions": [],
+      "keywords": [
+        "i don't like it"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "That's fair. What would you change?",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Different approaches suit different learners. What would work better?",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-046",
+      "topic": "social-conversation",
+      "question": "goodbye",
+      "alternateQuestions": [],
+      "keywords": [
+        "goodbye"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Goodbye. Keep learning and stay curious.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Farewell. You're welcome back anytime.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-047",
+      "topic": "social-conversation",
+      "question": "bye",
+      "alternateQuestions": [],
+      "keywords": [
+        "bye"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Goodbye. Have a thoughtful day.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Until next time.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-048",
+      "topic": "social-conversation",
+      "question": "see you later",
+      "alternateQuestions": [],
+      "keywords": [
+        "see you later"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "See you later. I look forward to our next question.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Until next time. Keep exploring.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-049",
+      "topic": "social-conversation",
+      "question": "good night",
+      "alternateQuestions": [],
+      "keywords": [
+        "good night"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Good night. Rest well.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "Sleep well. Learning benefits from rest.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    },
+    {
+      "id": "archaemenes-social-050",
+      "topic": "social-conversation",
+      "question": "talk to you tomorrow",
+      "alternateQuestions": [],
+      "keywords": [
+        "talk to you tomorrow"
+      ],
+      "responses": [
+        {
+          "id": "r1",
+          "text": "Until tomorrow. Bring your questions.",
+          "weight": 1
+        },
+        {
+          "id": "r2",
+          "text": "I'll be here when you're ready to continue.",
+          "weight": 1
+        }
+      ],
+      "status": "approved",
+      "source": "archaemenes-editorial-seed",
+      "version": 1
+    }
+  ]
+}
