@@ -8,7 +8,7 @@ const sample=bank.records.find(x=>x.status==="founder-approved-editorial"&&x.que
 const browser=await chromium.launch({headless:true});
 const context=await browser.newContext();
 const page=await context.newPage();
-await page.route("**/*",route=>new URL(route.request().url).origin===origin?route.continue():route.abort("blockedbyclient"));
+await page.route("**/*",route=>new URL(route.request().url()).origin===origin?route.continue():route.abort("blockedbyclient"));
 try{
  const loaded=page.waitForResponse(r=>r.url().includes("mentor-approved-500.v1.json")&&r.status()===200,{timeout:18000});
  await page.goto(origin+"/",{waitUntil:"domcontentloaded",timeout:20000});
