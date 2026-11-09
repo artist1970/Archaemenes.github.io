@@ -7,6 +7,7 @@ on:
       - "archaemenes-conversation.js"
       - "knowledge/mentor-approved-500.v1.json"
       - "tests/front-door-review.test.mjs"
+      - "tests/mentor-chat-browser-smoke.mjs"
       - ".github/workflows/mentor-front-door-review.yml"
   workflow_dispatch:
 
@@ -27,3 +28,19 @@ jobs:
       - run: |
           node --check archaemenes-conversation.js
           node --test tests/front-door-review.test.mjs
+      - name: Install isolated Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Verify full Q&A reaches the existing chat interface
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8775 --bind 127.0.0.1 > "$RUNNER_TEMP/public-chat-server.log" 2>&1 &
+          PID=$!
+          trap 'kill "$PID" 2>/dev/null || true' EXIT
+          for i in 1 2 3 4 5 6 7 8; do
+            curl --fail --silent http://127.0.0.1:8775/ -o /dev/null && break
+            sleep 1
+          done
+          node tests/mentor-chat-browser-smoke.mjs
