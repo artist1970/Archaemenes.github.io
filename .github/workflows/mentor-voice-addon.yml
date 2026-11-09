@@ -1,0 +1,25 @@
+name: Mentor full voice regression
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'mentor-voice-addon-v1.js'
+      - 'tests/mentor-voice-addon.test.mjs'
+      - '.github/workflows/mentor-voice-addon.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'mentor-voice-addon-v1.js'
+      - 'tests/mentor-voice-addon.test.mjs'
+permissions:
+  contents: read
+jobs:
+  public-narration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/mentor-voice-addon.test.mjs
