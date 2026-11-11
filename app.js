@@ -394,3 +394,37 @@
   bindCharacterPrinciples();
   bindComfort();
 })();
+
+// Mount the canonical VNV/KA public page components after defer-loaded engines are ready.
+// Preserve the original VNV homepage: this bootstrap runs only on Archaemenes' site.
+(() => {
+  "use strict";
+  function mountPublicChrome(){
+    window.VNV_TICKER?.autoPopulate?.({label:"Archaemenes · Principal",max:14});
+    window.VNV_HEADER?.mount?.({
+      title:"Archaemenes",
+      subtitle:"Khaemenes Academy · Principal",
+      icon:"A",
+      home:"https://artist1970.github.io/Archaemenes.github.io/",
+      actions:[
+        {label:"CONVERSATION",href:"#archaemenesConversation"},
+        {label:"ACADEMY",href:"#levels"},
+        {label:"FAMILY",href:"https://vervenveda.com/Khaemenes_Academy.github.io/family/"}
+      ]
+    });
+    window.VNVEcosystemToolbar?.mount?.();
+  }
+  function revealHash(){
+    const hash=location.hash.slice(1);
+    if(!hash)return;
+    const target=document.getElementById(decodeURIComponent(hash));
+    const details=target?.closest(".archaemenes-disclosure")||
+      target?.querySelector?.(":scope > .shell > .archaemenes-disclosure");
+    if(details&&details.tagName==="DETAILS")details.open=true;
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded",()=>{mountPublicChrome();revealHash()},{once:true});
+  }else{mountPublicChrome();revealHash()}
+  window.addEventListener("hashchange",revealHash);
+})();
+
