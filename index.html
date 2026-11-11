@@ -310,7 +310,7 @@ html{scroll-behavior:smooth;scroll-padding-top:92px}
 .archaemenes-stages .section-head .kicker{font:400 20px/1.35 var(--serif);letter-spacing:.06em}
 .archaemenes-stages .section-head h2{font:400 clamp(30px,3.5vw,44px)/1.28 var(--serif);color:#243038}
 .archaemenes-stages .section-head .intro{font-size:18px;line-height:1.55}
-.archaemenes-stage-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.archaemenes-stage-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .archaemenes-stage-card{display:flex;flex-direction:column;align-items:center;gap:7px;padding:18px 12px 16px;border:1px solid #bba678;border-radius:7px;background:#fffdf8;color:#243038;cursor:pointer;min-width:0;box-sizing:border-box;transition:box-shadow .2s ease,border-color .2s ease}
 .archaemenes-stage-card img{width:100%;height:clamp(135px,16vw,210px);object-fit:contain}
 .archaemenes-stage-card .stage-name{font:400 22px/1.3 var(--serif);text-align:center}
@@ -325,7 +325,7 @@ html{scroll-behavior:smooth;scroll-padding-top:92px}
 .archaemenes-stage-response .stage-response-actions button{padding:10px 16px;min-height:44px;font:400 16px/1.3 var(--body);background:#fff8e9;color:#243038;border:1px solid #b48b45;border-radius:7px;cursor:pointer}
 .archaemenes-stage-response .stage-authority-note{margin:16px 0 0;font:400 16px/1.55 var(--body);color:#e7e0d0}
 @media(max-width:900px){.archaemenes-home-hero .hero-inner{grid-template-columns:1fr;gap:20px!important}.archaemenes-portrait-medallion{width:min(300px,70vw)}#archaemenesConversation .conversation-entry-layout{grid-template-columns:1fr}.archaemenes-stage-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:540px){.archaemenes-stage-gallery{gap:9px}.archaemenes-stage-card{padding:12px 7px}.archaemenes-stage-card[aria-pressed="true"]{padding:10px 5px}.archaemenes-stage-card .stage-name{font-size:18px}.archaemenes-stage-card img{height:140px}.archaemenes-portrait-medallion{width:min(260px,80vw)}}
+@media(max-width:540px){.archaemenes-stage-gallery{grid-template-columns:1fr;gap:9px}.archaemenes-stage-card{padding:12px 7px}.archaemenes-stage-card[aria-pressed="true"]{padding:10px 5px}.archaemenes-stage-card .stage-name{font-size:18px}.archaemenes-stage-card img{height:140px}.archaemenes-portrait-medallion{width:min(260px,80vw)}}
 @media(prefers-reduced-motion:reduce){.archaemenes-stage-card{transition:none}}
 </style>
 <style id="archaemenes-final-canonical-20261111">
@@ -439,16 +439,12 @@ html:root:root body footer .archaemenes-comfort-inline button[aria-pressed="true
     <div class="section-head">
       <p class="kicker">A Principal for Every Learning Stage</p>
       <h2 id="livingMentorHeading">One mentor. A lifetime of discovery.</h2>
-      <p class="intro">Archaemenes grows with the learner. Explore his four original portraits and hear how his encouragement evolves from early learning through higher scholarship.</p>
+      <p class="intro">Archaemenes grows with the learner. Explore three featured learning stages and hear how his encouragement evolves from early learning through high school and higher scholarship.</p>
     </div>
     <div class="archaemenes-stage-gallery" role="group" aria-label="Choose an Archaemenes learning stage">
       <button class="archaemenes-stage-card" type="button" data-mentor-stage="young" aria-pressed="false">
         <img src="assets/Archaemenes-young.png" alt="Archaemenes early-learning illustration" loading="lazy" decoding="async" width="260" height="260">
         <span class="stage-name">Early Learning</span><span class="stage-detail">Curiosity · Wonder</span>
-      </button>
-      <button class="archaemenes-stage-card" type="button" data-mentor-stage="middle" aria-pressed="false">
-        <img src="assets/Archaemens-mid.png" alt="Archaemenes middle-school illustration" loading="lazy" decoding="async" width="260" height="260">
-        <span class="stage-name">Middle School</span><span class="stage-detail">Reasoning · Discovery</span>
       </button>
       <button class="archaemenes-stage-card" type="button" data-mentor-stage="high" aria-pressed="true">
         <img src="assets/Archaemens-high.png" alt="Archaemenes high-school illustration" loading="lazy" decoding="async" width="260" height="260">
