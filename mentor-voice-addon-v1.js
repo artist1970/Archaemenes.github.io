@@ -24,7 +24,19 @@ const preference="vnv.public.voice."+cfg.id+".v1";
 const supported="speechSynthesis" in window&&"SpeechSynthesisUtterance" in window;
 const key=v=>JSON.stringify([v.voiceURI||"",v.name||"",v.lang||"",!!v.localService]);
 try{const stored=localStorage.getItem(preference);if(stored&&stored.length<500)choice=stored;}catch{}
-function automatic(){return voices.find(v=>v.name==="Arthur"&&v.lang==="en-GB")||voices.find(v=>/^en/i.test(v.lang||""))||voices[0]||null;}
+// Archaemenes: Google UK English Male first, Daniel (English UK) second.
+ // Browser speech synthesis exposes installed voices only; availability depends on the device.
+function automatic(){
+ if(cfg.id==="archaemenes"){
+  const british=v=>/^en[-_]gb$/i.test(v.lang||"");
+  const google=voices.find(v=>/^Google UK English Male$/i.test((v.name||"").trim()))||
+    voices.find(v=>/Google.*UK.*English.*Male/i.test(v.name||"")&&british(v));
+  const daniel=voices.find(v=>/^Daniel(?:\s*\(English UK\))?$/i.test((v.name||"").trim())&&british(v))||
+    voices.find(v=>/^Daniel/i.test(v.name||"")&&british(v));
+  return google||daniel||voices.find(v=>british(v))||voices.find(v=>/^en/i.test(v.lang||""))||voices[0]||null;
+ }
+ return voices.find(v=>v.name==="Arthur"&&v.lang==="en-GB")||voices.find(v=>/^en/i.test(v.lang||""))||voices[0]||null;
+}
 function picked(){return choice==="auto"?automatic():voices.find(v=>key(v)===choice)||automatic();}
 function name(v){return(v.name||"Unnamed")+" · "+(v.lang||"unknown")+(v.localService?" · device":" · browser/service");}
 function refresh(){
@@ -33,12 +45,12 @@ function refresh(){
  const d=document.createElement("option");d.value="auto";d.textContent="Automatic · preferred voice";select.append(d);
  const seen=new Set();
  for(const v of voices){const k=key(v);if(seen.has(k))continue;seen.add(k);const o=document.createElement("option");o.value=k;o.textContent=name(v);select.append(o);}
- if(choice!=="auto"&&!seen.has(choice)&&voices.length){choice="auto";status.textContent="Selected voice is unavailable; automatic mode restored.";}
- select.value=choice;
+ if(choice!=="auto"&&!seen.has(choice)&&voices.length){status.textContent="Saved voice is unavailable on this device; using the preferred UK fallback until it returns.";}
+ select.value=seen.has(choice)?choice:"auto";
 }
 function speak(text){
  if(!supported){status.textContent="Speech is not available in this browser.";return;}
- try{window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(String(text||"").trim().slice(0,2800));const v=picked();if(v){u.voice=v;u.lang=v.lang;}else u.lang="en-US";u.rate=.95;u.volume=.85;u.onstart=()=>{status.textContent="Speaking: "+(v?.name||"browser default");};u.onend=()=>{status.textContent="Playback finished.";};u.onerror=()=>{status.textContent="Speech playback interrupted or unavailable.";};window.speechSynthesis.speak(u);}
+ try{window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(String(text||"").trim().slice(0,2800));const v=picked();if(v){u.voice=v;u.lang=v.lang;}else u.lang=cfg.id==="archaemenes"?"en-GB":"en-US";u.rate=.95;u.volume=.85;u.onstart=()=>{status.textContent="Speaking: "+(v?.name||"browser default");};u.onend=()=>{status.textContent="Playback finished.";};u.onerror=()=>{status.textContent="Speech playback interrupted or unavailable.";};window.speechSynthesis.speak(u);}
  catch{status.textContent="Speech playback is unavailable.";}
 }
 function isMentor(p){
