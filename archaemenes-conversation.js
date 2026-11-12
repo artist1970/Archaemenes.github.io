@@ -116,6 +116,8 @@ function answer(message){
   return "Name an idea, a setting, and a question worth exploring. Another specialist may help us go deeper. "+askBack(message);
  if(/\b(?:academy|school|course|learn)\b/i.test(message))
   return "Khaemenes Academy offers pathways from early childhood through higher learning. Which subject interests you? "+askBack(message);
+ const cross=root.CreativeSparkMentorQA?.answer(message,{mentorId:"archaemenes",scope:"principal-public"});
+ if(cross)return "From "+cross.sourceName+"'s approved public knowledge: "+cross.answer+" (Reference: "+cross.sourceName+" · "+cross.topic+".) Would you like to investigate the reasoning behind it?";
  return "I do not have a reviewed answer to that question yet. Could you tell me a little more about what you want to understand?";
 }
 say("Archaemenes","Welcome. What would you like to discuss?");
