@@ -61,11 +61,11 @@ test("single weak keyword cannot randomly select a published answer",async()=>{
 test("three age expressions alter only the instructional follow-up",async()=>{
  const t=boot();await t.ready();
  t.mode.value="wise-owl";
- assert.match(t.ask("hello"),/notice or try first/i);
+ assert.match(t.ask("How can I begin learning algebra?"),/notice or try first/i);
  t.mode.value="academy-mentor";
- assert.match(t.ask("hello"),/own words/i);
+ assert.match(t.ask("How can I begin learning algebra?"),/own words/i);
  t.mode.value="scholar";
- assert.match(t.ask("hello"),/evidence, assumption, or counterexample/i);
+ assert.match(t.ask("How can I begin learning algebra?"),/evidence, assumption, or counterexample/i);
  assert.doesNotMatch(source,/setGrade|setPlacement|awardMastery|changeAccount/);
 });
 test("public dictionary and basic grammar use mentor-scoped shared adapter",async()=>{
