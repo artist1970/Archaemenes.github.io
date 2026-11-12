@@ -1,0 +1,41 @@
+/* Archaemenes · KA canonical aesthetic refinement v1.
+   Parchment, forest, charcoal and academic gold; preserve principal portrait. */
+:root{--r:7px;--control:7px;--forest:#183a2d;--paper:#f4efe4;--ink:#202724;--serif:"Cinzel",Georgia,serif;--body:"Nunito","Brandon Grotesque","Avenir Next",Arial,sans-serif}
+body{font-family:var(--body);font-size:18px;line-height:1.68}
+.hero.archaemenes-home-hero{padding:clamp(58px,7vw,84px) 0 54px;background:radial-gradient(circle at 17% 10%,rgba(181,139,70,.14),transparent 30rem),linear-gradient(180deg,#f9f5ea,#f2eadb)}
+.hero .hero-inner{align-items:center;gap:clamp(22px,4vw,56px)}
+.hero .hero-copy{min-width:0}
+.hero .eyebrow{font:400 clamp(18px,2.7vw,33px)/1.35 var(--serif);letter-spacing:.025em;text-transform:none;color:#355342}
+.hero h1{font:400 clamp(48px,7vw,66px)/1.18 var(--serif);letter-spacing:.025em;color:#202724}
+.hero .tagline{font-size:clamp(18px,2.4vw,23px);color:#335443}
+.hero .lede{font-size:18px;line-height:1.75;max-width:790px}
+.hero .quote{font-size:20px}
+.hero .hero-note{font-size:16px;line-height:1.6}
+.hero .badges{justify-content:center;gap:8px}
+.hero .badges .badge{font-size:16px;border-radius:7px}
+.hero .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.hero .actions .btn{min-width:160px}
+.owl-wrap{min-width:0}
+.archaemenes-portrait-medallion{border-radius:7px}
+:is(.card,.panel,.conversation-entry-card,.archaemenes-stage-card,.character-card,.btn,button,input,textarea,select,.public-note){border-radius:7px}
+:is(button,input,select,textarea,.btn){font-size:16px;line-height:1.45;min-height:44px}
+.section{padding-block:clamp(44px,5.5vw,70px)}
+.section-head h2,.section h2{font:400 clamp(30px,4vw,44px)/1.3 var(--serif)}
+.section :is(h3,.card h3,.panel h3){font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.6vw,33px);line-height:1.32}
+.section :is(p,li,label,small,.kicker,.eyebrow,.form-note,.public-note,.conversation-privacy,.conversation-boundary){font-size:18px;line-height:1.65}
+.section .hero-note,.section .form-note{font-size:16px}
+.level-grid,.character-grid,.ecosystem-grid,.archaemenes-stage-gallery{align-items:stretch;gap:17px}
+:is(.card,.panel,.conversation-entry-card){min-width:0;border-color:rgba(32,39,36,.22)}
+.conversation-entry-card{background:#fffdf8;border:2px solid #b8a276;padding:clamp(16px,2.5vw,28px)}
+.conversation-card-heading{text-align:center}
+.conversation-entry-form input{color:#202724;background:#fffdf8;min-height:48px}
+.conversation-input-row{gap:10px}
+.conversation-starters button{background:#202724;color:#fff8e9;border:1px solid #b58b46}
+.conversation-entry-card [data-chat-log]{overflow-wrap:anywhere}
+.footer-inner{justify-content:center;text-align:center;flex-wrap:wrap}
+footer{background:#202724;color:#fff8e9;font-size:16px}
+footer .footer-links{justify-content:center}
+footer :is(a,small,strong){color:#fff8e9;font-size:16px;font-weight:400}
+.comfort.archaemenes-comfort-inline{position:static;transform:none;border-radius:7px;box-shadow:none}
+.comfort.archaemenes-comfort-inline button{min-width:44px;min-height:44px;border-radius:7px}
+@media(max-width:760px){.hero .hero-inner{gap:24px}.hero .actions{flex-direction:column;align-items:stretch}.hero .actions .btn{width:100%}.footer-inner{gap:15px}.footer-links{justify-content:center}}
