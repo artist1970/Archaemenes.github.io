@@ -419,6 +419,15 @@ html:root:root body footer .archaemenes-comfort-inline button[aria-pressed="true
     </div>
     <div class="conversation-entry-card">
       <div class="conversation-card-heading"><h3>Public Conversation</h3><p>Ask a question or choose a starting point.</p></div>
+      <div class="archaemenes-mentor-mode" style="margin:12px 0 16px;text-align:left">
+        <label for="archaemenes-mentor-mode" style="display:block;font-size:16px;margin-bottom:6px">Teaching style · Visitor preference</label>
+        <select id="archaemenes-mentor-mode" data-mentor-mode style="min-height:44px;width:100%;font:inherit;padding:8px;border-radius:7px;background:#fffdf8;color:#202b25;border:1px solid #58715d">
+          <option value="wise-owl">Wise Owl · Gentle clues</option>
+          <option value="academy-mentor" selected>Academy Mentor · Step-by-step</option>
+          <option value="scholar">Scholar · Evidence and reasoning</option>
+        </select>
+        <p style="font-size:16px;line-height:1.5;margin:6px 0 0">This changes the public conversation style, not your grade, placement, or account permissions.</p>
+      </div>
       <div data-chat-log role="log" tabindex="0" aria-live="polite" aria-relevant="additions text" aria-label="Archaemenes public conversation"></div>
       <div class="conversation-starters" aria-label="Conversation starters">
         <button type="button" data-chat-prompt="How can I begin learning algebra?">Mathematics</button>
@@ -704,6 +713,7 @@ html:root:root body footer .archaemenes-comfort-inline button[aria-pressed="true
 
 
 <script src="app.js"></script>
+<script src="creative-spark-mentor-language-v1.js" defer></script>
 <script src="archaemenes-conversation.js" defer></script><script src="mentor-voice-addon-v1.js" defer></script>
 <script src="living-mentor-preview-v1.js" defer></script>
 <script src="https://vervenveda.com/assets/vnv-333-ticker.js" defer></script>
