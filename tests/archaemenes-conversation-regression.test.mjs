@@ -99,3 +99,26 @@ test("clear and topic selection do not persist student information",async()=>{
  assert.equal(t.log.children.length,1);
  assert.doesNotMatch(source,/\blocalStorage\b|\bindexedDB\b|\bsessionStorage\b/);
 });
+
+test("visitor orientation handles the reported enrollment and school-stage questions",async()=>{
+ const t=boot();await t.ready();
+ assert.match(t.ask("i am not sure where to start"),/student, a parent or guardian, or an educator/i);
+ assert.match(t.ask("how to enroll in the academy"),/registration or family-access directions/i);
+ assert.match(t.ask("I have a pre school student"),/Preschool and Kindergarten pathways/i);
+ assert.match(t.ask("I have a high school student"),/High School campus/i);
+ assert.match(t.ask("what can you tell me about the school"),/Preschool through Higher Learning/i);
+});
+test("social conversation acknowledges visitor without an inappropriate lesson prompt",async()=>{
+ const t=boot();await t.ready();
+ assert.match(t.ask("how do you feel today"),/do not experience a day/i);
+ assert.match(t.ask("can you be my friend"),/friendly educational companion/i);
+ assert.match(t.ask("how many answers do you have"),/140 approved question records/i);
+ const hello=t.ask("hello");
+ assert.doesNotMatch(hello,/take the first step, in your own words/i);
+});
+test("isolated hero and sticky conversation anchor preserve the single page identity",()=>{
+ assert.match(page,/class="archaemenes-section-anchor"/);
+ assert.match(page,/href="#archaemenes-home-title"/);
+ assert.equal((page.match(/<h1(?:\s|>)/g)||[]).length,1);
+ assert.equal((page.match(/<footer(?:\s|>)/g)||[]).length,1);
+});
