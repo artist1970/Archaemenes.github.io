@@ -1,0 +1,23 @@
+name: Archaemenes Public Mentor Regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'archaemenes-conversation.js'
+      - 'creative-spark-mentor-language-v1.js'
+      - 'knowledge/question-records.json'
+      - 'index.html'
+      - 'tests/archaemenes-conversation-regression.test.mjs'
+      - '.github/workflows/archaemenes-conversation-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-mentor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/archaemenes-conversation-regression.test.mjs tests/mentor-voice-addon.test.mjs
