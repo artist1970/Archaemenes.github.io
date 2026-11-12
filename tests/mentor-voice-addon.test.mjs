@@ -58,7 +58,7 @@ test('Voice On/Off is a user-controlled persistent preference',()=>{
  const x=setup();
  const toggle=x.created.find(n=>n.textContent==='Voice Off');
  assert.ok(toggle,'visible voice toggle');
- assert.equal(toggle.events.click instanceof Function,true);
+ assert.equal(typeof toggle.events.click,'function');
  toggle.events.click();
  assert.equal(toggle.textContent,'Voice On');
  assert.equal(toggle.attributes?.['aria-pressed']||toggle.textContent,'Voice On');
