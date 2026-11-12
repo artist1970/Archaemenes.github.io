@@ -39,3 +39,21 @@ footer :is(a,small,strong){color:#fff8e9;font-size:16px;font-weight:400}
 .comfort.archaemenes-comfort-inline{position:static;transform:none;border-radius:7px;box-shadow:none}
 .comfort.archaemenes-comfort-inline button{min-width:44px;min-height:44px;border-radius:7px}
 @media(max-width:760px){.hero .hero-inner{gap:24px}.hero .actions{flex-direction:column;align-items:stretch}.hero .actions .btn{width:100%}.footer-inner{gap:15px}.footer-links{justify-content:center}}
+
+/* November visual feedback: the landing introduction stands on its own.
+   The second section owns a compact sticky anchor, not a second global header. */
+.archaemenes-home-hero{min-height:max(660px,calc(100svh - 115px));justify-content:center;padding-top:clamp(58px,7vw,96px)!important;padding-bottom:clamp(48px,6vw,75px)!important}
+.archaemenes-scroll-row{margin-top:clamp(22px,3vw,42px);padding:10px 0}
+#archaemenesConversation{position:relative;scroll-margin-top:110px;padding-top:0}
+.archaemenes-section-anchor{position:sticky;top:76px;z-index:15;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;background:#202724;color:#fff8e9;border-block:2px solid #b58b46;padding:12px max(18px,calc((100vw - 1210px)/2));font:400 16px/1.45 var(--body);text-align:center}
+.archaemenes-section-anchor span{font-family:var(--serif);font-weight:400;font-size:16px;letter-spacing:.025em}
+.archaemenes-section-anchor a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 13px;border:1px solid #b58b46;border-radius:7px;color:#fff8e9;text-decoration:none;font-size:16px}
+.archaemenes-section-anchor a:hover{background:#36443b}
+#archaemenesConversation>.conversation-entry-layout{padding-block:clamp(30px,4.5vw,60px)}
+#archaemenesConversation .conversation-entry-intro{text-align:center}
+#archaemenesConversation .conversation-entry-card{box-shadow:0 12px 34px rgba(10,22,18,.11)}
+#archaemenesConversation .mentor-voice-addon{margin:12px 16px;padding:14px;border:1px solid #a88a51;border-radius:7px;background:#f5f0e5;color:#202724}
+#archaemenesConversation .mentor-voice-addon button[aria-pressed="true"]{background:#183a2d;border-color:#183a2d;color:#fff8e9}
+#archaemenesConversation .mentor-voice-addon button[aria-pressed="false"]{background:#202724;border-color:#b58b46;color:#fff8e9}
+@media(max-width:850px){.archaemenes-home-hero{min-height:0;padding-top:54px!important;padding-bottom:38px!important}.archaemenes-section-anchor{top:64px;justify-content:center}}
+@media(max-width:540px){.archaemenes-section-anchor{top:58px;padding:10px 14px}.archaemenes-section-anchor a{width:100%}}
