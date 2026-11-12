@@ -79,7 +79,12 @@ function isMentor(p){
 }
 function replyText(p){
  const speaker=p.querySelector("strong")?.textContent||"";
- return p.textContent?.slice(speaker.length).trim()||"";
+ // The replay control is UI, not part of the mentor's spoken response.
+ // Remove it before deriving the text, including on repeated/manual playback.
+ const content=p.childNodes?Array.from(p.childNodes)
+   .filter(node=>!(node.nodeType===1&&node.classList?.contains("mentor-turn-replay")))
+   .map(node=>node.textContent||"").join(""):(p.textContent||"");
+ return content.slice(speaker.length).trim();
 }
 function decorate(readNew=false){
  for(const p of Array.from(log.children)){
