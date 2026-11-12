@@ -1,5 +1,6 @@
 /* Public mentor voice addon for existing chronological chats.
- * Read-only narration; no private data, chat storage, or autoplay.
+ * Read-only narration; optional user-enabled automatic speech with a saved toggle.
+ * No private data or chat transcript storage.
  */
 (function(){"use strict";
 const cases=[
