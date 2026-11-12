@@ -11,17 +11,36 @@ const host=document.querySelector(cfg.host),log=host.querySelector(cfg.log);if(!
 const voiceArea=document.createElement("div");voiceArea.className="mentor-voice-addon";
 const lab=document.createElement("label");lab.textContent=cfg.name+" voice";lab.htmlFor="mentor-voice-select";
 const select=document.createElement("select");select.id="mentor-voice-select";
+const autoplay=document.createElement("button");
+autoplay.type="button";autoplay.setAttribute("aria-pressed","false");
+autoplay.setAttribute("aria-label","Toggle automatic mentor narration");
+autoplay.textContent="Voice Off";
 const preview=document.createElement("button");preview.type="button";preview.textContent="Preview voice";
 const last=document.createElement("button");last.type="button";last.textContent="Listen to latest reply";
 const stop=document.createElement("button");stop.type="button";stop.textContent="Stop audio";
 const status=document.createElement("p");status.setAttribute("role","status");status.setAttribute("aria-live","polite");status.textContent="Loading browser voices…";
-voiceArea.append(lab,select,preview,last,stop,status);
+voiceArea.append(lab,select,autoplay,preview,last,stop,status);
 const css=document.createElement("style");
 css.textContent=".mentor-voice-addon{margin:15px 0;padding:15px;border:1px solid #b58b46;border-radius:7px;display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:16px}.mentor-voice-addon label,.mentor-voice-addon p{width:100%;margin:0;font-size:16px}.mentor-voice-addon select{min-width:180px;max-width:100%;flex:1;background:#f4f0e7;color:#243038;padding:10px;border:1px solid #9d8b6d;border-radius:7px;font:inherit;font-size:16px}.mentor-voice-addon button,.mentor-turn-replay{padding:9px 12px;border:1px solid #b58b46;border-radius:7px;background:#28332f;color:#f4f0e7;font:inherit;font-size:16px;cursor:pointer}.mentor-turn-replay{margin:7px 0;display:block}";
 document.head.append(css);log.insertAdjacentElement("afterend",voiceArea);
-let voices=[],choice="auto";
+let voices=[],choice="auto",autoRead=false;
 const preference="vnv.public.voice."+cfg.id+".v1";
+const autoPreference="vnv.public.voice.autoplay."+cfg.id+".v1";
+try{autoRead=localStorage.getItem(autoPreference)==="on";}catch{}
 const supported="speechSynthesis" in window&&"SpeechSynthesisUtterance" in window;
+function renderAutoplay(){
+ autoplay.textContent=autoRead?"Voice On":"Voice Off";
+ autoplay.setAttribute("aria-pressed",String(autoRead));
+ status.textContent=autoRead?"Automatic replies are on.":"Automatic replies are off; use Listen for individual replies.";
+}
+autoplay.addEventListener("click",()=>{
+ if(!supported){status.textContent="Speech is unavailable in this browser.";return;}
+ autoRead=!autoRead;
+ try{localStorage.setItem(autoPreference,autoRead?"on":"off");}catch{}
+ if(!autoRead)window.speechSynthesis.cancel();
+ renderAutoplay();
+});
+renderAutoplay();
 const key=v=>JSON.stringify([v.voiceURI||"",v.name||"",v.lang||"",!!v.localService]);
 try{const stored=localStorage.getItem(preference);if(stored&&stored.length<500)choice=stored;}catch{}
 // Archaemenes: Google UK English Male first, Daniel (English UK) second.
@@ -61,19 +80,26 @@ function replyText(p){
  const speaker=p.querySelector("strong")?.textContent||"";
  return p.textContent?.slice(speaker.length).trim()||"";
 }
-function decorate(){
+function decorate(readNew=false){
  for(const p of Array.from(log.children)){
   if(!isMentor(p)||p.querySelector(".mentor-turn-replay"))continue;
   const button=document.createElement("button");button.type="button";button.className="mentor-turn-replay";button.textContent="Listen to this reply";
   const words=replyText(p);button.addEventListener("click",()=>speak(words));p.append(button);
+  if(readNew&&autoRead&&cfg.id==="archaemenes"&&words)speak(words);
  }
 }
 decorate();
-if("MutationObserver" in window){const observer=new MutationObserver(decorate);observer.observe(log,{childList:true});}
+if("MutationObserver" in window){
+ const observer=new MutationObserver(records=>{
+  if(!records.some(r=>r.type==="childList"&&Array.from(r.addedNodes||[]).some(n=>n.parentNode===log)))return;
+  decorate(true);
+ });
+ observer.observe(log,{childList:true});
+}
 select.addEventListener("change",()=>{choice=select.value||"auto";try{localStorage.setItem(preference,choice);}catch{}status.textContent="Voice: "+(picked()?name(picked()):"browser default");});
 preview.addEventListener("click",()=>speak("Hello, I am "+cfg.name+". Welcome to our learning conversation."));
 last.addEventListener("click",()=>{const rows=Array.from(log.children).filter(isMentor);const r=rows.at(-1);if(r)speak(replyText(r));else status.textContent="There is no mentor reply to read yet.";});
 stop.addEventListener("click",()=>{if(supported)window.speechSynthesis.cancel();status.textContent="Audio stopped.";});
 if(supported){refresh();window.speechSynthesis.addEventListener?.("voiceschanged",refresh);}
-else{select.disabled=true;preview.disabled=true;last.disabled=true;stop.disabled=true;status.textContent="Speech is unavailable in this browser.";}
+else{select.disabled=true;autoplay.disabled=true;preview.disabled=true;last.disabled=true;stop.disabled=true;status.textContent="Speech is unavailable in this browser.";}
 })();
