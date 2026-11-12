@@ -27,13 +27,14 @@ function setup(){
  const row=elem(kind==='archaemenes'?'p':'div'),strong=elem('strong');
  strong.textContent=kind==='archaemenes'?'Archaemenes: ':'Klasaipeer · demo';
  row.textContent=strong.textContent+'Hello there!';row.append(strong);log.append(row);
+ const created=[];const originalElement=elem;
  const document={querySelector:selector=>selector===(kind==='archaemenes'?'#archaemenesConversation':'#klasaipeer-chat')?host:null,
-  createElement:elem,head:{append(){}}};
+  createElement:tag=>{const n=originalElement(tag);created.push(n);return n;},head:{append(){}}};
  function SpeechSynthesisUtterance(s){this.text=s;}
  const window={speechSynthesis:{getVoices:()=>voices,addEventListener(){},cancel(){},speak:u=>spoken.push(u)},SpeechSynthesisUtterance};
  const localStorage={getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)};
  vm.runInNewContext(code,{document,window,localStorage,SpeechSynthesisUtterance},{timeout:1000});
- const panel=log.children[0];return {log,row,spoken,storage,kind};
+ const panel=log.children[0];return {log,row,spoken,storage,kind,created};
 }
 test('mentor addon loads after existing chat engine without replacing it',()=>{
  assert.match(html,/mentor-voice-addon-v1\.js/);
@@ -51,4 +52,19 @@ test('addon is read-only and stores no message content',()=>{
  const x=setup();
  assert.equal(x.storage.size,0);
  assert.doesNotMatch(code,/innerHTML|sessionStorage|conversation\.replaceChildren/);
+});
+
+test('Voice On/Off is a user-controlled persistent preference',()=>{
+ const x=setup();
+ const toggle=x.created.find(n=>n.textContent==='Voice Off');
+ assert.ok(toggle,'visible voice toggle');
+ assert.equal(toggle.events.click instanceof Function,true);
+ toggle.events.click();
+ assert.equal(toggle.textContent,'Voice On');
+ assert.equal(toggle.attributes?.['aria-pressed']||toggle.textContent,'Voice On');
+ assert.equal(x.storage.get('vnv.public.voice.autoplay.'+x.kind+'.v1'),'on');
+ toggle.events.click();
+ assert.equal(toggle.textContent,'Voice Off');
+ assert.equal(x.storage.get('vnv.public.voice.autoplay.'+x.kind+'.v1'),'off');
+ assert.equal(x.spoken.length,0,'No unsolicited playback on switch');
 });
