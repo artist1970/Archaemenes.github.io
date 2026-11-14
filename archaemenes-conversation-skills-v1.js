@@ -53,7 +53,7 @@
        "A hypothesis is a testable explanation or prediction. Ask a clear question, identify variables, make a prediction, gather observations, and compare the results with the hypothesis. A result can challenge an idea without making the experiment a failure.",
        "Scientific inquiry develops testable hypotheses, designs controlled observations or experiments, analyzes evidence and uncertainty, and revises explanations. Good methodology distinguishes correlation from causal inference.");
    }
-   if(/\b(?:what (?:is|does) (?:a )?(?:primary source|reliable source|evidence)|how (?:do|can) i (?:research|check) (?:a |my )?source|how do i (?:know|tell) (?:if )?a source is reliable)\b/i.test(q)){
+   if(/\b(?:what (?:is|does) (?:a )?(?:primary source|reliable source|evidence)|how (?:do|can) i (?:research|check) (?:whether )?(?:a |my )?source|how do i (?:know|tell) (?:if )?a source is reliable)\b/i.test(q)){
      context.topic="research";
      return "A primary source comes from the period or event being studied, such as a letter, photograph, or firsthand record. Reliability depends on the question: check who created the source, when, why, what it can actually establish, and whether independent evidence supports the claim.";
    }
