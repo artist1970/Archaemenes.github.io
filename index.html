@@ -368,6 +368,15 @@ html:root:root body footer .archaemenes-comfort-inline button{position:static;mi
 html:root:root body footer .archaemenes-comfort-inline button[aria-pressed="true"]{background:#e3c681;border-color:#e3c681}
 #mentor-language-laboratory{border-radius:7px;margin:25px auto 8px!important;max-width:100%;box-sizing:border-box}
 </style><link rel="stylesheet" href="styles/archaemenes-landing-refinement-v1.css">
+<style>
+/* Conversation composer: allow longer, accessible visitor messages. */
+#archaemenesConversation .conversation-input-row textarea{flex:1 1 270px;min-width:0;min-height:102px;resize:vertical;padding:12px 14px;border:1px solid #b48b45;border-radius:7px;background:#fffdf8;color:#243038;font:400 16px/1.55 var(--body)}
+#archaemenesConversation .conversation-input-row textarea:focus-visible{outline:3px solid #a17b38;outline-offset:2px}
+#archaemenesConversation .conversation-entry-hint{margin:8px 0 0;color:#39473c;font:400 16px/1.45 var(--body)}
+#archaemenesConversation .conversation-starters{gap:10px}
+#archaemenesConversation [data-chat-log] p{white-space:pre-wrap}
+@media(max-width:600px){#archaemenesConversation .conversation-input-row textarea{flex-basis:100%}}
+</style>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to main content</a>
@@ -417,13 +426,13 @@ html:root:root body footer .archaemenes-comfort-inline button[aria-pressed="true
     <div class="conversation-entry-intro">
       <p class="kicker">Khaemenes Academy · One Continuous Mentor</p>
       <h2 id="archaemenes-chat-heading">A Conversation with the Principal</h2>
-      <p>Begin a thoughtful conversation using the curated public knowledge library. This introduction is rule-based, not a live AI service.</p>
+      <p>Bring me a question, a story from your day, or a subject you would like to understand. We can talk naturally, work through an example, or simply follow your curiosity. This public conversation is rule-based, not a live AI service.</p>
       <p class="conversation-privacy">Please do not share student records, passwords, addresses, or other private information here.</p>
       <a class="btn gold" href="https://vervenveda.com/Khaemenes_Academy.github.io/mentor/#mentorWorkspace">Registered Learner Conversation</a>
       <p class="conversation-boundary">Family-linked conversation and learner continuity remain on the Academy site. They are not shared between these browser origins.</p>
     </div>
     <div class="conversation-entry-card">
-      <div class="conversation-card-heading"><h3>Public Conversation</h3><p>Ask a question or choose a starting point.</p></div>
+      <div class="conversation-card-heading"><h3>Talk with Archaemenes</h3><p>A conversation first. An explanation when you ask. Change your teaching style at any time.</p></div>
       <div class="archaemenes-mentor-mode" style="margin:12px 0 16px;text-align:left">
         <label for="archaemenes-mentor-mode" style="display:block;font-size:16px;margin-bottom:6px">Teaching style · Visitor preference</label>
         <select id="archaemenes-mentor-mode" data-mentor-mode style="min-height:44px;width:100%;font:inherit;padding:8px;border-radius:7px;background:#fffdf8;color:#202b25;border:1px solid #58715d">
@@ -435,13 +444,17 @@ html:root:root body footer .archaemenes-comfort-inline button[aria-pressed="true
       </div>
       <div data-chat-log role="log" tabindex="0" aria-live="polite" aria-relevant="additions text" aria-label="Archaemenes public conversation"></div>
       <div class="conversation-starters" aria-label="Conversation starters">
-        <button type="button" data-chat-prompt="How can I begin learning algebra?">Mathematics</button>
-        <button type="button" data-chat-prompt="Help me plan a creative story.">Creative Writing</button>
+        <button type="button" data-chat-prompt="Hello Archaemenes, how are you today?">Just Talk</button>
+        <button type="button" data-chat-prompt="Can you explain fractions with an example?">Mathematics</button>
+        <button type="button" data-chat-prompt="What is a hypothesis?">Science</button>
+        <button type="button" data-chat-prompt="How do I write a paragraph?">Writing</button>
+        <button type="button" data-chat-prompt="How can I check whether a source is reliable?">Research</button>
         <button type="button" data-chat-prompt="What can I explore at Khaemenes Academy?">Explore Academy</button>
       </div>
       <form class="conversation-entry-form" autocomplete="off">
         <label for="archaemenes-chat-input">Your message</label>
-        <div class="conversation-input-row"><input id="archaemenes-chat-input" maxlength="500" required placeholder="What would you like to learn?" autocomplete="off"><button class="btn primary" type="submit">Send</button><button class="btn" type="button" data-chat-clear>Clear</button></div>
+        <div class="conversation-input-row"><textarea id="archaemenes-chat-input" data-chat-input rows="3" maxlength="1800" required placeholder="Share a thought, question, or something you noticed today…" autocomplete="off"></textarea><button class="btn primary" type="submit">Send</button><button class="btn" type="button" data-chat-clear>Clear</button></div>
+        <p class="conversation-entry-hint">Enter to send · Shift+Enter for a new line · Temporary on this page</p>
       </form>
       <p data-chat-status role="status" aria-live="polite">Loading curated conversational knowledge…</p>
     </div>
@@ -721,6 +734,7 @@ html:root:root body footer .archaemenes-comfort-inline button[aria-pressed="true
 <!-- Shared lexicon is initialized once below, ahead of visitor interaction. -->
 <script src="creative-spark-mentor-language-v1.js"></script>
 <script src="creative-spark-mentor-qa-v1.js" defer></script>
+<script src="archaemenes-conversation-skills-v1.js" defer></script>
 <script src="archaemenes-conversation.js" defer></script><script src="mentor-voice-addon-v1.js" defer></script>
 <script src="living-mentor-preview-v1.js" defer></script>
 <script src="https://vervenveda.com/assets/vnv-333-ticker.js" defer></script>
