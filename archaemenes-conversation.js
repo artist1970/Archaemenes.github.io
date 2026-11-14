@@ -4,7 +4,7 @@
  */
 (function(root){"use strict";
 const host=document.getElementById("archaemenesConversation");if(!host)return;
-const log=host.querySelector("[data-chat-log]"),form=host.querySelector("form"),input=host.querySelector("input"),
+const log=host.querySelector("[data-chat-log]"),form=host.querySelector("form"),input=host.querySelector("[data-chat-input]")||host.querySelector("input"),
  status=host.querySelector("[data-chat-status]"),modePicker=host.querySelector("[data-mentor-mode]");
 if(!log||!form||!input||!status)return;
 let records=[],loaded=false,last="",recentIds=[],topic="";
@@ -130,11 +130,12 @@ fetch("./knowledge/question-records.json",{cache:"no-store",credentials:"same-or
  .then(data=>{records=validated(data);loaded=true;status.textContent="140-entry public conversation library available. Developmental mode is guidance only; no learner account is accessed.";})
  .catch(()=>{loaded=false;records=[];status.textContent="Curated knowledge unavailable. Public-only guidance remains available.";});
 form.addEventListener("submit",e=>{
- e.preventDefault();const message=input.value.trim().slice(0,500);if(!message)return;
+ e.preventDefault();const message=input.value.trim().slice(0,1800);if(!message)return;
  say("You",message);say("Archaemenes",answer(message));input.value="";input.focus();
 });
+input.addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.shiftKey&&!e.isComposing){e.preventDefault();form.requestSubmit?.();}});
 host.querySelectorAll("[data-chat-prompt]").forEach(button=>button.addEventListener("click",()=>{
- input.value=(button.getAttribute("data-chat-prompt")||"").slice(0,500);input.focus();
+ input.value=(button.getAttribute("data-chat-prompt")||"").slice(0,1800);input.focus();
 }));
 host.querySelector("[data-chat-clear]")?.addEventListener("click",()=>{
  log.replaceChildren();last="";recentIds=[];topic="";visitorContext=root.ArchaemenesConversationSkills?.fresh()||{topic:"",lastDetail:"",turns:0};
