@@ -8,6 +8,7 @@ const log=host.querySelector("[data-chat-log]"),form=host.querySelector("form"),
  status=host.querySelector("[data-chat-status]"),modePicker=host.querySelector("[data-mentor-mode]");
 if(!log||!form||!input||!status)return;
 let records=[],loaded=false,last="",recentIds=[],topic="";
+let visitorContext=root.ArchaemenesConversationSkills?.fresh()||{topic:"",lastDetail:"",turns:0};
 const normalize=s=>String(s||"").normalize("NFKC").toLowerCase().replace(/[’]/g,"'").replace(/[^\p{L}\p{N} ]/gu," ").replace(/\s+/g," ").trim();
 const STOP=new Set(["the","and","for","from","with","what","where","when","would","could","should","your","about","have","that","this","can","you","how","are","please","me","my","to","an","a","is","do","i"]);
 const terms=s=>normalize(s).split(" ").filter(w=>w.length>=3&&!STOP.has(w));
@@ -70,6 +71,8 @@ function answer(message){
    return "I can help practise a concept, but I cannot reveal protected assessment answers, credentials, or private records.";
  if(/\b(?:hurt myself|suicide|immediate danger|emergency|unsafe)\b/i.test(message))
    return "Your safety comes first. Please reach out to a trusted adult or emergency services if there is immediate danger.";
+ const immediate=root.ArchaemenesConversationSkills?.reply(message,visitorContext,getMode());
+ if(immediate)return immediate;
  // Visitor-facing conversation and enrollment orientation, not course-grade decisions.
  // These specific intents take precedence over generic 'Academy' keyword fallbacks.
  if(/\b(?:how (?:do|can) (?:i|we) (?:enroll|register|sign up)|enroll(?:ment|ing)?|register(?:ing|ation)?|sign up|admission)\b/i.test(message))
@@ -134,10 +137,10 @@ host.querySelectorAll("[data-chat-prompt]").forEach(button=>button.addEventListe
  input.value=(button.getAttribute("data-chat-prompt")||"").slice(0,500);input.focus();
 }));
 host.querySelector("[data-chat-clear]")?.addEventListener("click",()=>{
- log.replaceChildren();last="";recentIds=[];topic="";
+ log.replaceChildren();last="";recentIds=[];topic="";visitorContext=root.ArchaemenesConversationSkills?.fresh()||{topic:"",lastDetail:"",turns:0};
  say("Archaemenes","A fresh beginning. What shall we explore?");
 });
-modePicker?.addEventListener("change",()=>{last="";recentIds=[];topic="";
+modePicker?.addEventListener("change",()=>{last="";recentIds=[];topic="";visitorContext=root.ArchaemenesConversationSkills?.fresh()||{topic:"",lastDetail:"",turns:0};
  status.textContent="Public teaching style: "+modePicker.selectedOptions[0].text+". This is a visitor preference, not a verified grade or placement.";});
 root.ArchaemenesPublicMentor=Object.freeze({answer,validated,rank,getMode,loaded:()=>loaded});
 })(window);
