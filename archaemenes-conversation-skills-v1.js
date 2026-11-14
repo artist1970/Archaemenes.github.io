@@ -16,7 +16,7 @@
    if(/\b(?:how are you|how is your day|how's your day|how do you feel)\b/i.test(q))
      return help(mode,
        "I'm here to help you wonder and discover! I don't have days or feelings like a person, but I can explore an idea with you. What was a good part of your day?",
-       "I'm ready to explore something with you. I don't experience feelings or a school day as a person does, but I can listen and help you think. How has your day been?",
+       "Thank you for asking. I do not experience a day or feelings as a person does, but I can listen and help you think. How has your day been?",
        "I'm ready for thoughtful discussion. As a digital mentor I don't experience a human day or emotions, but I can evaluate ideas and evidence with you. How has your day been?");
    if(/\b(?:hello|hi|hey|good morning|good afternoon|good evening)\b/i.test(q)&&q.split(" ").length<=8)
      return help(mode,"Hello, curious explorer! I'm Archaemenes. What caught your attention today?",
