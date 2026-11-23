@@ -377,6 +377,43 @@ html:root:root body footer .archaemenes-comfort-inline button[aria-pressed="true
 #archaemenesConversation [data-chat-log] p{white-space:pre-wrap}
 @media(max-width:600px){#archaemenesConversation .conversation-input-row textarea{flex-basis:100%}}
 </style>
+<style id="archaemenes-dark-hero-contrast">
+/* Archaemenes dark-hero legibility correction — 2026-11-23 */
+/* This hero is charcoal: light foreground must override light-page defaults. */
+body .hero.archaemenes-home-hero.vnv-mentor-hero :is(.eyebrow,.tagline,.lede,.hero-note){
+  color:#fff8e9!important;
+  -webkit-text-fill-color:#fff8e9!important;
+  opacity:1!important;
+}
+body .hero.archaemenes-home-hero.vnv-mentor-hero .quote,
+body .hero.archaemenes-home-hero.vnv-mentor-hero .archaemenes-scroll-cue,
+body .hero.archaemenes-home-hero.vnv-mentor-hero .archaemenes-scroll-cue :is(span,.archaemenes-scroll-arrow){
+  color:#f3cf82!important;
+  -webkit-text-fill-color:#f3cf82!important;
+  opacity:1!important;
+}
+body .hero.archaemenes-home-hero.vnv-mentor-hero .badges .badge{
+  background:#fff8e9!important;
+  color:#243038!important;
+  -webkit-text-fill-color:#243038!important;
+  opacity:1!important;
+  border:1px solid #d7b568!important;
+}
+body .hero.archaemenes-home-hero.vnv-mentor-hero .actions .btn.ghost{
+  color:#fff8e9!important;
+  -webkit-text-fill-color:#fff8e9!important;
+  border:2px solid #f3cf82!important;
+  background:transparent!important;
+}
+body .hero.archaemenes-home-hero.vnv-mentor-hero .actions .btn.primary{
+  color:#fff8e9!important;
+  -webkit-text-fill-color:#fff8e9!important;
+}
+body .hero.archaemenes-home-hero.vnv-mentor-hero .actions .btn.gold{
+  color:#243038!important;
+  -webkit-text-fill-color:#243038!important;
+}
+</style>
 <style id="vnv-mentor-layout-v1">
  .vnv-mentor-hero{background:#243038!important;color:#fff8e9!important;border-radius:7px!important}
  .vnv-mentor-hero h1{font:400 clamp(40px,7vw,66px)/1.2 Cinzel,Georgia,serif!important;color:#fff8e9!important}
